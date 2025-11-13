@@ -47,7 +47,7 @@ const nameInput = document.getElementById('name-input');
 const startButton = document.getElementById('start-button');
 const departmentSelect = document.getElementById('department-select');
 const confirmationModal = document.getElementById('confirmation-modal');
-const confirmStartButton = document.getElementById('confirm-start-button');
+// const confirmStartButton = document.getElementById('confirm-start-button');
 
 // --- QUESTION DATA (New 4-Subject Structure) ---
 const fullQuestionsData = [
