@@ -52,21 +52,1321 @@ const confirmStartButton = document.getElementById('confirm-start-button');
 // --- QUESTION DATA (New 4-Subject Structure) ---
 const fullQuestionsData = [
     // --- MATHEMATICS (15 Questions Pool) ---
-    { id: 'M1', subject: 'MATHS', q: 'Simplify: $3x + 5y - x + 2y$', options: { A: '$4x + 7y$', B: '$2x + 7y$', C: '$4x + 3y$', D: '$2x + 3y$' }, ans: 'B', exp: 'Combine like terms: $(3x - x) + (5y + 2y) = 2x + 7y$.' },
-    { id: 'M2', subject: 'MATHS', q: 'What is the value of $\\frac{1}{4}$ of $100$?', options: { A: '50', B: '25', C: '40', D: '75' }, ans: 'B', exp: 'One-quarter of 100 is $100 \\div 4 = 25$.' },
-    { id: 'M3', subject: 'MATHS', q: 'If a man buys a shirt for N800 and sells it for N1000, what is his profit percentage?', options: { A: '$20\\%$', B: '$25\\%$', C: '$15\\%$', D: '$10\\%$' }, ans: 'B', exp: 'Profit is N200. Profit percentage is $(\\frac{200}{800}) \\times 100 = 25\\%$.' },
-    { id: 'M4', subject: 'MATHS', q: 'Solve for x: $2x - 7 = 11$', options: { A: '$x = 8$', B: '$x = 9$', C: '$x = 10$', D: '$x = 18$' }, ans: 'B', exp: 'Add 7 to both sides: $2x = 18$. Divide by 2: $x = 9$.' },
-    { id: 'M5', subject: 'MATHS', q: 'The next number in the sequence: $1, 4, 9, 16, 25, \\dots$', options: { A: '30', B: '32', C: '36', D: '49' }, ans: 'C', exp: 'The sequence consists of perfect squares: $1^2, 2^2, 3^2, 4^2, 5^2$. The next is $6^2 = 36$.' },
-    { id: 'M6', subject: 'MATHS', q: 'Calculate the area of a circle with a radius of $7cm$ (use $\\pi = \\frac{22}{7}$)', options: { A: '$49cm^2$', B: '$154cm^2$', C: '$22cm^2$', D: '$14cm^2$' }, ans: 'B', exp: 'Area $= \\pi r^2 = \\frac{22}{7} \\times 7^2 = 22 \\times 7 = 154cm^2$.' },
-    { id: 'M7', subject: 'MATHS', q: 'Convert $0.625$ to a fraction in its simplest form.', options: { A: '$\\frac{5}{8}$', B: '$\\frac{3}{5}$', C: '$\\frac{1}{2}$', D: '$\\frac{6}{10}$' }, ans: 'A', exp: '$0.625 = \\frac{625}{1000}$. Dividing by 125 gives $\\frac{5}{8}$.' },
-    { id: 'M8', subject: 'MATHS', q: 'What is $2^3 + 3^2$?', options: { A: '12', B: '15', C: '17', D: '18' }, ans: 'C', exp: '$2^3 = 8$ and $3^2 = 9$. $8 + 9 = 17$.' },
-    { id: 'M9', subject: 'MATHS', q: 'How many days are there in $10$ weeks?', options: { A: '70', B: '60', C: '75', D: '100' }, ans: 'A', exp: '$10 \\times 7 = 70$ days.' },
-    { id: 'M10', subject: 'MATHS', q: 'Find the mean of the numbers: $5, 10, 15, 20$.', options: { A: '12', B: '12.5', C: '15', D: '50' }, ans: 'B', exp: 'Sum is 50. Mean is $\\frac{50}{4} = 12.5.' },
-    { id: 'M11', subject: 'MATHS', q: 'If $a=3$ and $b=4$, find the value of $a^2 + b^2$.', options: { A: '7', B: '12', C: '25', D: '49' }, ans: 'C', exp: '$3^2 + 4^2 = 9 + 16 = 25.' },
-    { id: 'M12', subject: 'MATHS', q: 'A train traveled $180km$ in $3$ hours. What was its speed in $km/h$?', options: { A: '$60km/h$', B: '$50km/h$', C: '$70km/h$', D: '90km/h' }, ans: 'A', exp: 'Speed = Distance / Time = $180km / 3h = 60km/h$.' },
-    { id: 'M13', subject: 'MATHS', q: 'What is the highest common factor (H.C.F.) of $12$ and $18$?', options: { A: '3', B: '6', C: '9', D: '12' }, ans: 'B', exp: 'The factors of 12 are 1, 2, 3, 4, 6, 12. The factors of 18 are 1, 2, 3, 6, 9, 18. The largest common factor is 6.' },
-    { id: 'M14', subject: 'MATHS', q: 'What is the sum of angles in a triangle?', options: { A: '$90^{\\circ}$', B: '$180^{\\circ}$', C: '$270^{\\circ}$', D: '$360^{\\circ}$' }, ans: 'B', exp: 'The sum of internal angles in any Euclidean triangle is always $180^{\\circ}$.' },
-    { id: 'M15', subject: 'MATHS', q: 'A square has a perimeter of $40cm$. What is its area?', options: { A: '$10cm^2$', B: '$40cm^2$', C: '$100cm^2$', D: '$160cm^2$' }, ans: 'C', exp: 'Side length is $\\frac{40}{4} = 10cm$. Area is $10cm \\times 10cm = 100cm^2$.' },
+     {
+        "id": "M1",
+        "subject": "MATHS",
+        "q": "Simplify: $2x + 3x - 4$",
+        "options": {
+            "A": "$5x - 4$",
+            "B": "$x - 4$",
+            "C": "$4x - 4$",
+            "D": "$5x + 4$"
+        },
+        "ans": "A",
+        "exp": "Combine like terms: $2x + 3x = 5x$, so result is $5x - 4$."
+    },
+    {
+        "id": "M2",
+        "subject": "MATHS",
+        "q": "Solve for $x$: $2x + 5 = 11$",
+        "options": {
+            "A": "$x = 2$",
+            "B": "$x = 3$",
+            "C": "$x = 4$",
+            "D": "$x = 5$"
+        },
+        "ans": "C",
+        "exp": "Subtract 5 from both sides: $2x = 6$, divide by 2: $x = 3$."
+    },
+    {
+        "id": "M3",
+        "subject": "MATHS",
+        "q": "Expand: $(x + 2)(x + 3)$",
+        "options": {
+            "A": "$x^2 + 5x + 6$",
+            "B": "$x^2 + 6x + 5$",
+            "C": "$x^2 + 2x + 3$",
+            "D": "$x^2 + 3x + 2$"
+        },
+        "ans": "A",
+        "exp": "Use distributive law: $x(x+3) + 2(x+3) = x^2 + 5x + 6$."
+    },
+    {
+        "id": "M4",
+        "subject": "MATHS",
+        "q": "Factorize: $x^2 + 7x + 10$",
+        "options": {
+            "A": "$(x + 2)(x + 5)$",
+            "B": "$(x + 1)(x + 10)$",
+            "C": "$(x - 2)(x + 5)$",
+            "D": "$(x + 10)(x - 1)$"
+        },
+        "ans": "A",
+        "exp": "Find two numbers that multiply to 10 and add to 7 \u2192 2 and 5."
+    },
+    {
+        "id": "M5",
+        "subject": "MATHS",
+        "q": "Simplify: $3x + 5y - x + 2y$",
+        "options": {
+            "A": "$4x + 7y$",
+            "B": "$2x + 7y$",
+            "C": "$4x + 3y$",
+            "D": "$2x + 3y$"
+        },
+        "ans": "B",
+        "exp": "Combine like terms: $(3x - x) + (5y + 2y) = 2x + 7y$."
+    },
+    {
+        "id": "M6",
+        "subject": "MATHS",
+        "q": "Find the value: $15 + 8 \\times 2$",
+        "options": {
+            "A": "$46$",
+            "B": "$31$",
+            "C": "$23$",
+            "D": "$30$"
+        },
+        "ans": "B",
+        "exp": "Use BODMAS: $8 \\times 2 = 16$, then $15 + 16 = 31$."
+    },
+    {
+        "id": "M7",
+        "subject": "MATHS",
+        "q": "What is 25% of 200?",
+        "options": {
+            "A": "$25$",
+            "B": "$50$",
+            "C": "$75$",
+            "D": "$100$"
+        },
+        "ans": "B",
+        "exp": "25% of 200 = $\\frac{25}{100} \\times 200 = 50$."
+    },
+    {
+        "id": "M8",
+        "subject": "MATHS",
+        "q": "Simplify: $3^2 + 4^2$",
+        "options": {
+            "A": "$12$",
+            "B": "$25$",
+            "C": "$7$",
+            "D": "$9$"
+        },
+        "ans": "B",
+        "exp": "Compute squares: $3^2 = 9$, $4^2 = 16$, sum = 25."
+    },
+    {
+        "id": "M9",
+        "subject": "MATHS",
+        "q": "Convert 0.75 to a fraction.",
+        "options": {
+            "A": "$\\frac{1}{4}$",
+            "B": "$\\frac{2}{3}$",
+            "C": "$\\frac{3}{4}$",
+            "D": "$\\frac{4}{5}$"
+        },
+        "ans": "C",
+        "exp": "$0.75 = \\frac{75}{100} = \\frac{3}{4}$."
+    },
+    {
+        "id": "M10",
+        "subject": "MATHS",
+        "q": "Find the LCM of 6 and 8.",
+        "options": {
+            "A": "$12$",
+            "B": "$24$",
+            "C": "$18$",
+            "D": "$30$"
+        },
+        "ans": "B",
+        "exp": "LCM of 6 and 8 = $24$."
+    },
+    {
+        "id": "M11",
+        "subject": "MATHS",
+        "q": "Simplify: $\\frac{3}{4} + \\frac{2}{4}$",
+        "options": {
+            "A": "$\\frac{5}{4}$",
+            "B": "$\\frac{1}{2}$",
+            "C": "$\\frac{3}{2}$",
+            "D": "$\\frac{1}{4}$"
+        },
+        "ans": "A",
+        "exp": "Same denominator: $3 + 2 = 5$, so $\\frac{5}{4}$."
+    },
+    {
+        "id": "M12",
+        "subject": "MATHS",
+        "q": "Simplify: $\\frac{5}{6} - \\frac{1}{3}$",
+        "options": {
+            "A": "$\\frac{4}{6}$",
+            "B": "$\\frac{1}{2}$",
+            "C": "$\\frac{1}{4}$",
+            "D": "$\\frac{1}{6}$"
+        },
+        "ans": "B",
+        "exp": "Convert $\\frac{1}{3}$ to $\\frac{2}{6}$, subtract: $\\frac{5}{6} - \\frac{2}{6} = \\frac{3}{6} = \\frac{1}{2}$."
+    },
+    {
+        "id": "M13",
+        "subject": "MATHS",
+        "q": "Multiply: $\\frac{2}{3} \\times \\frac{3}{5}$",
+        "options": {
+            "A": "$\\frac{6}{15}$",
+            "B": "$\\frac{2}{5}$",
+            "C": "$\\frac{3}{8}$",
+            "D": "$\\frac{1}{5}$"
+        },
+        "ans": "A",
+        "exp": "Multiply numerators and denominators: $2 \\times 3 = 6$, $3 \\times 5 = 15$."
+    },
+    {
+        "id": "M14",
+        "subject": "MATHS",
+        "q": "Divide: $\\frac{4}{5} \u00f7 \\frac{2}{3}$",
+        "options": {
+            "A": "$\\frac{6}{5}$",
+            "B": "$\\frac{8}{15}$",
+            "C": "$\\frac{5}{6}$",
+            "D": "$\\frac{4}{5}$"
+        },
+        "ans": "A",
+        "exp": "Invert divisor and multiply: $\\frac{4}{5} \\times \\frac{3}{2} = \\frac{12}{10} = \\frac{6}{5}$."
+    },
+    {
+        "id": "M15",
+        "subject": "MATHS",
+        "q": "Simplify: $\\frac{9}{12}$",
+        "options": {
+            "A": "$\\frac{3}{4}$",
+            "B": "$\\frac{4}{5}$",
+            "C": "$\\frac{9}{10}$",
+            "D": "$\\frac{2}{3}$"
+        },
+        "ans": "A",
+        "exp": "Divide top and bottom by 3: $\\frac{9}{12} = \\frac{3}{4}$."
+    },
+    {
+        "id": "M16",
+        "subject": "MATHS",
+        "q": "Find the area of a rectangle with length 10 cm and width 5 cm.",
+        "options": {
+            "A": "$15\\text{ cm}^2$",
+            "B": "$25\\text{ cm}^2$",
+            "C": "$50\\text{ cm}^2$",
+            "D": "$100\\text{ cm}^2$"
+        },
+        "ans": "C",
+        "exp": "Area = length \u00d7 width = $10 \\times 5 = 50\\text{ cm}^2$."
+    },
+    {
+        "id": "M17",
+        "subject": "MATHS",
+        "q": "Find the circumference of a circle with radius 7 cm. ($\\pi = 22/7$)",
+        "options": {
+            "A": "$22\\text{ cm}$",
+            "B": "$44\\text{ cm}$",
+            "C": "$33\\text{ cm}$",
+            "D": "$49\\text{ cm}$"
+        },
+        "ans": "B",
+        "exp": "Circumference = $2\\pi r = 2 \\times \\frac{22}{7} \\times 7 = 44$ cm."
+    },
+    {
+        "id": "M18",
+        "subject": "MATHS",
+        "q": "Find the area of a triangle with base 8 cm and height 5 cm.",
+        "options": {
+            "A": "$40\\text{ cm}^2$",
+            "B": "$20\\text{ cm}^2$",
+            "C": "$25\\text{ cm}^2$",
+            "D": "$15\\text{ cm}^2$"
+        },
+        "ans": "B",
+        "exp": "Area = $\\frac{1}{2} \\times 8 \\times 5 = 20\\text{ cm}^2$."
+    },
+    {
+        "id": "M19",
+        "subject": "MATHS",
+        "q": "A cube has a side length of 4 cm. Find its volume.",
+        "options": {
+            "A": "$64\\text{ cm}^3$",
+            "B": "$16\\text{ cm}^3$",
+            "C": "$32\\text{ cm}^3$",
+            "D": "$48\\text{ cm}^3$"
+        },
+        "ans": "A",
+        "exp": "Volume = side\u00b3 = $4^3 = 64\\text{ cm}^3$."
+    },
+    {
+        "id": "M20",
+        "subject": "MATHS",
+        "q": "Find the perimeter of a square with side 6 cm.",
+        "options": {
+            "A": "$12\\text{ cm}$",
+            "B": "$24\\text{ cm}$",
+            "C": "$18\\text{ cm}$",
+            "D": "$36\\text{ cm}$"
+        },
+        "ans": "B",
+        "exp": "Perimeter = 4 \u00d7 side = $4 \\times 6 = 24\\text{ cm}$."
+    },
+    {
+        "id": "M21",
+        "subject": "MATHS",
+        "q": "Simplify the ratio 12:8.",
+        "options": {
+            "A": "3:2",
+            "B": "2:3",
+            "C": "4:3",
+            "D": "6:5"
+        },
+        "ans": "A",
+        "exp": "Divide both terms by 4: 12 \u00f7 4 = 3, 8 \u00f7 4 = 2 \u2192 3:2."
+    },
+    {
+        "id": "M22",
+        "subject": "MATHS",
+        "q": "Divide \u20a6600 in the ratio 2:3.",
+        "options": {
+            "A": "\u20a6200 and \u20a6400",
+            "B": "\u20a6240 and \u20a6360",
+            "C": "\u20a6250 and \u20a6350",
+            "D": "\u20a6300 and \u20a6300"
+        },
+        "ans": "B",
+        "exp": "Sum = 5 parts; \u20a6600 \u00f7 5 = \u20a6120 per part; \u20a6240 and \u20a6360 respectively."
+    },
+    {
+        "id": "M23",
+        "subject": "MATHS",
+        "q": "If a map scale is 1:50,000, what distance does 2 cm represent?",
+        "options": {
+            "A": "1 km",
+            "B": "0.5 km",
+            "C": "2 km",
+            "D": "10 km"
+        },
+        "ans": "A",
+        "exp": "2 cm \u00d7 50,000 = 100,000 cm = 1 km."
+    },
+    {
+        "id": "M24",
+        "subject": "MATHS",
+        "q": "Express 20 minutes as a fraction of an hour.",
+        "options": {
+            "A": "1/2",
+            "B": "1/3",
+            "C": "2/3",
+            "D": "1/4"
+        },
+        "ans": "B",
+        "exp": "20 min \u00f7 60 min = 1/3 of an hour."
+    },
+    {
+        "id": "M25",
+        "subject": "MATHS",
+        "q": "The ratio of boys to girls in a class is 3:2. If there are 15 boys, how many girls?",
+        "options": {
+            "A": "5",
+            "B": "8",
+            "C": "10",
+            "D": "12"
+        },
+        "ans": "C",
+        "exp": "Each part = 15 \u00f7 3 = 5, girls = 2 \u00d7 5 = 10."
+    },
+    {
+        "id": "M26",
+        "subject": "MATHS",
+        "q": "A coin is tossed once. Find the probability of getting a head.",
+        "options": {
+            "A": "$\\frac{1}{2}$",
+            "B": "$\\frac{1}{3}$",
+            "C": "$1$",
+            "D": "$0$"
+        },
+        "ans": "A",
+        "exp": "Two possible outcomes, 1 favorable \u2192 $1/2$."
+    },
+    {
+        "id": "M27",
+        "subject": "MATHS",
+        "q": "Find the probability of getting an even number on a fair die.",
+        "options": {
+            "A": "$\\frac{1}{2}$",
+            "B": "$\\frac{1}{3}$",
+            "C": "$\\frac{2}{3}$",
+            "D": "$\\frac{1}{6}$"
+        },
+        "ans": "A",
+        "exp": "Even outcomes = 3 (2,4,6); total 6; $3/6 = 1/2$."
+    },
+    {
+        "id": "M28",
+        "subject": "MATHS",
+        "q": "A bag has 3 red and 2 blue balls. Find P(blue).",
+        "options": {
+            "A": "$\\frac{1}{2}$",
+            "B": "$\\frac{2}{5}$",
+            "C": "$\\frac{3}{5}$",
+            "D": "$\\frac{1}{3}$"
+        },
+        "ans": "B",
+        "exp": "Total = 5, blue = 2, so P(blue) = 2/5."
+    },
+    {
+        "id": "M29",
+        "subject": "MATHS",
+        "q": "Two coins are tossed. Find P(getting two heads).",
+        "options": {
+            "A": "$\\frac{1}{4}$",
+            "B": "$\\frac{1}{3}$",
+            "C": "$\\frac{1}{2}$",
+            "D": "$\\frac{3}{4}$"
+        },
+        "ans": "A",
+        "exp": "Outcomes = 4, favorable = 1 (HH), so 1/4."
+    },
+    {
+        "id": "M30",
+        "subject": "MATHS",
+        "q": "A number is chosen from 1\u201310. Find P(odd).",
+        "options": {
+            "A": "$\\frac{1}{2}$",
+            "B": "$\\frac{3}{5}$",
+            "C": "$\\frac{2}{5}$",
+            "D": "$\\frac{1}{3}$"
+        },
+        "ans": "B",
+        "exp": "Odd numbers = 5, total = 10 \u2192 5/10 = 1/2."
+    },
+    {
+        "id": "M31",
+        "subject": "MATHS",
+        "q": "Simplify: $2x + 3x - 4$",
+        "options": {
+            "A": "$5x - 4$",
+            "B": "$x - 4$",
+            "C": "$4x - 4$",
+            "D": "$5x + 4$"
+        },
+        "ans": "A",
+        "exp": "Combine like terms: $2x + 3x = 5x$, so result is $5x - 4$."
+    },
+    {
+        "id": "M32",
+        "subject": "MATHS",
+        "q": "Solve for $x$: $2x + 5 = 11$",
+        "options": {
+            "A": "$x = 2$",
+            "B": "$x = 3$",
+            "C": "$x = 4$",
+            "D": "$x = 5$"
+        },
+        "ans": "C",
+        "exp": "Subtract 5 from both sides: $2x = 6$, divide by 2: $x = 3$."
+    },
+    {
+        "id": "M33",
+        "subject": "MATHS",
+        "q": "Expand: $(x + 2)(x + 3)$",
+        "options": {
+            "A": "$x^2 + 5x + 6$",
+            "B": "$x^2 + 6x + 5$",
+            "C": "$x^2 + 2x + 3$",
+            "D": "$x^2 + 3x + 2$"
+        },
+        "ans": "A",
+        "exp": "Use distributive law: $x(x+3) + 2(x+3) = x^2 + 5x + 6$."
+    },
+    {
+        "id": "M34",
+        "subject": "MATHS",
+        "q": "Factorize: $x^2 + 7x + 10$",
+        "options": {
+            "A": "$(x + 2)(x + 5)$",
+            "B": "$(x + 1)(x + 10)$",
+            "C": "$(x - 2)(x + 5)$",
+            "D": "$(x + 10)(x - 1)$"
+        },
+        "ans": "A",
+        "exp": "Find two numbers that multiply to 10 and add to 7 \u2192 2 and 5."
+    },
+    {
+        "id": "M35",
+        "subject": "MATHS",
+        "q": "Simplify: $3x + 5y - x + 2y$",
+        "options": {
+            "A": "$4x + 7y$",
+            "B": "$2x + 7y$",
+            "C": "$4x + 3y$",
+            "D": "$2x + 3y$"
+        },
+        "ans": "B",
+        "exp": "Combine like terms: $(3x - x) + (5y + 2y) = 2x + 7y$."
+    },
+    {
+        "id": "M36",
+        "subject": "MATHS",
+        "q": "Find the value: $15 + 8 \\times 2$",
+        "options": {
+            "A": "$46$",
+            "B": "$31$",
+            "C": "$23$",
+            "D": "$30$"
+        },
+        "ans": "B",
+        "exp": "Use BODMAS: $8 \\times 2 = 16$, then $15 + 16 = 31$."
+    },
+    {
+        "id": "M37",
+        "subject": "MATHS",
+        "q": "What is 25% of 200?",
+        "options": {
+            "A": "$25$",
+            "B": "$50$",
+            "C": "$75$",
+            "D": "$100$"
+        },
+        "ans": "B",
+        "exp": "25% of 200 = $\\frac{25}{100} \\times 200 = 50$."
+    },
+    {
+        "id": "M38",
+        "subject": "MATHS",
+        "q": "Simplify: $3^2 + 4^2$",
+        "options": {
+            "A": "$12$",
+            "B": "$25$",
+            "C": "$7$",
+            "D": "$9$"
+        },
+        "ans": "B",
+        "exp": "Compute squares: $3^2 = 9$, $4^2 = 16$, sum = 25."
+    },
+    {
+        "id": "M39",
+        "subject": "MATHS",
+        "q": "Convert 0.75 to a fraction.",
+        "options": {
+            "A": "$\\frac{1}{4}$",
+            "B": "$\\frac{2}{3}$",
+            "C": "$\\frac{3}{4}$",
+            "D": "$\\frac{4}{5}$"
+        },
+        "ans": "C",
+        "exp": "$0.75 = \\frac{75}{100} = \\frac{3}{4}$."
+    },
+    {
+        "id": "M40",
+        "subject": "MATHS",
+        "q": "Find the LCM of 6 and 8.",
+        "options": {
+            "A": "$12$",
+            "B": "$24$",
+            "C": "$18$",
+            "D": "$30$"
+        },
+        "ans": "B",
+        "exp": "LCM of 6 and 8 = $24$."
+    },
+    {
+        "id": "M41",
+        "subject": "MATHS",
+        "q": "Simplify: $\\frac{3}{4} + \\frac{2}{4}$",
+        "options": {
+            "A": "$\\frac{5}{4}$",
+            "B": "$\\frac{1}{2}$",
+            "C": "$\\frac{3}{2}$",
+            "D": "$\\frac{1}{4}$"
+        },
+        "ans": "A",
+        "exp": "Same denominator: $3 + 2 = 5$, so $\\frac{5}{4}$."
+    },
+    {
+        "id": "M42",
+        "subject": "MATHS",
+        "q": "Simplify: $\\frac{5}{6} - \\frac{1}{3}$",
+        "options": {
+            "A": "$\\frac{4}{6}$",
+            "B": "$\\frac{1}{2}$",
+            "C": "$\\frac{1}{4}$",
+            "D": "$\\frac{1}{6}$"
+        },
+        "ans": "B",
+        "exp": "Convert $\\frac{1}{3}$ to $\\frac{2}{6}$, subtract: $\\frac{5}{6} - \\frac{2}{6} = \\frac{3}{6} = \\frac{1}{2}$."
+    },
+    {
+        "id": "M43",
+        "subject": "MATHS",
+        "q": "Multiply: $\\frac{2}{3} \\times \\frac{3}{5}$",
+        "options": {
+            "A": "$\\frac{6}{15}$",
+            "B": "$\\frac{2}{5}$",
+            "C": "$\\frac{3}{8}$",
+            "D": "$\\frac{1}{5}$"
+        },
+        "ans": "A",
+        "exp": "Multiply numerators and denominators: $2 \\times 3 = 6$, $3 \\times 5 = 15$."
+    },
+    {
+        "id": "M44",
+        "subject": "MATHS",
+        "q": "Divide: $\\frac{4}{5} \u00f7 \\frac{2}{3}$",
+        "options": {
+            "A": "$\\frac{6}{5}$",
+            "B": "$\\frac{8}{15}$",
+            "C": "$\\frac{5}{6}$",
+            "D": "$\\frac{4}{5}$"
+        },
+        "ans": "A",
+        "exp": "Invert divisor and multiply: $\\frac{4}{5} \\times \\frac{3}{2} = \\frac{12}{10} = \\frac{6}{5}$."
+    },
+    {
+        "id": "M45",
+        "subject": "MATHS",
+        "q": "Simplify: $\\frac{9}{12}$",
+        "options": {
+            "A": "$\\frac{3}{4}$",
+            "B": "$\\frac{4}{5}$",
+            "C": "$\\frac{9}{10}$",
+            "D": "$\\frac{2}{3}$"
+        },
+        "ans": "A",
+        "exp": "Divide top and bottom by 3: $\\frac{9}{12} = \\frac{3}{4}$."
+    },
+    {
+        "id": "M46",
+        "subject": "MATHS",
+        "q": "Find the area of a rectangle with length 10 cm and width 5 cm.",
+        "options": {
+            "A": "$15\\text{ cm}^2$",
+            "B": "$25\\text{ cm}^2$",
+            "C": "$50\\text{ cm}^2$",
+            "D": "$100\\text{ cm}^2$"
+        },
+        "ans": "C",
+        "exp": "Area = length \u00d7 width = $10 \\times 5 = 50\\text{ cm}^2$."
+    },
+    {
+        "id": "M47",
+        "subject": "MATHS",
+        "q": "Find the circumference of a circle with radius 7 cm. ($\\pi = 22/7$)",
+        "options": {
+            "A": "$22\\text{ cm}$",
+            "B": "$44\\text{ cm}$",
+            "C": "$33\\text{ cm}$",
+            "D": "$49\\text{ cm}$"
+        },
+        "ans": "B",
+        "exp": "Circumference = $2\\pi r = 2 \\times \\frac{22}{7} \\times 7 = 44$ cm."
+    },
+    {
+        "id": "M48",
+        "subject": "MATHS",
+        "q": "Find the area of a triangle with base 8 cm and height 5 cm.",
+        "options": {
+            "A": "$40\\text{ cm}^2$",
+            "B": "$20\\text{ cm}^2$",
+            "C": "$25\\text{ cm}^2$",
+            "D": "$15\\text{ cm}^2$"
+        },
+        "ans": "B",
+        "exp": "Area = $\\frac{1}{2} \\times 8 \\times 5 = 20\\text{ cm}^2$."
+    },
+    {
+        "id": "M49",
+        "subject": "MATHS",
+        "q": "A cube has a side length of 4 cm. Find its volume.",
+        "options": {
+            "A": "$64\\text{ cm}^3$",
+            "B": "$16\\text{ cm}^3$",
+            "C": "$32\\text{ cm}^3$",
+            "D": "$48\\text{ cm}^3$"
+        },
+        "ans": "A",
+        "exp": "Volume = side\u00b3 = $4^3 = 64\\text{ cm}^3$."
+    },
+    {
+        "id": "M50",
+        "subject": "MATHS",
+        "q": "Find the perimeter of a square with side 6 cm.",
+        "options": {
+            "A": "$12\\text{ cm}$",
+            "B": "$24\\text{ cm}$",
+            "C": "$18\\text{ cm}$",
+            "D": "$36\\text{ cm}$"
+        },
+        "ans": "B",
+        "exp": "Perimeter = 4 \u00d7 side = $4 \\times 6 = 24\\text{ cm}$."
+    },
+    {
+        "id": "M51",
+        "subject": "MATHS",
+        "q": "Simplify the ratio 12:8.",
+        "options": {
+            "A": "3:2",
+            "B": "2:3",
+            "C": "4:3",
+            "D": "6:5"
+        },
+        "ans": "A",
+        "exp": "Divide both terms by 4: 12 \u00f7 4 = 3, 8 \u00f7 4 = 2 \u2192 3:2."
+    },
+    {
+        "id": "M52",
+        "subject": "MATHS",
+        "q": "Divide \u20a6600 in the ratio 2:3.",
+        "options": {
+            "A": "\u20a6200 and \u20a6400",
+            "B": "\u20a6240 and \u20a6360",
+            "C": "\u20a6250 and \u20a6350",
+            "D": "\u20a6300 and \u20a6300"
+        },
+        "ans": "B",
+        "exp": "Sum = 5 parts; \u20a6600 \u00f7 5 = \u20a6120 per part; \u20a6240 and \u20a6360 respectively."
+    },
+    {
+        "id": "M53",
+        "subject": "MATHS",
+        "q": "If a map scale is 1:50,000, what distance does 2 cm represent?",
+        "options": {
+            "A": "1 km",
+            "B": "0.5 km",
+            "C": "2 km",
+            "D": "10 km"
+        },
+        "ans": "A",
+        "exp": "2 cm \u00d7 50,000 = 100,000 cm = 1 km."
+    },
+    {
+        "id": "M54",
+        "subject": "MATHS",
+        "q": "Express 20 minutes as a fraction of an hour.",
+        "options": {
+            "A": "1/2",
+            "B": "1/3",
+            "C": "2/3",
+            "D": "1/4"
+        },
+        "ans": "B",
+        "exp": "20 min \u00f7 60 min = 1/3 of an hour."
+    },
+    {
+        "id": "M55",
+        "subject": "MATHS",
+        "q": "The ratio of boys to girls in a class is 3:2. If there are 15 boys, how many girls?",
+        "options": {
+            "A": "5",
+            "B": "8",
+            "C": "10",
+            "D": "12"
+        },
+        "ans": "C",
+        "exp": "Each part = 15 \u00f7 3 = 5, girls = 2 \u00d7 5 = 10."
+    },
+    {
+        "id": "M56",
+        "subject": "MATHS",
+        "q": "A coin is tossed once. Find the probability of getting a head.",
+        "options": {
+            "A": "$\\frac{1}{2}$",
+            "B": "$\\frac{1}{3}$",
+            "C": "$1$",
+            "D": "$0$"
+        },
+        "ans": "A",
+        "exp": "Two possible outcomes, 1 favorable \u2192 $1/2$."
+    },
+    {
+        "id": "M57",
+        "subject": "MATHS",
+        "q": "Find the probability of getting an even number on a fair die.",
+        "options": {
+            "A": "$\\frac{1}{2}$",
+            "B": "$\\frac{1}{3}$",
+            "C": "$\\frac{2}{3}$",
+            "D": "$\\frac{1}{6}$"
+        },
+        "ans": "A",
+        "exp": "Even outcomes = 3 (2,4,6); total 6; $3/6 = 1/2$."
+    },
+    {
+        "id": "M58",
+        "subject": "MATHS",
+        "q": "A bag has 3 red and 2 blue balls. Find P(blue).",
+        "options": {
+            "A": "$\\frac{1}{2}$",
+            "B": "$\\frac{2}{5}$",
+            "C": "$\\frac{3}{5}$",
+            "D": "$\\frac{1}{3}$"
+        },
+        "ans": "B",
+        "exp": "Total = 5, blue = 2, so P(blue) = 2/5."
+    },
+    {
+        "id": "M59",
+        "subject": "MATHS",
+        "q": "Two coins are tossed. Find P(getting two heads).",
+        "options": {
+            "A": "$\\frac{1}{4}$",
+            "B": "$\\frac{1}{3}$",
+            "C": "$\\frac{1}{2}$",
+            "D": "$\\frac{3}{4}$"
+        },
+        "ans": "A",
+        "exp": "Outcomes = 4, favorable = 1 (HH), so 1/4."
+    },
+    {
+        "id": "M60",
+        "subject": "MATHS",
+        "q": "A number is chosen from 1\u201310. Find P(odd).",
+        "options": {
+            "A": "$\\frac{1}{2}$",
+            "B": "$\\frac{3}{5}$",
+            "C": "$\\frac{2}{5}$",
+            "D": "$\\frac{1}{3}$"
+        },
+        "ans": "B",
+        "exp": "Odd numbers = 5, total = 10 \u2192 5/10 = 1/2."
+    },
+    {
+        "id": "M61",
+        "subject": "MATHS",
+        "q": "Simplify: $2x + 3x - 4$",
+        "options": {
+            "A": "$5x - 4$",
+            "B": "$x - 4$",
+            "C": "$4x - 4$",
+            "D": "$5x + 4$"
+        },
+        "ans": "A",
+        "exp": "Combine like terms: $2x + 3x = 5x$, so result is $5x - 4$."
+    },
+    {
+        "id": "M62",
+        "subject": "MATHS",
+        "q": "Solve for $x$: $2x + 5 = 11$",
+        "options": {
+            "A": "$x = 2$",
+            "B": "$x = 3$",
+            "C": "$x = 4$",
+            "D": "$x = 5$"
+        },
+        "ans": "C",
+        "exp": "Subtract 5 from both sides: $2x = 6$, divide by 2: $x = 3$."
+    },
+    {
+        "id": "M63",
+        "subject": "MATHS",
+        "q": "Expand: $(x + 2)(x + 3)$",
+        "options": {
+            "A": "$x^2 + 5x + 6$",
+            "B": "$x^2 + 6x + 5$",
+            "C": "$x^2 + 2x + 3$",
+            "D": "$x^2 + 3x + 2$"
+        },
+        "ans": "A",
+        "exp": "Use distributive law: $x(x+3) + 2(x+3) = x^2 + 5x + 6$."
+    },
+    {
+        "id": "M64",
+        "subject": "MATHS",
+        "q": "Factorize: $x^2 + 7x + 10$",
+        "options": {
+            "A": "$(x + 2)(x + 5)$",
+            "B": "$(x + 1)(x + 10)$",
+            "C": "$(x - 2)(x + 5)$",
+            "D": "$(x + 10)(x - 1)$"
+        },
+        "ans": "A",
+        "exp": "Find two numbers that multiply to 10 and add to 7 \u2192 2 and 5."
+    },
+    {
+        "id": "M65",
+        "subject": "MATHS",
+        "q": "Simplify: $3x + 5y - x + 2y$",
+        "options": {
+            "A": "$4x + 7y$",
+            "B": "$2x + 7y$",
+            "C": "$4x + 3y$",
+            "D": "$2x + 3y$"
+        },
+        "ans": "B",
+        "exp": "Combine like terms: $(3x - x) + (5y + 2y) = 2x + 7y$."
+    },
+    {
+        "id": "M66",
+        "subject": "MATHS",
+        "q": "Find the value: $15 + 8 \\times 2$",
+        "options": {
+            "A": "$46$",
+            "B": "$31$",
+            "C": "$23$",
+            "D": "$30$"
+        },
+        "ans": "B",
+        "exp": "Use BODMAS: $8 \\times 2 = 16$, then $15 + 16 = 31$."
+    },
+    {
+        "id": "M67",
+        "subject": "MATHS",
+        "q": "What is 25% of 200?",
+        "options": {
+            "A": "$25$",
+            "B": "$50$",
+            "C": "$75$",
+            "D": "$100$"
+        },
+        "ans": "B",
+        "exp": "25% of 200 = $\\frac{25}{100} \\times 200 = 50$."
+    },
+    {
+        "id": "M68",
+        "subject": "MATHS",
+        "q": "Simplify: $3^2 + 4^2$",
+        "options": {
+            "A": "$12$",
+            "B": "$25$",
+            "C": "$7$",
+            "D": "$9$"
+        },
+        "ans": "B",
+        "exp": "Compute squares: $3^2 = 9$, $4^2 = 16$, sum = 25."
+    },
+    {
+        "id": "M69",
+        "subject": "MATHS",
+        "q": "Convert 0.75 to a fraction.",
+        "options": {
+            "A": "$\\frac{1}{4}$",
+            "B": "$\\frac{2}{3}$",
+            "C": "$\\frac{3}{4}$",
+            "D": "$\\frac{4}{5}$"
+        },
+        "ans": "C",
+        "exp": "$0.75 = \\frac{75}{100} = \\frac{3}{4}$."
+    },
+    {
+        "id": "M70",
+        "subject": "MATHS",
+        "q": "Find the LCM of 6 and 8.",
+        "options": {
+            "A": "$12$",
+            "B": "$24$",
+            "C": "$18$",
+            "D": "$30$"
+        },
+        "ans": "B",
+        "exp": "LCM of 6 and 8 = $24$."
+    },
+    {
+        "id": "M71",
+        "subject": "MATHS",
+        "q": "Simplify: $\\frac{3}{4} + \\frac{2}{4}$",
+        "options": {
+            "A": "$\\frac{5}{4}$",
+            "B": "$\\frac{1}{2}$",
+            "C": "$\\frac{3}{2}$",
+            "D": "$\\frac{1}{4}$"
+        },
+        "ans": "A",
+        "exp": "Same denominator: $3 + 2 = 5$, so $\\frac{5}{4}$."
+    },
+    {
+        "id": "M72",
+        "subject": "MATHS",
+        "q": "Simplify: $\\frac{5}{6} - \\frac{1}{3}$",
+        "options": {
+            "A": "$\\frac{4}{6}$",
+            "B": "$\\frac{1}{2}$",
+            "C": "$\\frac{1}{4}$",
+            "D": "$\\frac{1}{6}$"
+        },
+        "ans": "B",
+        "exp": "Convert $\\frac{1}{3}$ to $\\frac{2}{6}$, subtract: $\\frac{5}{6} - \\frac{2}{6} = \\frac{3}{6} = \\frac{1}{2}$."
+    },
+    {
+        "id": "M73",
+        "subject": "MATHS",
+        "q": "Multiply: $\\frac{2}{3} \\times \\frac{3}{5}$",
+        "options": {
+            "A": "$\\frac{6}{15}$",
+            "B": "$\\frac{2}{5}$",
+            "C": "$\\frac{3}{8}$",
+            "D": "$\\frac{1}{5}$"
+        },
+        "ans": "A",
+        "exp": "Multiply numerators and denominators: $2 \\times 3 = 6$, $3 \\times 5 = 15$."
+    },
+    {
+        "id": "M74",
+        "subject": "MATHS",
+        "q": "Divide: $\\frac{4}{5} \u00f7 \\frac{2}{3}$",
+        "options": {
+            "A": "$\\frac{6}{5}$",
+            "B": "$\\frac{8}{15}$",
+            "C": "$\\frac{5}{6}$",
+            "D": "$\\frac{4}{5}$"
+        },
+        "ans": "A",
+        "exp": "Invert divisor and multiply: $\\frac{4}{5} \\times \\frac{3}{2} = \\frac{12}{10} = \\frac{6}{5}$."
+    },
+    {
+        "id": "M75",
+        "subject": "MATHS",
+        "q": "Simplify: $\\frac{9}{12}$",
+        "options": {
+            "A": "$\\frac{3}{4}$",
+            "B": "$\\frac{4}{5}$",
+            "C": "$\\frac{9}{10}$",
+            "D": "$\\frac{2}{3}$"
+        },
+        "ans": "A",
+        "exp": "Divide top and bottom by 3: $\\frac{9}{12} = \\frac{3}{4}$."
+    },
+    {
+        "id": "M76",
+        "subject": "MATHS",
+        "q": "Find the area of a rectangle with length 10 cm and width 5 cm.",
+        "options": {
+            "A": "$15\\text{ cm}^2$",
+            "B": "$25\\text{ cm}^2$",
+            "C": "$50\\text{ cm}^2$",
+            "D": "$100\\text{ cm}^2$"
+        },
+        "ans": "C",
+        "exp": "Area = length \u00d7 width = $10 \\times 5 = 50\\text{ cm}^2$."
+    },
+    {
+        "id": "M77",
+        "subject": "MATHS",
+        "q": "Find the circumference of a circle with radius 7 cm. ($\\pi = 22/7$)",
+        "options": {
+            "A": "$22\\text{ cm}$",
+            "B": "$44\\text{ cm}$",
+            "C": "$33\\text{ cm}$",
+            "D": "$49\\text{ cm}$"
+        },
+        "ans": "B",
+        "exp": "Circumference = $2\\pi r = 2 \\times \\frac{22}{7} \\times 7 = 44$ cm."
+    },
+    {
+        "id": "M78",
+        "subject": "MATHS",
+        "q": "Find the area of a triangle with base 8 cm and height 5 cm.",
+        "options": {
+            "A": "$40\\text{ cm}^2$",
+            "B": "$20\\text{ cm}^2$",
+            "C": "$25\\text{ cm}^2$",
+            "D": "$15\\text{ cm}^2$"
+        },
+        "ans": "B",
+        "exp": "Area = $\\frac{1}{2} \\times 8 \\times 5 = 20\\text{ cm}^2$."
+    },
+    {
+        "id": "M79",
+        "subject": "MATHS",
+        "q": "A cube has a side length of 4 cm. Find its volume.",
+        "options": {
+            "A": "$64\\text{ cm}^3$",
+            "B": "$16\\text{ cm}^3$",
+            "C": "$32\\text{ cm}^3$",
+            "D": "$48\\text{ cm}^3$"
+        },
+        "ans": "A",
+        "exp": "Volume = side\u00b3 = $4^3 = 64\\text{ cm}^3$."
+    },
+    {
+        "id": "M80",
+        "subject": "MATHS",
+        "q": "Find the perimeter of a square with side 6 cm.",
+        "options": {
+            "A": "$12\\text{ cm}$",
+            "B": "$24\\text{ cm}$",
+            "C": "$18\\text{ cm}$",
+            "D": "$36\\text{ cm}$"
+        },
+        "ans": "B",
+        "exp": "Perimeter = 4 \u00d7 side = $4 \\times 6 = 24\\text{ cm}$."
+    },
+    {
+        "id": "M81",
+        "subject": "MATHS",
+        "q": "Simplify the ratio 12:8.",
+        "options": {
+            "A": "3:2",
+            "B": "2:3",
+            "C": "4:3",
+            "D": "6:5"
+        },
+        "ans": "A",
+        "exp": "Divide both terms by 4: 12 \u00f7 4 = 3, 8 \u00f7 4 = 2 \u2192 3:2."
+    },
+    {
+        "id": "M82",
+        "subject": "MATHS",
+        "q": "Divide \u20a6600 in the ratio 2:3.",
+        "options": {
+            "A": "\u20a6200 and \u20a6400",
+            "B": "\u20a6240 and \u20a6360",
+            "C": "\u20a6250 and \u20a6350",
+            "D": "\u20a6300 and \u20a6300"
+        },
+        "ans": "B",
+        "exp": "Sum = 5 parts; \u20a6600 \u00f7 5 = \u20a6120 per part; \u20a6240 and \u20a6360 respectively."
+    },
+    {
+        "id": "M83",
+        "subject": "MATHS",
+        "q": "If a map scale is 1:50,000, what distance does 2 cm represent?",
+        "options": {
+            "A": "1 km",
+            "B": "0.5 km",
+            "C": "2 km",
+            "D": "10 km"
+        },
+        "ans": "A",
+        "exp": "2 cm \u00d7 50,000 = 100,000 cm = 1 km."
+    },
+    {
+        "id": "M84",
+        "subject": "MATHS",
+        "q": "Express 20 minutes as a fraction of an hour.",
+        "options": {
+            "A": "1/2",
+            "B": "1/3",
+            "C": "2/3",
+            "D": "1/4"
+        },
+        "ans": "B",
+        "exp": "20 min \u00f7 60 min = 1/3 of an hour."
+    },
+    {
+        "id": "M85",
+        "subject": "MATHS",
+        "q": "The ratio of boys to girls in a class is 3:2. If there are 15 boys, how many girls?",
+        "options": {
+            "A": "5",
+            "B": "8",
+            "C": "10",
+            "D": "12"
+        },
+        "ans": "C",
+        "exp": "Each part = 15 \u00f7 3 = 5, girls = 2 \u00d7 5 = 10."
+    },
+    {
+        "id": "M86",
+        "subject": "MATHS",
+        "q": "A coin is tossed once. Find the probability of getting a head.",
+        "options": {
+            "A": "$\\frac{1}{2}$",
+            "B": "$\\frac{1}{3}$",
+            "C": "$1$",
+            "D": "$0$"
+        },
+        "ans": "A",
+        "exp": "Two possible outcomes, 1 favorable \u2192 $1/2$."
+    },
+    {
+        "id": "M87",
+        "subject": "MATHS",
+        "q": "Find the probability of getting an even number on a fair die.",
+        "options": {
+            "A": "$\\frac{1}{2}$",
+            "B": "$\\frac{1}{3}$",
+            "C": "$\\frac{2}{3}$",
+            "D": "$\\frac{1}{6}$"
+        },
+        "ans": "A",
+        "exp": "Even outcomes = 3 (2,4,6); total 6; $3/6 = 1/2$."
+    },
+    {
+        "id": "M88",
+        "subject": "MATHS",
+        "q": "A bag has 3 red and 2 blue balls. Find P(blue).",
+        "options": {
+            "A": "$\\frac{1}{2}$",
+            "B": "$\\frac{2}{5}$",
+            "C": "$\\frac{3}{5}$",
+            "D": "$\\frac{1}{3}$"
+        },
+        "ans": "B",
+        "exp": "Total = 5, blue = 2, so P(blue) = 2/5."
+    },
+    {
+        "id": "M89",
+        "subject": "MATHS",
+        "q": "Two coins are tossed. Find P(getting two heads).",
+        "options": {
+            "A": "$\\frac{1}{4}$",
+            "B": "$\\frac{1}{3}$",
+            "C": "$\\frac{1}{2}$",
+            "D": "$\\frac{3}{4}$"
+        },
+        "ans": "A",
+        "exp": "Outcomes = 4, favorable = 1 (HH), so 1/4."
+    },
+    {
+        "id": "M90",
+        "subject": "MATHS",
+        "q": "A number is chosen from 1\u201310. Find P(odd).",
+        "options": {
+            "A": "$\\frac{1}{2}$",
+            "B": "$\\frac{3}{5}$",
+            "C": "$\\frac{2}{5}$",
+            "D": "$\\frac{1}{3}$"
+        },
+        "ans": "B",
+        "exp": "Odd numbers = 5, total = 10 \u2192 5/10 = 1/2."
+    },
+    {
+        "id": "M91",
+        "subject": "MATHS",
+        "q": "Simplify: $2x + 3x - 4$",
+        "options": {
+            "A": "$5x - 4$",
+            "B": "$x - 4$",
+            "C": "$4x - 4$",
+            "D": "$5x + 4$"
+        },
+        "ans": "A",
+        "exp": "Combine like terms: $2x + 3x = 5x$, so result is $5x - 4$."
+    },
+    {
+        "id": "M92",
+        "subject": "MATHS",
+        "q": "Solve for $x$: $2x + 5 = 11$",
+        "options": {
+            "A": "$x = 2$",
+            "B": "$x = 3$",
+            "C": "$x = 4$",
+            "D": "$x = 5$"
+        },
+        "ans": "C",
+        "exp": "Subtract 5 from both sides: $2x = 6$, divide by 2: $x = 3$."
+    },
+    {
+        "id": "M93",
+        "subject": "MATHS",
+        "q": "Expand: $(x + 2)(x + 3)$",
+        "options": {
+            "A": "$x^2 + 5x + 6$",
+            "B": "$x^2 + 6x + 5$",
+            "C": "$x^2 + 2x + 3$",
+            "D": "$x^2 + 3x + 2$"
+        },
+        "ans": "A",
+        "exp": "Use distributive law: $x(x+3) + 2(x+3) = x^2 + 5x + 6$."
+    },
+    {
+        "id": "M94",
+        "subject": "MATHS",
+        "q": "Factorize: $x^2 + 7x + 10$",
+        "options": {
+            "A": "$(x + 2)(x + 5)$",
+            "B": "$(x + 1)(x + 10)$",
+            "C": "$(x - 2)(x + 5)$",
+            "D": "$(x + 10)(x - 1)$"
+        },
+        "ans": "A",
+        "exp": "Find two numbers that multiply to 10 and add to 7 \u2192 2 and 5."
+    },
+    {
+        "id": "M95",
+        "subject": "MATHS",
+        "q": "Simplify: $3x + 5y - x + 2y$",
+        "options": {
+            "A": "$4x + 7y$",
+            "B": "$2x + 7y$",
+            "C": "$4x + 3y$",
+            "D": "$2x + 3y$"
+        },
+        "ans": "B",
+        "exp": "Combine like terms: $(3x - x) + (5y + 2y) = 2x + 7y$."
+    },
+    {
+        "id": "M96",
+        "subject": "MATHS",
+        "q": "Find the value: $15 + 8 \\times 2$",
+        "options": {
+            "A": "$46$",
+            "B": "$31$",
+            "C": "$23$",
+            "D": "$30$"
+        },
+        "ans": "B",
+        "exp": "Use BODMAS: $8 \\times 2 = 16$, then $15 + 16 = 31$."
+    },
+    {
+        "id": "M97",
+        "subject": "MATHS",
+        "q": "What is 25% of 200?",
+        "options": {
+            "A": "$25$",
+            "B": "$50$",
+            "C": "$75$",
+            "D": "$100$"
+        },
+        "ans": "B",
+        "exp": "25% of 200 = $\\frac{25}{100} \\times 200 = 50$."
+    },
+    {
+        "id": "M98",
+        "subject": "MATHS",
+        "q": "Simplify: $3^2 + 4^2$",
+        "options": {
+            "A": "$12$",
+            "B": "$25$",
+            "C": "$7$",
+            "D": "$9$"
+        },
+        "ans": "B",
+        "exp": "Compute squares: $3^2 = 9$, $4^2 = 16$, sum = 25."
+    },
+    {
+        "id": "M99",
+        "subject": "MATHS",
+        "q": "Convert 0.75 to a fraction.",
+        "options": {
+            "A": "$\\frac{1}{4}$",
+            "B": "$\\frac{2}{3}$",
+            "C": "$\\frac{3}{4}$",
+            "D": "$\\frac{4}{5}$"
+        },
+        "ans": "C",
+        "exp": "$0.75 = \\frac{75}{100} = \\frac{3}{4}$."
+    },
+    {
+        "id": "M100",
+        "subject": "MATHS",
+        "q": "Find the LCM of 6 and 8.",
+        "options": {
+            "A": "$12$",
+            "B": "$24$",
+            "C": "$18$",
+            "D": "$30$"
+        },
+        "ans": "B",
+        "exp": "LCM of 6 and 8 = $24$."
+    },
+   // { id: 'M1', subject: 'MATHS', q: 'Simplify: $3x + 5y - x + 2y$', options: { A: '$4x + 7y$', B: '$2x + 7y$', C: '$4x + 3y$', D: '$2x + 3y$' }, ans: 'B', exp: 'Combine like terms: $(3x - x) + (5y + 2y) = 2x + 7y$.' },
+ //   { id: 'M2', subject: 'MATHS', q: 'What is the value of $\\frac{1}{4}$ of $100$?', options: { A: '50', B: '25', C: '40', D: '75' }, ans: 'B', exp: 'One-quarter of 100 is $100 \\div 4 = 25$.' },
+ //   { id: 'M3', subject: 'MATHS', q: 'If a man buys a shirt for N800 and sells it for N1000, what is his profit percentage?', options: { A: '$20\\%$', B: '$25\\%$', C: '$15\\%$', D: '$10\\%$' }, ans: 'B', exp: 'Profit is N200. Profit percentage is $(\\frac{200}{800}) \\times 100 = 25\\%$.' },
+//    { id: 'M4', subject: 'MATHS', q: 'Solve for x: $2x - 7 = 11$', options: { A: '$x = 8$', B: '$x = 9$', C: '$x = 10$', D: '$x = 18$' }, ans: 'B', exp: 'Add 7 to both sides: $2x = 18$. Divide by 2: $x = 9$.' },
+//    { id: 'M5', subject: 'MATHS', q: 'The next number in the sequence: $1, 4, 9, 16, 25, \\dots$', options: { A: '30', B: '32', C: '36', D: '49' }, ans: 'C', exp: 'The sequence consists of perfect squares: $1^2, 2^2, 3^2, 4^2, 5^2$. The next is $6^2 = 36$.' },
+//    { id: 'M6', subject: 'MATHS', q: 'Calculate the area of a circle with a radius of $7cm$ (use $\\pi = \\frac{22}{7}$)', options: { A: '$49cm^2$', B: '$154cm^2$', C: '$22cm^2$', D: '$14cm^2$' }, ans: 'B', exp: 'Area $= \\pi r^2 = \\frac{22}{7} \\times 7^2 = 22 \\times 7 = 154cm^2$.' },
+//    { id: 'M7', subject: 'MATHS', q: 'Convert $0.625$ to a fraction in its simplest form.', options: { A: '$\\frac{5}{8}$', B: '$\\frac{3}{5}$', C: '$\\frac{1}{2}$', D: '$\\frac{6}{10}$' }, ans: 'A', exp: '$0.625 = \\frac{625}{1000}$. Dividing by 125 gives $\\frac{5}{8}$.' },
+ //   { id: 'M8', subject: 'MATHS', q: 'What is $2^3 + 3^2$?', options: { A: '12', B: '15', C: '17', D: '18' }, ans: 'C', exp: '$2^3 = 8$ and $3^2 = 9$. $8 + 9 = 17$.' },
+  //  { id: 'M9', subject: 'MATHS', q: 'How many days are there in $10$ weeks?', options: { A: '70', B: '60', C: '75', D: '100' }, ans: 'A', exp: '$10 \\times 7 = 70$ days.' },
+ //   { id: 'M10', subject: 'MATHS', q: 'Find the mean of the numbers: $5, 10, 15, 20$.', options: { A: '12', B: '12.5', C: '15', D: '50' }, ans: 'B', exp: 'Sum is 50. Mean is $\\frac{50}{4} = 12.5.' },
+  //  { id: 'M11', subject: 'MATHS', q: 'If $a=3$ and $b=4$, find the value of $a^2 + b^2$.', options: { A: '7', B: '12', C: '25', D: '49' }, ans: 'C', exp: '$3^2 + 4^2 = 9 + 16 = 25.' },
+//    { id: 'M12', subject: 'MATHS', q: 'A train traveled $180km$ in $3$ hours. What was its speed in $km/h$?', options: { A: '$60km/h$', B: '$50km/h$', C: '$70km/h$', D: '90km/h' }, ans: 'A', exp: 'Speed = Distance / Time = $180km / 3h = 60km/h$.' },
+    //{ id: 'M13', subject: 'MATHS', q: 'What is the highest common factor (H.C.F.) of $12$ and $18$?', options: { A: '3', B: '6', C: '9', D: '12' }, ans: 'B', exp: 'The factors of 12 are 1, 2, 3, 4, 6, 12. The factors of 18 are 1, 2, 3, 6, 9, 18. The largest common factor is 6.' },
+  //  { id: 'M14', subject: 'MATHS', q: 'What is the sum of angles in a triangle?', options: { A: '$90^{\\circ}$', B: '$180^{\\circ}$', C: '$270^{\\circ}$', D: '$360^{\\circ}$' }, ans: 'B', exp: 'The sum of internal angles in any Euclidean triangle is always $180^{\\circ}$.' },
+//    { id: 'M15', subject: 'MATHS', q: 'A square has a perimeter of $40cm$. What is its area?', options: { A: '$10cm^2$', B: '$40cm^2$', C: '$100cm^2$', D: '$160cm^2$' }, ans: 'C', exp: 'Side length is $\\frac{40}{4} = 10cm$. Area is $10cm \\times 10cm = 100cm^2$.' },
 
 
     // --- ENGLISH LANGUAGE (15 Questions Pool) ---
