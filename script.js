@@ -3958,117 +3958,1660 @@ const fullQuestionsData = [
     
     // --- DEPARTMENTAL QUESTIONS (60 Questions Pool, organized by subject) ---
 
-    // IMMIGRATION SERVICE (NIS) - 15 Questions Pool
-    { id: 'I1', subject: 'IMMIGRATION_NIS', q: 'Which body manages immigration and border control in Nigeria?', options: { A: 'NDLEA', B: 'NIS', C: 'EFCC', D: 'FRSC' }, ans: 'B', exp: 'NIS (Nigeria Immigration Service) manages immigration.' },
-    { id: 'I2', subject: 'IMMIGRATION_NIS', q: 'Who is the operational head of the Nigeria Immigration Service?', options: { A: 'Inspector General of Police', B: 'Comptroller General of Immigration', C: 'Commandant General', D: 'Director General' }, ans: 'B', exp: 'The Comptroller General of Immigration (CGI) heads the NIS.' },
-    { id: 'I3', subject: 'IMMIGRATION_NIS', q: 'What is the NIS responsible for issuing to Nigerian citizens?', options: { A: 'National ID Card', B: 'International Passport', C: 'Voter’s Card', D: 'Driver’s License' }, ans: 'B', exp: 'NIS is solely responsible for issuing International Passports.' },
-    { id: 'I4', subject: 'IMMIGRATION_NIS', q: 'The official color of the NIS uniform is predominantly:', options: { A: 'Black', B: 'Khaki/Brown', C: 'Green', D: 'Blue' }, ans: 'D', exp: 'The NIS uniform is predominantly blue.' },
-    { id: 'I5', subject: 'IMMIGRATION_NIS', q: 'The NIS handles all of Nigeria’s borders, including:', options: { A: 'Airports only', B: 'Seaports only', C: 'Land borders only', D: 'All points of entry and exit' }, ans: 'D', exp: 'NIS covers all official ports of entry and exit (air, land, and sea).' },
-    { id: 'I6', subject: 'IMMIGRATION_NIS', q: 'NIS is responsible for the deportation of:', options: { A: 'Nigerian citizens', B: 'Illegal immigrants', C: 'Military personnel', D: 'Diplomats' }, ans: 'B', exp: 'NIS handles the repatriation or deportation of foreign nationals who violate immigration laws.' },
-    { id: 'I7', subject: 'IMMIGRATION_NIS', q: 'The NIS is under the supervision of which Ministry?', options: { A: 'Defence', B: 'Interior', C: 'Foreign Affairs', D: 'Justice' }, ans: 'B', exp: 'The Ministry of Interior oversees the NIS.' },
-    { id: 'I8', subject: 'IMMIGRATION_NIS', q: 'What is the acronym CDCFIB related to?', options: { A: 'Recruitment for NIS, NCS, FFS, and NSCDC', B: 'International Passport Control', C: 'Visa Processing', D: 'Border Demarcation' }, ans: 'A', exp: 'CDCFIB (Civil Defence, Correctional, Fire, and Immigration Services Board) oversees these four agencies.' },
-    { id: 'I9', subject: 'IMMIGRATION_NIS', q: 'Which permit does NIS issue to non-Nigerians to reside and work?', options: { A: 'Visitor’s Permit', B: 'CERPAC/Residence Permit', C: 'Transit Visa', D: 'ECOWAS Travel Certificate' }, ans: 'B', exp: 'The Combined Expatriate Residence Permit and Alien Card (CERPAC) is key.' },
-    { id: 'I10', subject: 'IMMIGRATION_NIS', q: 'An ECOWAS citizen can enter Nigeria without a visa using what document?', options: { A: 'International Passport', B: 'National ID Card', C: 'ECOWAS Travel Certificate', D: 'Diplomatic Passport' }, ans: 'C', exp: 'The ECOWAS Travel Certificate is used for free movement within the sub-region.' },
-    { id: 'I11', subject: 'IMMIGRATION_NIS', q: 'The NIS is responsible for controlling the entry and exit of **\\dots** into and out of Nigeria.', options: { A: 'Goods', B: 'Persons', C: 'Vehicles', D: 'Animals' }, ans: 'B', exp: 'The primary focus of Immigration is the movement of persons.' },
-    { id: 'I12', subject: 'IMMIGRATION_NIS', q: 'What is the NIS official national emergency line (mock)?', options: { A: '112', B: '001', C: '447', D: '911' }, ans: 'A', exp: '112 is a common emergency line (using 112 as a mock answer for a paramilitary agency).' },
-    { id: 'I13', subject: 'IMMIGRATION_NIS', q: 'A visa is granted to a foreigner to permit:', options: { A: 'Residency', B: 'Entry', C: 'Citizenship', D: 'Permanent Stay' }, ans: 'B', exp: 'A visa generally grants permission for entry, not permanent stay or citizenship.' },
-    { id: 'I14', subject: 'IMMIGRATION_NIS', q: 'The core duty of border patrol officers is to prevent:', options: { A: 'Tax evasion', B: 'Smuggling', C: 'Illegal migration', D: 'Road accidents' }, ans: 'C', exp: 'Preventing illegal migration and border violations is the core duty.' },
-    { id: 'I15', subject: 'IMMIGRATION_NIS', q: 'In NIS structure, which rank immediately follows Comptroller?', options: { A: 'Deputy Comptroller', B: 'Assistant Comptroller', C: 'Superintendent', D: 'Chief Inspector' }, ans: 'A', exp: 'The rank structure is: Comptroller General, Deputy Comptroller General, Assistant Comptroller General, etc.' },
-
+    // IMMIGRATION SERVICE (NIS) - 15 Questions Pool ---- 
+  {
+    "id": "NIS01",
+    "subject": "Nigeria Immigration Service",
+    "q": "The Nigeria Immigration Service (NIS) was formally established under which Act or Edict?",
+    "options": { "A": "Immigration Act of 1963", "B": "Immigration Edict of 1958", "C": "Customs and Excise Management Act 1956", "D": "Police Act 1943" },
+    "ans": "A",
+    "exp": "The NIS was formally established by the Immigration Act of 1963, succeeding the former Immigration Department."
+  },
+  {
+    "id": "NIS02",
+    "subject": "Nigeria Immigration Service",
+    "q": "What is the primary function of the Nigeria Immigration Service (NIS)?",
+    "options": { "A": "Internal security patrols", "B": "Management of the nation's borders and issuance of travel documents", "C": "Collection of customs duties", "D": "Fire prevention and rescue operations" },
+    "ans": "B",
+    "exp": "The NIS is primarily responsible for border control and the issuance of passports and visas."
+  },
+  {
+    "id": "NIS03",
+    "subject": "Nigeria Immigration Service",
+    "q": "Who is the head of the Nigeria Immigration Service?",
+    "options": { "A": "Inspector General of Police", "B": "Comptroller General of Immigration Service (CGIS)", "C": "Commandant General", "D": "Controller General of Corrections" },
+    "ans": "B",
+    "exp": "The head of the NIS is the Comptroller General of Immigration Service (CGIS)."
+  },
+  {
+    "id": "NIS04",
+    "subject": "Nigeria Immigration Service",
+    "q": "The NIS is under the supervision of which Nigerian Federal Ministry?",
+    "options": { "A": "Ministry of Defence", "B": "Ministry of Finance", "C": "Ministry of Interior", "D": "Ministry of Foreign Affairs" },
+    "ans": "C",
+    "exp": "The Nigeria Immigration Service operates under the supervision of the Federal Ministry of Interior."
+  },
+  {
+    "id": "NIS05",
+    "subject": "Nigeria Immigration Service",
+    "q": "Which of these ranks is an officer rank in the NIS structure?",
+    "options": { "A": "Immigration Assistant", "B": "Chief Immigration Assistant", "C": "Deputy Comptroller of Immigration", "D": "Inspector of Immigration" },
+    "ans": "C",
+    "exp": "Deputy Comptroller of Immigration is a senior officer rank, while the others are generally subordinate or inspectorate ranks."
+  },
+  {
+    "id": "NIS06",
+    "subject": "Nigeria Immigration Service",
+    "q": "What is the current motto of the Nigeria Immigration Service (NIS)?",
+    "options": { "A": "Service to the Nation", "B": "Integrity and Border Security", "C": "Peace and Security", "D": "Safety First" },
+    "ans": "B",
+    "exp": "The current motto of the NIS is 'Integrity and Border Security'."
+  },
+  {
+    "id": "NIS07",
+    "subject": "Nigeria Immigration Service",
+    "q": "Which document is the NIS responsible for issuing to Nigerians for international travel?",
+    "options": { "A": "National ID Card", "B": "Drivers' License", "C": "International Passport", "D": "Birth Certificate" },
+    "ans": "C",
+    "exp": "The NIS is solely responsible for the issuance of the Nigerian International Passport."
+  },
+  {
+    "id": "NIS08",
+    "subject": "Nigeria Immigration Service",
+    "q": "What is the highest rank in the Nigeria Immigration Service?",
+    "options": { "A": "Assistant Comptroller General", "B": "Comptroller General of Immigration Service", "C": "Director General", "D": "Zonal Coordinator" },
+    "ans": "B",
+    "exp": "The highest rank and head of the NIS is the Comptroller General of Immigration Service (CGIS)."
+  },
+  {
+    "id": "NIS09",
+    "subject": "Nigeria Immigration Service",
+    "q": "The e-Passport system was introduced by the NIS primarily to:",
+    "options": { "A": "Reduce passport cost", "B": "Enhance security and prevent forgery", "C": "Increase waiting time", "D": "Simplify application process for illiterates" },
+    "ans": "B",
+    "exp": "The e-Passport was introduced globally to enhance security and prevent fraudulent activities like forgery and identity theft."
+  },
+  {
+    "id": "NIS10",
+    "subject": "Nigeria Immigration Service",
+    "q": "Which of the following falls under the regulatory functions of the NIS?",
+    "options": { "A": "Issuing of marriage certificates", "B": "Controlling the entry, stay, and exit of migrants", "C": "Maintaining internal law and order", "D": "Managing correctional facilities" },
+    "ans": "B",
+    "exp": "Controlling migration is a core regulatory function of the Immigration Service."
+  },
+  {
+    "id": "NIS11",
+    "subject": "Nigeria Immigration Service",
+    "q": "What is the title of the officer in charge of an NIS State Command?",
+    "options": { "A": "State Coordinator", "B": "Comptroller of Immigration", "C": "Commander of the State Command", "D": "State Commissioner" },
+    "ans": "B",
+    "exp": "The officer in charge of an NIS State Command is usually a Comptroller of Immigration."
+  },
+  {
+    "id": "NIS12",
+    "subject": "Nigeria Immigration Service",
+    "q": "NIS is responsible for issuing which type of document to foreigners seeking to reside or work in Nigeria?",
+    "options": { "A": "Tourist Permit", "B": "ECOWAS Travel Certificate", "C": "CERPAC (Combined Expatriate Residence Permit and Alien Card)", "D": "Student Visa" },
+    "ans": "C",
+    "exp": "The NIS issues the CERPAC as a legal document permitting expatriates to reside and work in Nigeria."
+  },
+  {
+    "id": "NIS13",
+    "subject": "Nigeria Immigration Service",
+    "q": "Before 1958, the control of movement in and out of Nigeria was managed by:",
+    "options": { "A": "The Police Force", "B": "The Customs Department", "C": "Ministry of Foreign Affairs", "D": "Ministry of Defence" },
+    "ans": "B",
+    "exp": "Prior to 1958, the Immigration Department was a segment of the Customs Department."
+  },
+  {
+    "id": "NIS14",
+    "subject": "Nigeria Immigration Service",
+    "q": "What does the acronym 'NIS' stand for?",
+    "options": { "A": "Nigerian Internal Security", "B": "National Information System", "C": "Nigeria Immigration Service", "D": "Nigerian Intelligence System" },
+    "ans": "C",
+    "exp": "NIS stands for Nigeria Immigration Service."
+  },
+  {
+    "id": "NIS15",
+    "subject": "Nigeria Immigration Service",
+    "q": "The primary training institution for NIS officers is the:",
+    "options": { "A": "Nigeria Police Academy", "B": "NIS Training School, Kano/Oluwa", "C": "Armed Forces Command and Staff College", "D": "Civil Defence College" },
+    "ans": "B",
+    "exp": "The NIS has specific training institutions, notable ones being in Kano and Oluwa (Port Harcourt)."
+  },
+  {
+    "id": "NIS16",
+    "subject": "Nigeria Immigration Service",
+    "q": "A key duty of the NIS at International Airports is:",
+    "options": { "A": "Directing aircraft traffic", "B": "Clearing passengers through immigration checks", "C": "Selling flight tickets", "D": "Conducting security screening of cargo" },
+    "ans": "B",
+    "exp": "Clearing passengers is the primary role of the NIS at border control points like airports."
+  },
+  {
+    "id": "NIS17",
+    "subject": "Nigeria Immigration Service",
+    "q": "Which NIS rank is equivalent to a Police Constable or Military Private?",
+    "options": { "A": "Immigration Officer I", "B": "Immigration Assistant III", "C": "Assistant Superintendent of Immigration", "D": "Chief Superintendent of Immigration" },
+    "ans": "B",
+    "exp": "Immigration Assistant III (IA III) is the entry-level rank for the Assistant Cadre."
+  },
+  {
+    "id": "NIS18",
+    "subject": "Nigeria Immigration Service",
+    "q": "The NIS plays a crucial role in curbing which transnational crime?",
+    "options": { "A": "Cybercrime", "B": "Pipeline vandalism", "C": "Human Trafficking and Smuggling of Migrants", "D": "Terrorism in the North East only" },
+    "ans": "C",
+    "exp": "Border management and control are vital in combating transnational crimes like human trafficking and migrant smuggling."
+  },
+  {
+    "id": "NIS19",
+    "subject": "Nigeria Immigration Service",
+    "q": "The Immigration Act CAP I1 Laws of the Federation of Nigeria, 2004, has been repealed and replaced by the:",
+    "options": { "A": "Immigration Act 2015", "B": "Border Control Act 2019", "C": "Customs Act 2020", "D": "NIS Establishment Act 2011" },
+    "ans": "A",
+    "exp": "The Immigration Act 2015 is the current principal legislation governing the NIS."
+  },
+  {
+    "id": "NIS20",
+    "subject": "Nigeria Immigration Service",
+    "q": "In the NIS logo, what do the green and white colours of the Nigerian flag represent?",
+    "options": { "A": "Agriculture and Peace", "B": "Wealth and Power", "C": "Service and Integrity", "D": "Peace and Unity" },
+    "ans": "A",
+    "exp": "In the Nigerian flag context, green traditionally represents agriculture and white represents peace and unity."
+  },
+  {
+    "id": "NIS21",
+    "subject": "Nigeria Immigration Service",
+    "q": "Which rank insignia in the NIS typically involves the use of the Eagle and Star?",
+    "options": { "A": "Immigration Assistant ranks", "B": "Superintendent ranks", "C": "Comptroller ranks", "D": "Inspector ranks" },
+    "ans": "B",
+    "exp": "Superintendent ranks (Assistant Superintendent, Deputy Superintendent, etc.) often use variations of the star and the eagle."
+  },
+  {
+    "id": "NIS22",
+    "subject": "Nigeria Immigration Service",
+    "q": "The NIS is part of the security agencies under the purview of which body for general security coordination?",
+    "options": { "A": "Economic and Financial Crimes Commission (EFCC)", "B": "National Security Adviser (NSA) Office", "C": "Federal Road Safety Corps (FRSC)", "D": "Nigerian Ports Authority (NPA)" },
+    "ans": "B",
+    "exp": "Security agencies coordinate under the umbrella of the Office of the National Security Adviser (ONSA)."
+  },
+  {
+    "id": "NIS23",
+    "subject": "Nigeria Immigration Service",
+    "q": "How many geographical zones does the NIS typically use for operational structure?",
+    "options": { "A": "3", "B": "6", "C": "8", "D": "12" },
+    "ans": "C",
+    "exp": "The NIS generally uses 8 zonal commands for effective operational coverage across the country."
+  },
+  {
+    "id": "NIS24",
+    "subject": "Nigeria Immigration Service",
+    "q": "The official uniform colour of the Nigeria Immigration Service is primarily:",
+    "options": { "A": "Blue", "B": "Khaki", "C": "Black", "D": "Light Green" },
+    "ans": "B",
+    "exp": "The NIS uniform is a distinctive khaki colour."
+  },
+  {
+    "id": "NIS25",
+    "subject": "Nigeria Immigration Service",
+    "q": "Which section of the NIS is responsible for surveillance and patrol of the nation's land borders?",
+    "options": { "A": "Passport Control Section", "B": "Border Patrol/ECOWAS Section", "C": "Visa Section", "D": "Expatriate Quota Section" },
+    "ans": "B",
+    "exp": "The Border Patrol/ECOWAS Section is specifically tasked with monitoring and policing the borders."
+  },
+  {
+    "id": "NIS26",
+    "subject": "Nigeria Immigration Service",
+    "q": "A key responsibility of the NIS is the issuance of residence permits to:",
+    "options": { "A": "All citizens of ECOWAS member states", "B": "Non-Nigerians (Aliens)", "C": "Nigerian students abroad", "D": "Military personnel" },
+    "ans": "B",
+    "exp": "The NIS controls the stay of non-Nigerians in the country through permits."
+  },
+  {
+    "id": "NIS27",
+    "subject": "Nigeria Immigration Service",
+    "q": "When did the Immigration Department attain its full autonomy and become known as the Nigeria Immigration Service?",
+    "options": { "A": "1960", "B": "1963", "C": "1980", "D": "1999" },
+    "ans": "B",
+    "exp": "It attained full autonomy with the Immigration Act of 1963."
+  },
+  {
+    "id": "NIS28",
+    "subject": "Nigeria Immigration Service",
+    "q": "Which category of personnel are responsible for the day-to-day enforcement duties at entry points?",
+    "options": { "A": "Finance Officers", "B": "Immigration Operatives", "C": "Admin Staff", "D": "Procurement Officers" },
+    "ans": "B",
+    "exp": "Immigration Operatives are the frontline personnel responsible for enforcement duties."
+  },
+  {
+    "id": "NIS29",
+    "subject": "Nigeria Immigration Service",
+    "q": "What is the primary role of the NIS Special Task Force?",
+    "options": { "A": "Managing staff welfare", "B": "Combating internal industrial crises", "C": "Special operations, raid duties, and internal security support", "D": "Overseeing training institutions" },
+    "ans": "C",
+    "exp": "The Special Task Force is usually deployed for sensitive, high-risk, or specific enforcement and security operations."
+  },
+  {
+    "id": "NIS30",
+    "subject": "Nigeria Immigration Service",
+    "q": "The NIS works closely with which international body concerning migration and border management?",
+    "options": { "A": "World Health Organization (WHO)", "B": "International Organization for Migration (IOM)", "C": "United Nations Educational, Scientific and Cultural Organization (UNESCO)", "D": "International Maritime Organization (IMO)" },
+    "ans": "B",
+    "exp": "The IOM is the UN agency dedicated to promoting humane and orderly migration, making it a key partner for the NIS."
+  },
+  {
+    "id": "NIS31",
+    "subject": "Nigeria Immigration Service",
+    "q": "Which officer rank in the NIS is symbolized by a single star (pip) on the shoulder?",
+    "options": { "A": "Comptroller of Immigration", "B": "Chief Superintendent of Immigration", "C": "Assistant Superintendent of Immigration II (ASI II)", "D": "Deputy Comptroller of Immigration" },
+    "ans": "C",
+    "exp": "Assistant Superintendent of Immigration II (ASI II) is typically an entry-level officer rank marked by one star."
+  },
+  {
+    "id": "NIS32",
+    "subject": "Nigeria Immigration Service",
+    "q": "An expatriate quota is issued to a company by the NIS to permit the company to:",
+    "options": { "A": "Import goods duty-free", "B": "Employ a specified number of expatriate workers", "C": "Pay lower corporate taxes", "D": "Open branches in all Nigerian states" },
+    "ans": "B",
+    "exp": "The expatriate quota determines the number of foreign employees a company can legally hire in Nigeria."
+  },
+  {
+    "id": "NIS33",
+    "subject": "Nigeria Immigration Service",
+    "q": "The primary objective of the NIS Border Management Strategy is:",
+    "options": { "A": "To increase revenue from visas", "B": "To ensure effective and efficient border surveillance and control", "C": "To recruit more staff", "D": "To manage traffic congestion at border crossings" },
+    "ans": "B",
+    "exp": "Effective border surveillance and control are the core objectives of any Border Management Strategy."
+  },
+  {
+    "id": "NIS34",
+    "subject": "Nigeria Immigration Service",
+    "q": "What year was the NIS formally separated from the Nigeria Police Force and the Customs Department?",
+    "options": { "A": "1958", "B": "1963", "C": "1972", "D": "1990" },
+    "ans": "B",
+    "exp": "The Immigration Act of 1963 solidified the NIS as a distinct entity."
+  },
+  {
+    "id": "NIS35",
+    "subject": "Nigeria Immigration Service",
+    "q": "Which rank is immediately below the Comptroller General of Immigration Service (CGIS)?",
+    "options": { "A": "Zonal Coordinator", "B": "Assistant Comptroller General (ACG)", "C": "Deputy Comptroller General (DCG)", "D": "Comptroller of Immigration (CI)" },
+    "ans": "C",
+    "exp": "The Deputy Comptroller General (DCG) is the second highest rank, assisting the CGIS."
+  },
+  {
+    "id": "NIS36",
+    "subject": "Nigeria Immigration Service",
+    "q": "The NIS is the main agency for implementing the provisions of the ECOWAS Protocol on:",
+    "options": { "A": "Trade Liberalisation", "B": "Free Movement of Persons, Residence and Establishment", "C": "Single Currency", "D": "Defence Pact" },
+    "ans": "B",
+    "exp": "The NIS facilitates the movement of ECOWAS citizens in line with the protocol on Free Movement."
+  },
+  {
+    "id": "NIS37",
+    "subject": "Nigeria Immigration Service",
+    "q": "In the NIS structure, who oversees the activities of several State Commands within a geographical area?",
+    "options": { "A": "Area Commander", "B": "Zonal Coordinator/ACGI", "C": "State Comptroller", "D": "Sector Head" },
+    "ans": "B",
+    "exp": "The Zonal Coordinator, usually an Assistant Comptroller General of Immigration (ACGI), is in charge of a Zonal Command."
+  },
+  {
+    "id": "NIS38",
+    "subject": "Nigeria Immigration Service",
+    "q": "Which section handles the registration and documentation of non-Nigerian residents?",
+    "options": { "A": "Passport Control Section", "B": "Visa Section", "C": "Aliens Registration and Biometrics Section", "D": "Border Patrol" },
+    "ans": "C",
+    "exp": "The Aliens Registration and Biometrics Section (or similar name) handles the formal documentation of foreigners."
+  },
+  {
+    "id": "NIS39",
+    "subject": "Nigeria Immigration Service",
+    "q": "The NIS uniform typically includes a peaked cap for senior officers and a beret for junior and intermediate ranks. What is the usual colour of the beret?",
+    "options": { "A": "Red", "B": "Black", "C": "Green", "D": "Blue" },
+    "ans": "C",
+    "exp": "The NIS beret is typically green."
+  },
+  {
+    "id": "NIS40",
+    "subject": "Nigeria Immigration Service",
+    "q": "A core objective of the NIS Reform Agenda has been the transition to:",
+    "options": { "A": "Manual filing systems", "B": "Full digitalization and biometric control systems", "C": "Increased use of physical patrols only", "D": "Elimination of all checkpoints" },
+    "ans": "B",
+    "exp": "Modernization focuses on digitalization and biometric technology for enhanced security and service delivery."
+  },
+  {
+    "id": "NIS41",
+    "subject": "Nigeria Immigration Service",
+    "q": "What is the NIS's role regarding Nigerian citizens deported from other countries?",
+    "options": { "A": "They deny them entry", "B": "They receive and document them and hand them over to relevant authorities if necessary", "C": "They immediately re-issue their passports", "D": "They detain them indefinitely" },
+    "ans": "B",
+    "exp": "The NIS is responsible for the clearance and documentation of returning or deported Nigerians."
+  },
+  {
+    "id": "NIS42",
+    "subject": "Nigeria Immigration Service",
+    "q": "The NIS is actively involved in the implementation of the National Border Management Strategy (NBMS) which aims to:",
+    "options": { "A": "Build more hotels near borders", "B": "Enhance security, facilitate legitimate movement, and boost border infrastructure", "C": "Increase the price of visas", "D": "Establish new foreign embassies" },
+    "ans": "B",
+    "exp": "The NBMS focuses on a holistic approach to border management, balancing security and facilitation."
+  },
+  {
+    "id": "NIS43",
+    "subject": "Nigeria Immigration Service",
+    "q": "Which document authorizes a non-Nigerian to enter the country, typically obtained before arrival?",
+    "options": { "A": "Residence Permit", "B": "Visa", "C": "Electoral Card", "D": "National Identity Number" },
+    "ans": "B",
+    "exp": "A Visa is the required travel document granted to a non-Nigerian to enter Nigeria."
+  },
+  {
+    "id": "NIS44",
+    "subject": "Nigeria Immigration Service",
+    "q": "The Nigeria Immigration Service operates under the principles of:",
+    "options": { "A": "Military Law", "B": "The Immigration Act 2015 and other relevant laws", "C": "Customs Tariffs", "D": "Local Government Bye-laws" },
+    "ans": "B",
+    "exp": "The service is governed primarily by the Immigration Act and subsidiary legislations."
+  },
+  {
+    "id": "NIS45",
+    "subject": "Nigeria Immigration Service",
+    "q": "What is the rank equivalent to a Deputy Comptroller General (DCG) in the NIS?",
+    "options": { "A": "Assistant Inspector General of Police (AIG)", "B": "Deputy Inspector General of Police (DIG)", "C": "Commissioner of Police (CP)", "D": "Inspector General of Police (IGP)" },
+    "ans": "B",
+    "exp": "The DCG is the second highest rank, comparable to the Deputy Inspector General of Police (DIG)."
+  },
+  {
+    "id": "NIS46",
+    "subject": "Nigeria Immigration Service",
+    "q": "One of the key challenges the NIS faces at land borders is:",
+    "options": { "A": "Lack of adequate office furniture", "B": "Porous borders and proliferation of illegal routes", "C": "Too many trained personnel", "D": "High internet speed" },
+    "ans": "B",
+    "exp": "Porous borders and illegal crossing points pose a significant challenge to border control efforts."
+  },
+  {
+    "id": "NIS47",
+    "subject": "Nigeria Immigration Service",
+    "q": "Which section of the NIS manages travel documents for diplomatic and official personnel?",
+    "options": { "A": "General Duties", "B": "Protocol/Diplomatic Relations Section", "C": "Audit", "D": "Training" },
+    "ans": "B",
+    "exp": "The Protocol/Diplomatic Relations Section is specialized in handling diplomatic clearances and documentation."
+  },
+  {
+    "id": "NIS48",
+    "subject": "Nigeria Immigration Service",
+    "q": "What is the primary significance of the NIS logo's shield?",
+    "options": { "A": "Protection and defence of the nation's borders", "B": "Agricultural wealth", "C": "International cooperation", "D": "Economic prosperity" },
+    "ans": "A",
+    "exp": "The shield typically symbolizes protection and defence."
+  },
+  {
+    "id": "NIS49",
+    "subject": "Nigeria Immigration Service",
+    "q": "Recruitment into the NIS is primarily handled by the:",
+    "options": { "A": "Federal Civil Service Commission (FCSC)", "B": "NIS Recruitment Board", "C": "Ministry of Finance", "D": "National Youth Service Corps (NYSC)" },
+    "ans": "B",
+    "exp": "The NIS Recruitment Board is responsible for the recruitment of personnel into the service, often in collaboration with the supervising ministry."
+  },
+  {
+    "id": "NIS50",
+    "subject": "Nigeria Immigration Service",
+    "q": "An officer with the rank of Comptroller of Immigration is typically addressed as:",
+    "options": { "A": "Director", "B": "Chief Commander", "C": "Comptroller", "D": "General" },
+    "ans": "C",
+    "exp": "The officer is addressed by their rank, Comptroller."
+  }
+   
     // CIVIL DEFENCE (NSCDC) - 15 Questions Pool
-    { id: 'C1', subject: 'CIVIL_DEFENCE_NSCDC', q: 'Which Nigerian agency handles civil defense?', options: { A: 'CDCFIB', B: 'NSCDC', C: 'NDLEA', D: 'DSS' }, ans: 'B', exp: 'NSCDC (Nigeria Security and Civil Defence Corps) is the national civil defense agency.' },
-    { id: 'C2', subject: 'CIVIL_DEFENCE_NSCDC', q: 'What is the motto of the NSCDC?', options: { A: 'Service and Integrity', B: 'Defending the Nation', C: 'Integrity and Service', D: 'Defense and Security' }, ans: 'C', exp: 'The NSCDC motto is "Integrity and Service".' },
-    { id: 'C3', subject: 'CIVIL_DEFENCE_NSCDC', q: 'NSCDC primarily protects which of these infrastructures?', options: { A: 'Private Schools', B: 'Critical National Assets and Infrastructure', C: 'Motor Parks', D: 'Local Market Stalls' }, ans: 'B', exp: 'Protection of Critical National Assets and Infrastructure (CNAI) is a core mandate.' },
-    { id: 'C4', subject: 'CIVIL_DEFENCE_NSCDC', q: 'The highest rank in the NSCDC is:', options: { A: 'Inspector General', B: 'Comptroller General', C: 'Commandant General', D: 'Director General' }, ans: 'C', exp: 'The Commandant General is the highest rank and head of the Corps.' },
-    { id: 'C5', subject: 'CIVIL_DEFENCE_NSCDC', q: 'NSCDC is known for combating the vandalism of:', options: { A: 'Electric poles', B: 'Oil pipelines', C: 'Telecommunication masts', D: 'All of the above' }, ans: 'D', exp: 'Its CNAI mandate covers all these critical infrastructures, especially pipelines.' },
-    { id: 'C6', subject: 'CIVIL_DEFENCE_NSCDC', q: 'In disaster management, the NSCDC often collaborates with:', options: { A: 'Customs', B: 'NEMA', C: 'FRSC', D: 'NAPTIP' }, ans: 'B', exp: 'NEMA (National Emergency Management Agency) is the primary partner for disaster response.' },
-    { id: 'C7', subject: 'CIVIL_DEFENCE_NSCDC', q: 'The NSCDC Act gives the Corps powers to regulate:', options: { A: 'Motorcycles', B: 'Private Guard Companies (PGCs)', C: 'Oil Refineries', D: 'Local Markets' }, ans: 'B', exp: 'The regulation and licensing of Private Guard Companies is a specific NSCDC function.' },
-    { id: 'C8', subject: 'CIVIL_DEFENCE_NSCDC', q: 'NSCDC was upgraded to a paramilitary status by an Act of Parliament in:', options: { A: '1988', B: '2003', C: '1999', D: '1970' }, ans: 'B', exp: 'The current status and expanded functions were formalized by the Act of 2003.' },
-    { id: 'C9', subject: 'CIVIL_DEFENCE_NSCDC', q: 'The colour of the NSCDC beret is:', options: { A: 'Blue', B: 'Red', C: 'Green', D: 'Orange' }, ans: 'C', exp: 'The NSCDC beret is green.' },
-    { id: 'C10', subject: 'CIVIL_DEFENCE_NSCDC', q: 'Which Ministry supervises the NSCDC?', options: { A: 'Defence', B: 'Interior', C: 'Police Affairs', D: 'Justice' }, ans: 'B', exp: 'The NSCDC is one of the agencies under the Ministry of Interior.' },
-    { id: 'C11', subject: 'CIVIL_DEFENCE_NSCDC', q: 'The primary function of the NSCDC is to maintain:', options: { A: 'Law and Order', B: 'Internal Security', C: 'Public Safety and Civil Protection', D: 'Border Security' }, ans: 'C', exp: 'The Corps focuses on public safety and civil protection, distinct from the Police’s primary law and order mandate.' },
-    { id: 'C12', subject: 'CIVIL_DEFENCE_NSCDC', q: 'The NSCDC Act of 2007 allows the Corps to carry:', options: { A: 'Drones', B: 'Light arms', C: 'Heavy artillery', D: 'Only batons' }, ans: 'B', exp: 'The Act permits the use of light arms by NSCDC personnel.' },
-    { id: 'C13', subject: 'CIVIL_DEFENCE_NSCDC', q: 'NSCDC intervention in communal conflicts is aimed at:', options: { A: 'Arresting all parties', B: 'Neutralizing one party', C: 'Disaster mitigation and mediation', D: 'Taking control of land' }, ans: 'C', exp: 'The NSCDC often acts as a mediator and ensures safety during conflicts and disasters.' },
-    { id: 'C14', subject: 'CIVIL_DEFENCE_NSCDC', q: 'The NSCDC personnel structure is characterized as:', options: { A: 'Strictly military', B: 'Civilian and military', C: 'Paramilitary', D: 'Strictly civilian' }, ans: 'C', exp: 'The Corps is paramilitary in structure.' },
-    { id: 'C15', subject: 'CIVIL_DEFENCE_NSCDC', q: 'Which department of NSCDC deals with intelligence gathering?', options: { A: 'Operations', B: 'Administration', C: 'Intelligence and Investigation', D: 'Logistics' }, ans: 'C', exp: 'The Intelligence and Investigation Directorate handles intelligence and criminal cases.' },
-
+ [
+  {
+    "id": "NSCDC01",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The Nigeria Security and Civil Defence Corps (NSCDC) was established in what year as a volunteer organization?",
+    "options": { "A": "1945", "B": "1967", "C": "1990", "D": "2003" },
+    "ans": "B",
+    "exp": "The NSCDC was first established in 1967 as a voluntary organization in Lagos State during the Nigerian Civil War."
+  },
+  {
+    "id": "NSCDC02",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "Who is the head of the Nigeria Security and Civil Defence Corps?",
+    "options": { "A": "Comptroller General", "B": "Commandant General (CG)", "C": "Inspector General", "D": "Controller General" },
+    "ans": "B",
+    "exp": "The head of the NSCDC is the Commandant General (CG)."
+  },
+  {
+    "id": "NSCDC03",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "What is the primary legislation that formally gave legal backing to the NSCDC and made it a federal para-military agency?",
+    "options": { "A": "Police Act 1990", "B": "NSCDC Act 2003", "C": "Immigration Act 2015", "D": "Corrections Act 2019" },
+    "ans": "B",
+    "exp": "The NSCDC Act of 2003 established the Corps as a full-fledged federal agency."
+  },
+  {
+    "id": "NSCDC04",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC is under the supervision of which Nigerian Federal Ministry?",
+    "options": { "A": "Ministry of Justice", "B": "Ministry of Defence", "C": "Ministry of Interior", "D": "Ministry of Environment" },
+    "ans": "C",
+    "exp": "The NSCDC is supervised by the Federal Ministry of Interior."
+  },
+  {
+    "id": "NSCDC05",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "Which of these is a key function of the NSCDC, especially regarding national assets?",
+    "options": { "A": "Issuance of passports", "B": "Securing critical national infrastructure and assets (e.g., pipelines)", "C": "Managing federal prisons", "D": "Customs revenue collection" },
+    "ans": "B",
+    "exp": "Protection of critical national assets and infrastructure, especially oil pipelines, is a major statutory function."
+  },
+  {
+    "id": "NSCDC06",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "What is the official motto of the Nigeria Security and Civil Defence Corps?",
+    "options": { "A": "Integrity and Border Security", "B": "Defending the Nation with Valor", "C": "Defending the Nation and Disaster Management", "D": "Security and Justice" },
+    "ans": "C",
+    "exp": "The motto is 'Defending the Nation and Disaster Management', reflecting its dual role."
+  },
+  {
+    "id": "NSCDC07",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "In the NSCDC rank structure, what is the highest rank below the Commandant General?",
+    "options": { "A": "Senior Superintendent of Corps", "B": "Deputy Commandant General (DCG)", "C": "Assistant Commandant of Corps", "D": "Chief Corps Assistant" },
+    "ans": "B",
+    "exp": "The Deputy Commandant General (DCG) is the second highest rank."
+  },
+  {
+    "id": "NSCDC08",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "Which rank is typically the entry point for a university degree holder (officer cadre) in the NSCDC?",
+    "options": { "A": "Corps Assistant (CA)", "B": "Senior Corps Superintendent (SCS)", "C": "Assistant Superintendent of Corps II (ASC II)", "D": "Chief Corps Inspector" },
+    "ans": "C",
+    "exp": "Assistant Superintendent of Corps II is the standard entry-level rank for degree holders."
+  },
+  {
+    "id": "NSCDC09",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC is also primarily responsible for the registration, licensing, and supervision of:",
+    "options": { "A": "Commercial bus drivers", "B": "Private Guard Companies (PGCs)", "C": "Federal Universities", "D": "Oil Prospecting Licenses" },
+    "ans": "B",
+    "exp": "The NSCDC has the legal mandate to license and regulate Private Guard Companies in Nigeria."
+  },
+  {
+    "id": "NSCDC10",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "What is the NSCDC's specific role during national emergencies or disasters?",
+    "options": { "A": "Taking over the government", "B": "Carrying out civil defence activities and providing support to NEMA", "C": "Issuing travel bans", "D": "Monitoring stock exchange trading" },
+    "ans": "B",
+    "exp": "Disaster management and civil defence are core statutory mandates of the Corps."
+  },
+  {
+    "id": "NSCDC11",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "What is the rank of the officer who heads a State Command in the NSCDC?",
+    "options": { "A": "Commissioner of Corps", "B": "State Coordinator", "C": "Commandant of Corps (CC)", "D": "Brigadier" },
+    "ans": "C",
+    "exp": "A State Command is headed by a Commandant of Corps (CC)."
+  },
+  {
+    "id": "NSCDC12",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC was first given a mandate for permanent security duties in which year?",
+    "options": { "A": "1967", "B": "1988", "C": "2003", "D": "2010" },
+    "ans": "C",
+    "exp": "The NSCDC Act of 2003 formally transformed it from a voluntary to a statutory para-military organization."
+  },
+  {
+    "id": "NSCDC13",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "Which NSCDC Unit is specifically tasked with monitoring and protecting oil and gas installations?",
+    "options": { "A": "Anti-Vandalism Unit", "B": "Medical Unit", "C": "Public Relations Unit", "D": "Welfare Unit" },
+    "ans": "A",
+    "exp": "The Anti-Vandalism Unit is specifically dedicated to pipeline protection and combating oil theft."
+  },
+  {
+    "id": "NSCDC14",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC uniform is primarily which colour, giving it a distinctive appearance?",
+    "options": { "A": "Red", "B": "Blue", "C": "Khaki/Ash-Grey", "D": "White" },
+    "ans": "C",
+    "exp": "The NSCDC uniform is distinctively Khaki/Ash-Grey or a light brown colour."
+  },
+  {
+    "id": "NSCDC15",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC Corps Training College is located in which state, serving as a primary training ground?",
+    "options": { "A": "Lagos", "B": "Katsina", "C": "Abuja (Sauka)", "D": "Rivers" },
+    "ans": "C",
+    "exp": "The NSCDC College of Security Management (or similar training institutions) is a key facility in Abuja."
+  },
+  {
+    "id": "NSCDC16",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC has the statutory power to:",
+    "options": { "A": "Declare war on other nations", "B": "Prosecute offenders in court for certain crimes (e.g., vandalism, minor offenses)", "C": "Issue national passports", "D": "Control the flow of foreign exchange" },
+    "ans": "B",
+    "exp": "The NSCDC Act grants the Corps power to investigate and prosecute certain offenses related to its mandate."
+  },
+  {
+    "id": "NSCDC17",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "Which NSCDC rank is symbolized by the Nigerian Coat of Arms on the shoulder?",
+    "options": { "A": "Assistant Commandant of Corps", "B": "Commandant General", "C": "Chief Corps Inspector", "D": "Corps Assistant I" },
+    "ans": "B",
+    "exp": "The Coat of Arms is the insignia of the Commandant General."
+  },
+  {
+    "id": "NSCDC18",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC Peace and Conflict Resolution Unit is tasked with:",
+    "options": { "A": "International peace negotiations", "B": "Handling minor civil disputes and conflicts via Alternative Dispute Resolution (ADR)", "C": "Organizing staff parties", "D": "Military drills" },
+    "ans": "B",
+    "exp": "ADR, conciliation, and mediation are crucial functions, especially at the grassroots level."
+  },
+  {
+    "id": "NSCDC19",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC plays a key role in the security architecture by complementing the efforts of which main internal security agency?",
+    "options": { "A": "Nigerian Navy", "B": "Nigerian Police Force", "C": "Nigerian Air Force", "D": "Federal Road Safety Corps" },
+    "ans": "B",
+    "exp": "The NSCDC complements the Nigerian Police Force in maintaining internal law and order."
+  },
+  {
+    "id": "NSCDC20",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "What is the primary significance of the Eagle in the NSCDC logo?",
+    "options": { "A": "Peace", "B": "Unity and Strength", "C": "Wealth", "D": "Speed" },
+    "ans": "B",
+    "exp": "The Eagle symbolizes national identity, strength, and authority."
+  },
+  {
+    "id": "NSCDC21",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC is mandated to collaborate with NEMA for effective implementation of which strategy?",
+    "options": { "A": "Monetary Policy", "B": "Disaster Management Strategy", "C": "Foreign Trade Policy", "D": "Oil Production Quota" },
+    "ans": "B",
+    "exp": "Collaboration with NEMA is essential for fulfilling the NSCDC's disaster management mandate."
+  },
+  {
+    "id": "NSCDC22",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The rank of 'Deputy Commandant of Corps' is immediately below:",
+    "options": { "A": "Commandant of Corps (CC)", "B": "Senior Corps Assistant", "C": "Assistant Commandant General (ACG)", "D": "Corps Assistant I" },
+    "ans": "A",
+    "exp": "Deputy Commandant of Corps (DCC) is directly beneath Commandant of Corps (CC)."
+  },
+  {
+    "id": "NSCDC23",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "One of the NSCDC's roles is the protection of Government buildings and:",
+    "options": { "A": "Private farms", "B": "Federal institutions/infrastructure (e.g., dams, power stations)", "C": "Motor parks", "D": "Cinemas" },
+    "ans": "B",
+    "exp": "Protecting federal institutions and infrastructure is a core duty, particularly against vandalism."
+  },
+  {
+    "id": "NSCDC24",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "Which NSCDC Unit is primarily involved in surveillance and information gathering for security purposes?",
+    "options": { "A": "Music Unit", "B": "Intelligence and Investigation Unit", "C": "Sports Unit", "D": "Cleaning Unit" },
+    "ans": "B",
+    "exp": "The Intelligence and Investigation Unit is responsible for covert operations and information gathering."
+  },
+  {
+    "id": "NSCDC25",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "What is the core difference in mandate between the NSCDC and the Nigeria Police Force (NPF)?",
+    "options": { "A": "The NPF focuses on pipelines, NSCDC focuses on general crime.", "B": "The NSCDC focuses on Civil Defence, disaster management, and critical infrastructure protection, complementing the NPF's general law enforcement.", "C": "The NSCDC carries all the arms, the NPF carries none.", "D": "The NPF issues passports, the NSCDC issues licenses." },
+    "ans": "B",
+    "exp": "The NSCDC's mandate is specialized in civil defence and critical infrastructure protection, which complements the NPF."
+  },
+  {
+    "id": "NSCDC26",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC has the authority to prosecute cases related to:",
+    "options": { "A": "Homicide and armed robbery only", "B": "Destruction of government property, illegal oil bunkering, and vandalism", "C": "Treason", "D": "International trade disputes" },
+    "ans": "B",
+    "exp": "The Corps' prosecution power is focused on offenses related to its statutory functions, such as pipeline vandalism and unlawful destruction of national assets."
+  },
+  {
+    "id": "NSCDC27",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "Which officer rank in the NSCDC is equivalent to an Inspector in the Police Force?",
+    "options": { "A": "Assistant Commandant of Corps (ACC)", "B": "Chief Corps Inspector (CCI)", "C": "Corps Assistant I (CAI)", "D": "Deputy Commandant General (DCG)" },
+    "ans": "B",
+    "exp": "The Inspectorate Cadre of the NSCDC, led by the Chief Corps Inspector, is generally comparable to the Inspectorate Cadre in the Police."
+  },
+  {
+    "id": "NSCDC28",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC's commitment to gender mainstreaming led to the creation of the:",
+    "options": { "A": "Disaster Response Squad", "B": "Female Squad for security and protection of schools", "C": "Pipeline Protection Force", "D": "Music and Cultural Unit" },
+    "ans": "B",
+    "exp": "The Female Squad was established to enhance security, particularly in schools and vulnerable areas."
+  },
+  {
+    "id": "NSCDC29",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "What significant development concerning the NSCDC occurred in the year 2007?",
+    "options": { "A": "The Corps was disbanded", "B": "The NSCDC became officially recognized as an armed paramilitary force.", "C": "The Corps began issuing passports.", "D": "The Corps relocated its headquarters to Lagos." },
+    "ans": "B",
+    "exp": "The NSCDC was authorized to carry arms in 2007, significantly enhancing its operational capacity."
+  },
+  {
+    "id": "NSCDC30",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC operates under the directive of the National Security Adviser (NSA) in matters of:",
+    "options": { "A": "Staff recruitment", "B": "Coordination of national internal security efforts", "C": "Uniform colours", "D": "Fuel price regulation" },
+    "ans": "B",
+    "exp": "All internal security agencies coordinate their efforts under the Office of the National Security Adviser."
+  },
+  {
+    "id": "NSCDC31",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "Which piece of equipment is commonly used by the NSCDC's Anti-Vandalism Unit in monitoring pipelines?",
+    "options": { "A": "Submarines", "B": "Satellite/Aerial surveillance and ground patrol vehicles", "C": "Heavy artillery", "D": "Tractors" },
+    "ans": "B",
+    "exp": "Monitoring is done through a combination of technology (satellite/drones) and physical ground patrols."
+  },
+  {
+    "id": "NSCDC32",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC's mandate includes safeguarding educational institutions from:",
+    "options": { "A": "Bad grades", "B": "Vandalism, theft, and kidnapping (especially the Female Squad)", "C": "Poor teaching", "D": "High school fees" },
+    "ans": "B",
+    "exp": "Protecting schools from attacks and criminal activities is a priority, especially in volatile regions."
+  },
+  {
+    "id": "NSCDC33",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "In the NSCDC structure, who heads the various directorates at the National Headquarters?",
+    "options": { "A": "Chief Corps Assistants", "B": "Deputy Commandant Generals (DCGs) or Assistant Commandant Generals (ACGs)", "C": "Zonal Commanders", "D": "Corps Assistants" },
+    "ans": "B",
+    "exp": "Senior officers (DCGs and ACGs) typically head the directorates."
+  },
+  {
+    "id": "NSCDC34",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "What is the primary significance of the star symbol in the NSCDC officer rank insignia?",
+    "options": { "A": "The number of states in Nigeria", "B": "Gradual increase in command authority and experience", "C": "The number of children the officer has", "D": "The number of hours worked" },
+    "ans": "B",
+    "exp": "Stars (Pips) and other symbols denote rank, experience, and authority in paramilitary organizations."
+  },
+  {
+    "id": "NSCDC35",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC is charged with monitoring and protecting the infrastructure of which sector, apart from oil/gas?",
+    "options": { "A": "Entertainment Industry", "B": "Telecommunications and Power Sectors", "C": "Agricultural Exports", "D": "Fashion Design" },
+    "ans": "B",
+    "exp": "Critical national infrastructure includes telecom masts, power lines, and dams, all under NSCDC protection."
+  },
+  {
+    "id": "NSCDC36",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The Corps Assistant cadre in the NSCDC is primarily composed of personnel with which entry qualification?",
+    "options": { "A": "Master's Degree", "B": "SSCE/NECO/Trade Test", "C": "PhD", "D": "Only retired military personnel" },
+    "ans": "B",
+    "exp": "The Assistant Cadre is the general entry level for candidates with lower academic qualifications."
+  },
+  {
+    "id": "NSCDC37",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The 'Arms Squad' of the NSCDC is responsible for:",
+    "options": { "A": "Teaching history", "B": "Providing armed protection to personnel, installations, and during operations", "C": "Preparing lunch", "D": "Issuing travel visas" },
+    "ans": "B",
+    "exp": "The Arms Squad provides necessary firepower and protection for the Corps' operations."
+  },
+  {
+    "id": "NSCDC38",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC uses which method as an alternative to litigation for minor disputes?",
+    "options": { "A": "Trial by combat", "B": "Alternative Dispute Resolution (ADR) and Mediation", "C": "Immediate capital punishment", "D": "Military court martial" },
+    "ans": "B",
+    "exp": "ADR/Mediation is a statutory function for settling minor civil disagreements."
+  },
+  {
+    "id": "NSCDC39",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC's commitment to community safety often involves partnership with:",
+    "options": { "A": "Foreign Governments only", "B": "Traditional rulers and Community Development Associations (CDAs)", "C": "International banks", "D": "Major sports leagues" },
+    "ans": "B",
+    "exp": "Community policing and civil defence rely heavily on local partnership, especially with traditional leaders."
+  },
+  {
+    "id": "NSCDC40",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC Act was amended in which year to enhance its powers and operational efficiency?",
+    "options": { "A": "2003", "B": "2007", "C": "2010", "D": "2019" },
+    "ans": "D",
+    "exp": "The NSCDC Act was amended in 2019 to give the Corps more contemporary powers."
+  },
+  {
+    "id": "NSCDC41",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "What does the symbol of the torch in the NSCDC logo represent?",
+    "options": { "A": "Agriculture", "B": "Light/Enlightenment and security awareness", "C": "Oil and gas", "D": "International trade" },
+    "ans": "B",
+    "exp": "The torch typically symbolizes enlightenment, knowledge, and guiding light."
+  },
+  {
+    "id": "NSCDC42",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC is often deployed to maintain peace in areas experiencing:",
+    "options": { "A": "Heavy rainfall", "B": "Inter-communal or farmer-herder clashes", "C": "High stock market returns", "D": "Fashion shows" },
+    "ans": "B",
+    "exp": "The Corps is deployed for internal security, especially during localized civil unrest or communal conflicts."
+  },
+  {
+    "id": "NSCDC43",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "Which NSCDC rank is typically the lowest in the Superintendent Cadre?",
+    "options": { "A": "Corps Assistant", "B": "Senior Corps Inspector", "C": "Assistant Superintendent of Corps II (ASC II)", "D": "Chief Corps Superintendent" },
+    "ans": "C",
+    "exp": "ASC II is the entry point for officers/superintendents."
+  },
+  {
+    "id": "NSCDC44",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC actively participates in the recovery of which type of items after incidents like oil spills?",
+    "options": { "A": "Stolen vehicles only", "B": "Oil products, vandalized materials, and exhibits for prosecution", "C": "Ancient artifacts", "D": "Fresh produce" },
+    "ans": "B",
+    "exp": "Recovery of stolen products and evidence is crucial for the Corps' anti-vandalism mandate."
+  },
+  {
+    "id": "NSCDC45",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The training of NSCDC personnel is heavily focused on:",
+    "options": { "A": "Theoretical philosophy", "B": "Military-style drills, self-defence, first aid, and disaster response", "C": "Advanced cooking techniques", "D": "Commercial airline pilot training" },
+    "ans": "B",
+    "exp": "Training covers paramilitary and civil defence skills necessary for their dual mandate."
+  },
+  {
+    "id": "NSCDC46",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The official colour of the NSCDC beret for operational staff is typically:",
+    "options": { "A": "Red", "B": "Black", "C": "Green", "D": "Blue" },
+    "ans": "B",
+    "exp": "The Corps typically uses a black beret, often with the Corps crest."
+  },
+  {
+    "id": "NSCDC47",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The NSCDC works alongside the Federal Fire Service (FFS) in which area?",
+    "options": { "A": "Passport issuance", "B": "Disaster management, rescue, and fire prevention awareness", "C": "Oil bunkering prosecution", "D": "Agricultural subsidy disbursement" },
+    "ans": "B",
+    "exp": "Both agencies have a core role in disaster management and response."
+  },
+  {
+    "id": "NSCDC48",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The Commandant General of the NSCDC is appointed by the:",
+    "options": { "A": "Minister of Interior", "B": "President of the Federal Republic of Nigeria", "C": "Chief of Army Staff", "D": "Head of Service" },
+    "ans": "B",
+    "exp": "Heads of major federal paramilitary/security agencies are appointed by the President."
+  },
+  {
+    "id": "NSCDC49",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "Which section of the NSCDC is dedicated to investigating economic crimes related to its mandate (e.g., illegal oil bunkering)?",
+    "options": { "A": "Press Unit", "B": "Forensic and Investigation Unit (or similar specialized unit)", "C": "Transport Unit", "D": "Protocol Unit" },
+    "ans": "B",
+    "exp": "Specialized units handle complex crimes requiring investigation and forensic expertise."
+  },
+  {
+    "id": "NSCDC50",
+    "subject": "Nigeria Security and Civil Defence Corps",
+    "q": "The statutory function of the NSCDC to 'assist in the maintenance of peace and order' implies collaboration with:",
+    "options": { "A": "Foreign Military Forces", "B": "Other law enforcement and security agencies", "C": "International NGOs only", "D": "Local restaurants" },
+    "ans": "B",
+    "exp": "Effective maintenance of peace requires inter-agency collaboration."
+  }
+    
+    
+    
     // CORRECTIONAL CENTER (NCS) - 15 Questions Pool
-    { id: 'N1', subject: 'CORRECTIONAL_NCS', q: 'The acronym NCS stands for:', options: { A: 'Nigerian Central Security', B: 'Nigerian Correctional Service', C: 'National Custom Service', D: 'Nigerian Council of States' }, ans: 'B', exp: 'NCS stands for Nigerian Correctional Service, replacing the former NPS.' },
-    { id: 'N2', subject: 'CORRECTIONAL_NCS', q: 'The key focus of the NCS, following the 2019 Act, shifted to:', options: { A: 'Punishment and deterrence', B: 'Reformation and Rehabilitation', C: 'Long-term detention only', D: 'Generating revenue' }, ans: 'B', exp: 'The 2019 Act emphasizes rehabilitation and social reintegration of offenders.' },
-    { id: 'N3', subject: 'CORRECTIONAL_NCS', q: 'The head of the Nigerian Correctional Service is the:', options: { A: 'Inspector General of Prisons', B: 'Comptroller General of Corrections', C: 'Chief Judge', D: 'Commandant General' }, ans: 'B', exp: 'The head of the NCS is the Comptroller General of Corrections.' },
-    { id: 'N4', subject: 'CORRECTIONAL_NCS', q: 'The NCS was formerly known as:', options: { A: 'Nigerian Prison Service (NPS)', B: 'Federal Prisons Agency (FPA)', C: 'National Inmates Service (NIS)', D: 'Nigerian Detention Center (NDC)' }, ans: 'A', exp: 'The Nigerian Prisons Service (NPS) was renamed to NCS in 2019.' },
-    { id: 'N5', subject: 'CORRECTIONAL_NCS', q: 'The NCS Act 2019 established a non-custodial service which includes:', options: { A: 'Life imprisonment', B: 'Parole and community service', C: 'Hard labor', D: 'Military detention' }, ans: 'B', exp: 'Non-custodial measures like parole, probation, and community service are key components of the new Act.' },
-    { id: 'N6', subject: 'CORRECTIONAL_NCS', q: 'What is the purpose of the Borstal Institutions managed by NCS?', options: { A: 'For female offenders', B: 'For elderly offenders', C: 'For juvenile offenders', D: 'For high-risk inmates' }, ans: 'C', exp: 'Borstal Institutions are specialized reformatory centers for young/juvenile offenders.' },
-    { id: 'N7', subject: 'CORRECTIONAL_NCS', q: 'The primary role of NCS staff is the custody of persons committed to custody by:', options: { A: 'Their families', B: 'The law/courts', C: 'The military', D: 'Local government' }, ans: 'B', exp: 'The Service holds persons committed to custody by the courts via warrants.' },
-    { id: 'N8', subject: 'CORRECTIONAL_NCS', q: 'The NCS uniform color is primarily:', options: { A: 'Red and Black', B: 'Blue and Black', C: 'Green and Khaki', D: 'White and Blue' }, ans: 'B', exp: 'NCS uniforms typically feature blue and black colors.' },
-    { id: 'N9', subject: 'CORRECTIONAL_NCS', q: 'Which section of the NCS handles medical care for inmates?', options: { A: 'Operations Directorate', B: 'Health and Welfare Directorate', C: 'Technical Directorate', D: 'Legal Directorate' }, ans: 'B', exp: 'The Health and Welfare Directorate manages medical services and inmate well-being.' },
-    { id: 'N10', subject: 'CORRECTIONAL_NCS', q: 'What key term is used to describe the process of preparing an offender to return to society?', options: { A: 'Detention', B: 'Recidivism', C: 'Reintegration', D: 'Correction' }, ans: 'C', exp: 'Social reintegration is the critical final phase of correction.' },
-    { id: 'N11', subject: 'CORRECTIONAL_NCS', q: 'The NCS is primarily under the supervision of the Ministry of:', options: { A: 'Justice', B: 'Interior', C: 'Police Affairs', D: 'Defence' }, ans: 'B', exp: 'The NCS is under the Federal Ministry of Interior.' },
-    { id: 'N12', subject: 'CORRECTIONAL_NCS', q: 'Which of these is NOT an aim of the 2019 NCS Act?', options: { A: 'Reformation', B: 'Rehabilitation', C: 'Punitive Isolation', D: 'Reintegration' }, ans: 'C', exp: 'The Act shifted away from purely punitive isolation towards reformation.' },
-    { id: 'N13', subject: 'CORRECTIONAL_NCS', q: 'What body provides statutory oversight for the NCS?', options: { A: 'FRSC', B: 'CDCFIB', C: 'NEMA', D: 'DSS' }, ans: 'B', exp: 'CDCFIB (Civil Defence, Correctional, Fire, and Immigration Services Board) provides oversight.' },
-    { id: 'N14', subject: 'CORRECTIONAL_NCS', q: 'The term **parole** in the Correctional system means:', options: { A: 'Permanent release', B: 'Temporary release under supervision', C: 'Life imprisonment', D: 'Hard labor sentencing' }, ans: 'B', exp: 'Parole is the conditional release of a prisoner before the completion of the sentence.' },
-    { id: 'N15', subject: 'CORRECTIONAL_NCS', q: 'The maximum security prison in Nigeria is often considered to be located in:', options: { A: 'Lagos', B: 'Kirikiri', C: 'Kano', D: 'Calabar' }, ans: 'B', exp: 'Kirikiri Maximum Security Prison is the most commonly known facility.' },
-
+   [
+  {
+    "id": "NCoS01",
+    "subject": "Nigerian Correctional Service",
+    "q": "The Nigerian Correctional Service (NCoS) was formerly known as the:",
+    "options": { "A": "Nigerian Immigration Service", "B": "Nigerian Prisons Service (NPS)", "C": "Nigerian Civil Defence Corps", "D": "Federal Fire Department" },
+    "ans": "B",
+    "exp": "The NCoS was officially known as the Nigerian Prisons Service before the 2019 Act."
+  },
+  {
+    "id": "NCoS02",
+    "subject": "Nigerian Correctional Service",
+    "q": "Who is the head of the Nigerian Correctional Service?",
+    "options": { "A": "Commandant General", "B": "Comptroller General", "C": "Controller General of Corrections (CGC)", "D": "Inspector General" },
+    "ans": "C",
+    "exp": "The head of the NCoS is the Controller General of Corrections (CGC)."
+  },
+  {
+    "id": "NCoS03",
+    "subject": "Nigerian Correctional Service",
+    "q": "What is the primary piece of legislation that established the NCoS and changed its name?",
+    "options": { "A": "Criminal Code Act 1990", "B": "Prisons Act 1972", "C": "Nigerian Correctional Service Act 2019", "D": "Federal Penal Code" },
+    "ans": "C",
+    "exp": "The Nigerian Correctional Service Act 2019 officially changed the name and introduced a new mandate."
+  },
+  {
+    "id": "NCoS04",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS is under the supervision of which Nigerian Federal Ministry?",
+    "options": { "A": "Ministry of Justice", "B": "Ministry of Interior", "C": "Ministry of Defence", "D": "Ministry of Health" },
+    "ans": "B",
+    "exp": "The NCoS is supervised by the Federal Ministry of Interior."
+  },
+  {
+    "id": "NCoS05",
+    "subject": "Nigerian Correctional Service",
+    "q": "What is the core focus of the NCoS mandate, distinguishing it from the former NPS?",
+    "options": { "A": "Only punitive detention", "B": "Correctional services focused on rehabilitation and reintegration", "C": "Border security", "D": "Firefighting" },
+    "ans": "B",
+    "exp": "The 2019 Act shifted the focus from punishment (Prisons) to reform and rehabilitation (Correctional Service)."
+  },
+  {
+    "id": "NCoS06",
+    "subject": "Nigerian Correctional Service",
+    "q": "What is the official motto of the Nigerian Correctional Service?",
+    "options": { "A": "Safety First", "B": "The Ultimate Goal is to Reform", "C": "Punishment and Justice", "D": "Defence of the Nation" },
+    "ans": "B",
+    "exp": "A common motto reflecting its mandate is 'The Ultimate Goal is to Reform' or 'Reform, Rehabilitate, and Reintegrate'."
+  },
+  {
+    "id": "NCoS07",
+    "subject": "Nigerian Correctional Service",
+    "q": "Which key division of the NCoS is responsible for the academic and vocational training of inmates?",
+    "options": { "A": "Security/Operations", "B": "Inmate Training and Rehabilitation", "C": "General Administration", "D": "Logistics" },
+    "ans": "B",
+    "exp": "The Inmate Training and Rehabilitation Directorate oversees all programs aimed at skill development and education."
+  },
+  {
+    "id": "NCoS08",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS is divided into how many operational directorates at the National Headquarters level?",
+    "options": { "A": "2", "B": "6-8 (depending on current structure)", "C": "15", "D": "37" },
+    "ans": "B",
+    "exp": "The NCoS, like other federal agencies, is structured into various operational directorates (e.g., Operations, Administration, Health, Inmate Training, etc.)."
+  },
+  {
+    "id": "NCoS09",
+    "subject": "Nigerian Correctional Service",
+    "q": "What is the role of the Non-Custodial Service component of the NCoS?",
+    "options": { "A": "Detaining high-profile offenders only", "B": "Managing community service, parole, and probation for minor offenders outside the custodial facility", "C": "Issuing travel documents", "D": "Operating state prisons" },
+    "ans": "B",
+    "exp": "Non-Custodial Service manages alternatives to incarceration as mandated by the 2019 Act."
+  },
+  {
+    "id": "NCoS10",
+    "subject": "Nigerian Correctional Service",
+    "q": "The official uniform colour of the Nigerian Correctional Service is primarily:",
+    "options": { "A": "White", "B": "Green and Black/Navy Blue", "C": "Red", "D": "Yellow" },
+    "ans": "B",
+    "exp": "The official uniform is often green or a combination of green and navy blue/black, often with a green cap/beret."
+  },
+  {
+    "id": "NCoS11",
+    "subject": "Nigerian Correctional Service",
+    "q": "Which officer rank in the NCoS is equivalent to a Commissioner of Police?",
+    "options": { "A": "Assistant Controller of Corrections (ACC)", "B": "Controller of Corrections (CC)", "C": "Superintendent of Corrections (SC)", "D": "Chief Warder" },
+    "ans": "B",
+    "exp": "Controller of Corrections (CC) is generally the rank used for State Command heads, equivalent to CP."
+  },
+  {
+    "id": "NCoS12",
+    "subject": "Nigerian Correctional Service",
+    "q": "The logo of the NCoS typically features an open book, symbolizing:",
+    "options": { "A": "Punishment", "B": "Reformation through education and skills acquisition", "C": "Secrecy", "D": "Economic prosperity" },
+    "ans": "B",
+    "exp": "The open book and other symbols represent the focus on education and reformation."
+  },
+  {
+    "id": "NCoS13",
+    "subject": "Nigerian Correctional Service",
+    "q": "What is the highest rank in the NCoS after the Controller General of Corrections (CGC)?",
+    "options": { "A": "Assistant Controller General of Corrections (ACGC)", "B": "Deputy Controller General of Corrections (DCGC)", "C": "Controller of Corrections (CC)", "D": "Warder Major" },
+    "ans": "B",
+    "exp": "The Deputy Controller General of Corrections (DCGC) is the second highest rank."
+  },
+  {
+    "id": "NCoS14",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS's operational structure includes a maximum security prison located in:",
+    "options": { "A": "Calabar", "B": "Kirikiri (Lagos)", "C": "Maiduguri", "D": "Aba" },
+    "ans": "B",
+    "exp": "Kirikiri Maximum Security Prison in Lagos is Nigeria's most famous high-security facility."
+  },
+  {
+    "id": "NCoS15",
+    "subject": "Nigerian Correctional Service",
+    "q": "A core objective of the NCoS is to manage the welfare of:",
+    "options": { "A": "Only convicted inmates", "B": "Inmates (convicted and awaiting trial) and staff", "C": "Prison suppliers only", "D": "Ex-convicts only" },
+    "ans": "B",
+    "exp": "Welfare management covers all inmates and the well-being of the staff who manage them."
+  },
+  {
+    "id": "NCoS16",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS is responsible for providing which essential service to inmates?",
+    "options": { "A": "Free international travel", "B": "Medical care, feeding, and legal access", "C": "Daily cash allowance", "D": "Smartphone access" },
+    "ans": "B",
+    "exp": "Provision of medical care, food, and enabling access to justice are basic requirements for inmate management."
+  },
+  {
+    "id": "NCoS17",
+    "subject": "Nigerian Correctional Service",
+    "q": "Which officer cadre in the NCoS is typically the entry point for HND/B.Sc holders?",
+    "options": { "A": "Assistant Cadre", "B": "Superintendent Cadre (Assistant Superintendent of Corrections)", "C": "Controller Cadre", "D": "Support Staff" },
+    "ans": "B",
+    "exp": "The Superintendent Cadre (e.g., ASC II) is the standard entry point for graduates."
+  },
+  {
+    "id": "NCoS18",
+    "subject": "Nigerian Correctional Service",
+    "q": "The primary challenge addressed by the 2019 NCoS Act is:",
+    "options": { "A": "Lack of uniforms", "B": "Overcrowding in correctional facilities and the high number of awaiting trial inmates", "C": "Low staff salary", "D": "Poor internet connection" },
+    "ans": "B",
+    "exp": "Overcrowding and the large number of awaiting trial inmates (ATI) are the most significant systemic challenges the Act seeks to address."
+  },
+  {
+    "id": "NCoS19",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS plays a crucial role in the justice system by providing what service to the courts?",
+    "options": { "A": "Legal advice", "B": "Production of inmates for court appearances", "C": "Setting bail conditions", "D": "Appointing judges" },
+    "ans": "B",
+    "exp": "The NCoS ensures that inmates are available for their judicial proceedings."
+  },
+  {
+    "id": "NCoS20",
+    "subject": "Nigerian Correctional Service",
+    "q": "What is the significance of the two arms of service created by the NCoS Act 2019?",
+    "options": { "A": "Male and Female Inmates", "B": "Custodial Service and Non-Custodial Service", "C": "Security and Welfare", "D": "Federal and State Prisons" },
+    "ans": "B",
+    "exp": "The Act formally separated the NCoS into Custodial (for detention) and Non-Custodial (for alternatives to incarceration) services."
+  },
+  {
+    "id": "NCoS21",
+    "subject": "Nigerian Correctional Service",
+    "q": "The 'After-Care Services' provided by the NCoS are aimed at:",
+    "options": { "A": "Current inmates only", "B": "Helping ex-inmates reintegrate into society and preventing recidivism", "C": "Staff retired from service", "D": "International charity organizations" },
+    "ans": "B",
+    "exp": "After-care is vital for post-release support to ensure successful reintegration and reduce the rate of re-offending (recidivism)."
+  },
+  {
+    "id": "NCoS22",
+    "subject": "Nigerian Correctional Service",
+    "q": "Which NCoS rank is immediately below the Controller General of Corrections?",
+    "options": { "A": "Assistant Controller General of Corrections (ACGC)", "B": "Controller of Corrections (CC)", "C": "Chief Superintendent of Corrections (CSC)", "D": "Deputy Controller General of Corrections (DCGC)" },
+    "ans": "D",
+    "exp": "The DCGC is the immediate deputy to the CGC."
+  },
+  {
+    "id": "NCoS23",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS Act mandates collaboration with which non-governmental entities for inmate welfare and skill acquisition?",
+    "options": { "A": "Military Contractors", "B": "Faith-based organizations, NGOs, and the private sector", "C": "Foreign Embassies only", "D": "Local traffic wardens" },
+    "ans": "B",
+    "exp": "Community and private sector involvement is essential for effective rehabilitation and reintegration."
+  },
+  {
+    "id": "NCoS24",
+    "subject": "Nigerian Correctional Service",
+    "q": "The main security apparatus within the NCoS is responsible for:",
+    "options": { "A": "Managing staff leave", "B": "Prevention of escape, internal security, and maintaining discipline within the facilities", "C": "International investment", "D": "Inmate clothing design" },
+    "ans": "B",
+    "exp": "Security/Operations Directorate is responsible for maintaining order and preventing security breaches."
+  },
+  {
+    "id": "NCoS25",
+    "subject": "Nigerian Correctional Service",
+    "q": "What is the term for the process of determining an inmate's risk level and placement in the correctional system?",
+    "options": { "A": "Registration", "B": "Classification and Sentencing", "C": "Muster Roll Call", "D": "Catering Assignment" },
+    "ans": "B",
+    "exp": "Classification and profiling determine the appropriate level of security and intervention for each inmate."
+  },
+  {
+    "id": "NCoS26",
+    "subject": "Nigerian Correctional Service",
+    "q": "The rank of 'Assistant Controller General of Corrections (ACGC)' typically heads which level of command?",
+    "options": { "A": "A single correctional centre", "B": "A Zonal Command (covering multiple states)", "C": "The National Headquarters", "D": "A State Command" },
+    "ans": "B",
+    "exp": "ACGCs typically serve as Zonal Coordinators, overseeing several state commands."
+  },
+  {
+    "id": "NCoS27",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS encourages inmates to acquire vocational skills such as tailoring, carpentry, and welding primarily to:",
+    "options": { "A": "Make money for the service", "B": "Equip them for self-reliance and reduce recidivism upon release", "C": "Keep them busy", "D": "Decorate the facility" },
+    "ans": "B",
+    "exp": "Skill acquisition is the foundation of rehabilitation and successful reintegration."
+  },
+  {
+    "id": "NCoS28",
+    "subject": "Nigerian Correctional Service",
+    "q": "Which officer rank in the NCoS is typically the most senior rank for the Inspectorate Cadre?",
+    "options": { "A": "Controller of Corrections (CC)", "B": "Chief Inspector of Corrections (CIC)", "C": "Correctional Assistant I (CAI)", "D": "Deputy Controller General (DCGC)" },
+    "ans": "B",
+    "exp": "Chief Inspector of Corrections is the highest rank in the Inspectorate Cadre."
+  },
+  {
+    "id": "NCoS29",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS provides specialized correctional facilities for which vulnerable group?",
+    "options": { "A": "Foreign tourists", "B": "Juveniles and female offenders", "C": "Only very elderly men", "D": "Political office holders" },
+    "ans": "B",
+    "exp": "The service maintains separate facilities for women and focuses on specialized treatment for juveniles."
+  },
+  {
+    "id": "NCoS30",
+    "subject": "Nigerian Correctional Service",
+    "q": "What is the primary role of the NCoS's Legal Department?",
+    "options": { "A": "Managing staff payroll", "B": "Handling legal issues, prosecuting staff offenses, and advising on law relating to custody", "C": "Designing new uniforms", "D": "Operating the prison farm" },
+    "ans": "B",
+    "exp": "The Legal Department provides legal support and ensures compliance with the Correctional Service Act and other laws."
+  },
+  {
+    "id": "NCoS31",
+    "subject": "Nigerian Correctional Service",
+    "q": "The 2019 NCoS Act introduces the concept of which maximum term for Non-Custodial sentences?",
+    "options": { "A": "1 year", "B": "10 years", "C": "5 years", "D": "3 months" },
+    "ans": "C",
+    "exp": "The Act provides for a non-custodial sentence (e.g., community service) not exceeding 5 years."
+  },
+  {
+    "id": "NCoS32",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS emblem features a key, symbolizing:",
+    "options": { "A": "The wealth of Nigeria", "B": "The authority and responsibility of keeping inmates in safe custody", "C": "Access to international airports", "D": "A secret entrance" },
+    "ans": "B",
+    "exp": "The key is a universal symbol of control over the facility and the inmates."
+  },
+  {
+    "id": "NCoS33",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS is actively involved in generating data on inmates for national crime statistics, in collaboration with:",
+    "options": { "A": "Central Bank of Nigeria (CBN)", "B": "National Bureau of Statistics (NBS) and relevant security agencies", "C": "Foreign Affairs Ministry", "D": "Local market associations" },
+    "ans": "B",
+    "exp": "Data on inmate demographics and crime types are crucial for national statistics and policy planning."
+  },
+  {
+    "id": "NCoS34",
+    "subject": "Nigerian Correctional Service",
+    "q": "An officer with the rank of 'Assistant Superintendent of Corrections I' typically wears the insignia of:",
+    "options": { "A": "The Coat of Arms", "B": "Two stars (pips)", "C": "A single star (pip)", "D": "A crown" },
+    "ans": "B",
+    "exp": "ASC I is the second rank in the Superintendent Cadre, often marked by two stars."
+  },
+  {
+    "id": "NCoS35",
+    "subject": "Nigerian Correctional Service",
+    "q": "What is the NCoS's goal regarding inmates' health and sanitation?",
+    "options": { "A": "To ignore it completely", "B": "To ensure inmates enjoy a standard of health-care and hygiene comparable to the general public", "C": "To provide only spiritual care", "D": "To rely solely on external volunteers for everything" },
+    "ans": "B",
+    "exp": "The NCoS Act mandates the provision of adequate health and hygiene standards."
+  },
+  {
+    "id": "NCoS36",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS operates special facilities dedicated to which major reform program?",
+    "options": { "A": "International Diplomacy School", "B": "Inmate Education and Vocational Training Centres", "C": "Staff Recruitment Centres only", "D": "Currency Printing" },
+    "ans": "B",
+    "exp": "Dedicated centres facilitate intensive and structured training and education programs."
+  },
+  {
+    "id": "NCoS37",
+    "subject": "Nigerian Correctional Service",
+    "q": "The process of 'De-radicalization' within the NCoS is primarily targeted at inmates involved in:",
+    "options": { "A": "Minor theft", "B": "Terrorism and violent extremism", "C": "Traffic offenses", "D": "International trade" },
+    "ans": "B",
+    "exp": "De-radicalization programs are specialized interventions for extremist and terrorist inmates."
+  },
+  {
+    "id": "NCoS38",
+    "subject": "Nigerian Correctional Service",
+    "q": "Which officer is responsible for the overall security and administration of a Correctional Centre?",
+    "options": { "A": "The State Governor", "B": "The Officer in Charge (O.I.C.) or Controller of the facility", "C": "The Chief Justice", "D": "The Area Commander" },
+    "ans": "B",
+    "exp": "The O.I.C., often a Controller or Deputy Controller, is the head of the facility."
+  },
+  {
+    "id": "NCoS39",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS is mandated to allow inmates access to legal representation and:",
+    "options": { "A": "Unlimited cash", "B": "Family visits and mail correspondence", "C": "Private jet travel", "D": "Military secrets" },
+    "ans": "B",
+    "exp": "Access to family and correspondence is a fundamental right and key to rehabilitation."
+  },
+  {
+    "id": "NCoS40",
+    "subject": "Nigerian Correctional Service",
+    "q": "The introduction of Non-Custodial Service is primarily a measure to reduce:",
+    "options": { "A": "Staff morale", "B": "The inmate population and decongest correctional centres", "C": "The price of food", "D": "The number of prison breaks" },
+    "ans": "B",
+    "exp": "Non-custodial sentences are a core strategy for prison decongestion."
+  },
+  {
+    "id": "NCoS41",
+    "subject": "Nigerian Correctional Service",
+    "q": "The rank of 'Superintendent of Corrections (SC)' is senior to which of these ranks?",
+    "options": { "A": "Controller of Corrections (CC)", "B": "Assistant Superintendent of Corrections I (ASC I)", "C": "Deputy Controller General (DCGC)", "D": "Assistant Controller General (ACGC)" },
+    "ans": "B",
+    "exp": "SC is senior to ASC I, which is a junior officer rank."
+  },
+  {
+    "id": "NCoS42",
+    "subject": "Nigerian Correctional Service",
+    "q": "What is the NCoS's role in the event of a prison break/jailbreak?",
+    "options": { "A": "To ignore it as a local matter", "B": "To immediately mobilize for recapture and launch an internal investigation", "C": "To declare a national holiday", "D": "To blame another agency" },
+    "ans": "B",
+    "exp": "Swift recapture and internal investigation are mandatory security protocols after a jailbreak."
+  },
+  {
+    "id": "NCoS43",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS works closely with the judiciary to implement measures to speed up the trials of:",
+    "options": { "A": "Convicted inmates", "B": "Awaiting Trial Inmates (ATI)", "C": "Staff on leave", "D": "Retired officers" },
+    "ans": "B",
+    "exp": "Reducing the ATI population is a core strategy for decongestion."
+  },
+  {
+    "id": "NCoS44",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS encourages which type of education among inmates, from basic literacy to tertiary level?",
+    "options": { "A": "Only military training", "B": "Academic Education", "C": "Only religious studies", "D": "Online gaming" },
+    "ans": "B",
+    "exp": "Academic education is a major part of the NCoS reform program."
+  },
+  {
+    "id": "NCoS45",
+    "subject": "Nigerian Correctional Service",
+    "q": "What year was the Nigerian Prisons Service (NPS) originally established, pre-independence?",
+    "options": { "A": "1901 (with the establishment of the first formal prison)", "B": "1960", "C": "1999", "D": "2019" },
+    "ans": "A",
+    "exp": "The formal prison system in Nigeria traces its origins back to the colonial era, specifically 1901 with the building of prisons."
+  },
+  {
+    "id": "NCoS46",
+    "subject": "Nigerian Correctional Service",
+    "q": "The rank insignia for a 'Controller General of Corrections' typically includes the national Coat of Arms and:",
+    "options": { "A": "Four stars (pips)", "B": "A crossed staff and key/baton", "C": "Five stars (pips)", "D": "A single stripe" },
+    "ans": "B",
+    "exp": "The CGC insignia usually features the Coat of Arms and a crossed staff and key/baton, representing the authority over the service."
+  },
+  {
+    "id": "NCoS47",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS Act requires that every State have a committee to monitor which aspect of the correctional system?",
+    "options": { "A": "Staff recruitment", "B": "The conditions of custodial centres and inmate welfare/rehabilitation programs", "C": "International investment", "D": "Uniform procurement" },
+    "ans": "B",
+    "exp": "Monitoring committees are mandated to ensure accountability and humane treatment of inmates."
+  },
+  {
+    "id": "NCoS48",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS uses the term 'Correctional Centre' instead of 'Prison' to emphasize:",
+    "options": { "A": "A change in name only", "B": "The focus on correction, rehabilitation, and social reintegration of offenders", "C": "The building's height", "D": "Its location" },
+    "ans": "B",
+    "exp": "The name change reflects the shift in philosophy and mandate from punitive to reformative."
+  },
+  {
+    "id": "NCoS49",
+    "subject": "Nigerian Correctional Service",
+    "q": "The rank of 'Assistant Controller of Corrections (ACC)' is immediately below:",
+    "options": { "A": "Controller of Corrections (CC)", "B": "Deputy Controller General (DCGC)", "C": "Assistant Superintendent of Corrections II (ASC II)", "D": "Chief Warder" },
+    "ans": "A",
+    "exp": "ACC is the junior rank to CC within the senior officer cadre."
+  },
+  {
+    "id": "NCoS50",
+    "subject": "Nigerian Correctional Service",
+    "q": "The NCoS works with which agency to provide psychiatric support for inmates with mental health challenges?",
+    "options": { "A": "Federal Road Safety Corps", "B": "Federal Ministry of Health and specialized mental health institutions", "C": "Foreign Embassies", "D": "Customs Service" },
+    "ans": "B",
+    "exp": "The provision of mental health care is a crucial aspect of inmate welfare and rehabilitation, requiring collaboration with health authorities."
+  }
     // FEDERAL FIRE SERVICE (FFS) - 15 Questions Pool
-    { id: 'F1', subject: 'FIRE_FFS', q: 'What is the core function of the Federal Fire Service (FFS)?', options: { A: 'Border control', B: 'Fire fighting and prevention', C: 'Pipeline protection', D: 'Road traffic control' }, ans: 'B', exp: 'The FFS is primarily responsible for fighting and preventing fires.' },
-    { id: 'F2', subject: 'FIRE_FFS', q: 'The FFS is headed by the:', options: { A: 'Fire Marshal', B: 'Controller General of Fire', C: 'Commandant General', D: 'Inspector General' }, ans: 'B', exp: 'The FFS is headed by the Controller General of the Federal Fire Service.' },
-    { id: 'F3', subject: 'FIRE_FFS', q: 'The FFS motto is:', options: { A: 'Safety First', B: 'Service and Safety', C: 'Protection of Lives and Property', D: 'Fire is the Enemy' }, ans: 'C', exp: 'The official FFS motto is "Protection of Lives and Property".' },
-    { id: 'F4', subject: 'FIRE_FFS', q: 'What class of fire involves flammable liquids (e.g., petrol, kerosene)?', options: { A: 'Class A', B: 'Class B', C: 'Class C', D: 'Class D' }, ans: 'B', exp: 'Class B fires involve flammable liquids and gases.' },
-    { id: 'F5', subject: 'FIRE_FFS', q: 'The FFS helps in certifying a building’s:', options: { A: 'Structure stability', B: 'Fire Safety Compliance', C: 'Electrical wiring', D: 'Plumbing standards' }, ans: 'B', exp: 'Issuing Fire Safety Certificates is a major regulatory role of the FFS.' },
-    { id: 'F6', subject: 'FIRE_FFS', q: 'Which firefighting agent is primarily used by FFS for electrical fires?', options: { A: 'Water', B: 'Foam', C: 'CO2 or Dry Chemical', D: 'Sand' }, ans: 'C', exp: 'CO2 or Dry Chemical extinguishers are used for Class C (electrical) fires as they are non-conductive.' },
-    { id: 'F7', subject: 'FIRE_FFS', q: 'In fire safety, what is a crucial preventative measure?', options: { A: 'Water rationing', B: 'Installation of smoke detectors', C: 'Daily sweeping', D: 'High voltage use' }, ans: 'B', exp: 'Smoke detectors provide early warning, which is critical for fire prevention.' },
-    { id: 'F8', subject: 'FIRE_FFS', q: 'FFS often participates in Search and Rescue operations, collaborating with:', options: { A: 'Nigerian Navy', B: 'NEMA and NSCDC', C: 'Central Bank', D: 'Judiciary' }, ans: 'B', exp: 'FFS provides specialized rescue services alongside NEMA and NSCDC during emergencies.' },
-    { id: 'F9', subject: 'FIRE_FFS', q: 'What color is typically associated with fire trucks in Nigeria?', options: { A: 'Blue', B: 'Green', C: 'Red', D: 'Yellow' }, ans: 'C', exp: 'Red is the universal color for emergency vehicles like fire trucks.' },
-    { id: 'F10', subject: 'FIRE_FFS', q: 'The FFS is a department under the Ministry of:', options: { A: 'Defence', B: 'Environment', C: 'Interior', D: 'Works' }, ans: 'C', exp: 'Like NSCDC, NIS, and NCS, the FFS is under the Federal Ministry of Interior.' },
-    { id: 'F11', subject: 'FIRE_FFS', q: 'Class A fires involve which type of materials?', options: { A: 'Flammable Liquids', B: 'Metals', C: 'Ordinary Combustibles (wood, paper, cloth)', D: 'Electrical Equipment' }, ans: 'C', exp: 'Class A fires involve common materials like wood, paper, and cloth.' },
-    { id: 'F12', subject: 'FIRE_FFS', q: 'The technique of cooling a burning substance below its ignition temperature using water is called:', options: { A: 'Starvation', B: 'Smothering', C: 'Cooling', D: 'Dilution' }, ans: 'C', exp: 'Cooling is the primary method of using water to put out fires.' },
-    { id: 'F13', subject: 'FIRE_FFS', q: 'The removal of fuel from a fire is known as:', options: { A: 'Cooling', B: 'Smothering', C: 'Starvation', D: 'Separation' }, ans: 'C', exp: 'Starvation is the process of removing the fuel source to break the fire triangle.' },
-    { id: 'F14', subject: 'FIRE_FFS', q: 'The FFS is also mandated to provide:', options: { A: 'Ambulance services during accidents', B: 'Security escort for high-profile figures', C: 'Training on fire prevention', D: 'Border checkpoint management' }, ans: 'C', exp: 'Providing training and education on fire prevention is a core FFS mandate.' },
-    { id: 'F15', subject: 'FIRE_FFS', q: 'Which fire extinguisher type is identified by a **RED** label or body?', options: { A: 'Water', B: 'Foam', C: 'Dry Powder', D: 'CO2' }, ans: 'A', exp: 'While modern standards use color coding on bands, historically and commonly, water extinguishers were often plain red.' },
-
+  {
+    "id": "FFS01",
+    "subject": "Federal Fire Service",
+    "q": "The Federal Fire Service (FFS) was established in which year?",
+    "options": { "A": "1945", "B": "1963", "C": "1972", "D": "1990" },
+    "ans": "B",
+    "exp": "The FFS was established in 1963 as an integral part of the Federal Ministry of Internal Affairs (now Interior)."
+  },
+  {
+    "id": "FFS02",
+    "subject": "Federal Fire Service",
+    "q": "Who is the Chief Executive Officer of the Federal Fire Service?",
+    "options": { "A": "Comptroller General", "B": "Director General", "C": "Controller General", "D": "The Head of Service" },
+    "ans": "C",
+    "exp": "The head of the FFS is the Controller General (CG)."
+  },
+  {
+    "id": "FFS03",
+    "subject": "Federal Fire Service",
+    "q": "What is the primary function of the Federal Fire Service?",
+    "options": { "A": "Border security and immigration control", "B": "Fire prevention, mitigation, and rescue services", "C": "Correctional facility management", "D": "Pipeline protection" },
+    "ans": "B",
+    "exp": "The core function of the FFS is related to fire fighting, prevention, and rescue."
+  },
+  {
+    "id": "FFS04",
+    "subject": "Federal Fire Service",
+    "q": "The Federal Fire Service falls under the supervision of which Federal Ministry?",
+    "options": { "A": "Ministry of Power", "B": "Ministry of Defence", "C": "Ministry of Interior", "D": "Ministry of Aviation" },
+    "ans": "C",
+    "exp": "The FFS, like NIS and NSCDC, is supervised by the Federal Ministry of Interior."
+  },
+  {
+    "id": "FFS05",
+    "subject": "Federal Fire Service",
+    "q": "Which of these is the highest rank below the Controller General in the FFS structure?",
+    "options": { "A": "Assistant Controller of Fire", "B": "Deputy Controller General of Fire (DCGF)", "C": "Senior Fire Superintendent", "D": "Chief Fireman" },
+    "ans": "B",
+    "exp": "The Deputy Controller General of Fire is the second highest rank."
+  },
+  {
+    "id": "FFS06",
+    "subject": "Federal Fire Service",
+    "q": "What is the popular motto associated with the Federal Fire Service?",
+    "options": { "A": "Saving Lives and Properties", "B": "Integrity and Border Security", "C": "Peace and Security", "D": "The Customer is King" },
+    "ans": "A",
+    "exp": "A widely used motto reflecting the FFS mandate is 'Saving Lives and Properties'."
+  },
+  {
+    "id": "FFS07",
+    "subject": "Federal Fire Service",
+    "q": "FFS is responsible for setting and enforcing standards for fire safety in:",
+    "options": { "A": "Only Federal Government buildings", "B": "Public and private buildings nationwide", "C": "Only military barracks", "D": "Oil pipelines only" },
+    "ans": "B",
+    "exp": "The FFS is mandated to set and enforce fire safety standards across the nation."
+  },
+  {
+    "id": "FFS08",
+    "subject": "Federal Fire Service",
+    "q": "What is the rank of the officer in charge of a typical FFS State Command?",
+    "options": { "A": "State Governor", "B": "Area Commander", "C": "Controller of Fire", "D": "Sector Commander" },
+    "ans": "C",
+    "exp": "The head of a State Fire Command is generally a Controller of Fire (CF)."
+  },
+  {
+    "id": "FFS09",
+    "subject": "Federal Fire Service",
+    "q": "The FFS uniform is primarily which colour, reflecting its emergency nature?",
+    "options": { "A": "Green", "B": "Blue", "C": "Red", "D": "Black" },
+    "ans": "D",
+    "exp": "The operational uniforms of the FFS are typically black or navy blue, with reflective strips for safety."
+  },
+  {
+    "id": "FFS10",
+    "subject": "Federal Fire Service",
+    "q": "Which piece of legislation governs the establishment and operation of the FFS?",
+    "options": { "A": "Police Act", "B": "Federal Fire Service Act (or similar Fire Service Law)", "C": "Customs Act", "D": "Immigration Act" },
+    "ans": "B",
+    "exp": "The FFS is governed by the Federal Fire Service Act (as amended)."
+  },
+  {
+    "id": "FFS11",
+    "subject": "Federal Fire Service",
+    "q": "What does 'Mitigation' refer to in the context of fire service duties?",
+    "options": { "A": "Preventing the fire from starting", "B": "Reducing the negative impacts of a fire or disaster", "C": "Conducting post-fire investigation", "D": "Training new firemen" },
+    "ans": "B",
+    "exp": "Mitigation means reducing the severity, seriousness, or painfulness of something, in this case, a fire incident."
+  },
+  {
+    "id": "FFS12",
+    "subject": "Federal Fire Service",
+    "q": "FFS is actively involved in training which other level of fire service personnel in Nigeria?",
+    "options": { "A": "Only military fire personnel", "B": "State Fire Service personnel", "C": "Airport fire personnel only", "D": "No training of external bodies" },
+    "ans": "B",
+    "exp": "The FFS provides support and training standards for State and other fire services across Nigeria."
+  },
+  {
+    "id": "FFS13",
+    "subject": "Federal Fire Service",
+    "q": "What is the FFS's role in the event of building collapse?",
+    "options": { "A": "Traffic control", "B": "Post-disaster audit only", "C": "Search and Rescue (SAR) operations", "D": "Issuance of building permits" },
+    "ans": "C",
+    "exp": "Rescue is a crucial mandate of the FFS, particularly in structural collapse incidents."
+  },
+  {
+    "id": "FFS14",
+    "subject": "Federal Fire Service",
+    "q": "Which rank is generally an entry-level position for a university graduate in the FFS?",
+    "options": { "A": "Fireman I", "B": "Assistant Superintendent of Fire (ASF)", "C": "Chief Fire Officer", "D": "Deputy Controller of Fire" },
+    "ans": "B",
+    "exp": "Assistant Superintendent of Fire is typically the entry point for degree holders in the officer cadre."
+  },
+  {
+    "id": "FFS15",
+    "subject": "Federal Fire Service",
+    "q": "The FFS Head Office is located in:",
+    "options": { "A": "Lagos", "B": "Enugu", "C": "Abuja (FCT)", "D": "Port Harcourt" },
+    "ans": "C",
+    "exp": "The headquarters of the Federal Fire Service is located in the Federal Capital Territory, Abuja."
+  },
+  {
+    "id": "FFS16",
+    "subject": "Federal Fire Service",
+    "q": "What is the main purpose of a 'Fire Drill' conducted by FFS in public buildings?",
+    "options": { "A": "To test the building's structural integrity", "B": "To practice quick and safe evacuation procedures", "C": "To generate revenue", "D": "To check staff attendance" },
+    "ans": "B",
+    "exp": "Fire drills are essential for training occupants on safe and rapid evacuation during a fire."
+  },
+  {
+    "id": "FFS17",
+    "subject": "Federal Fire Service",
+    "q": "Which type of equipment is used by the FFS to extinguish fires involving flammable liquids (e.g., petrol)?",
+    "options": { "A": "Water hoses only", "B": "Foam and specialized chemical extinguishers", "C": "Sand buckets only", "D": "Oxygen tanks" },
+    "ans": "B",
+    "exp": "Fires involving flammable liquids require foam or specific chemical extinguishers (Class B fires)."
+  },
+  {
+    "id": "FFS18",
+    "subject": "Federal Fire Service",
+    "q": "The rank of 'Senior Fire Superintendent (SFS)' falls within which cadre?",
+    "options": { "A": "General Duty", "B": "Assistant Cadre", "C": "Superintendent Cadre", "D": "Control Cadre" },
+    "ans": "C",
+    "exp": "The rank SFS is part of the Superintendent Cadre."
+  },
+  {
+    "id": "FFS19",
+    "subject": "Federal Fire Service",
+    "q": "What is the primary objective of fire inspection by FFS officials?",
+    "options": { "A": "To check interior decoration", "B": "To ensure compliance with fire safety regulations and identify hazards", "C": "To assess air conditioning systems", "D": "To monitor security guards" },
+    "ans": "B",
+    "exp": "Inspections are carried out to ensure public safety and compliance with fire codes."
+  },
+  {
+    "id": "FFS20",
+    "subject": "Federal Fire Service",
+    "q": "Which international body does the FFS often collaborate with for modern firefighting techniques and training?",
+    "options": { "A": "Interpol", "B": "International Association of Fire Chiefs (IAFC) or similar global fire agencies", "C": "World Bank", "D": "Red Cross" },
+    "ans": "B",
+    "exp": "FFS engages with international fire service organizations for capacity building."
+  },
+  {
+    "id": "FFS21",
+    "subject": "Federal Fire Service",
+    "q": "The emblem of the FFS typically features which key element related to safety?",
+    "options": { "A": "A Sword", "B": "A Ladder and Fire Axe", "C": "An Oil Rig", "D": "A Book" },
+    "ans": "B",
+    "exp": "The ladder and axe are universal symbols of the Fire Service, representing rescue and forcible entry."
+  },
+  {
+    "id": "FFS22",
+    "subject": "Federal Fire Service",
+    "q": "In the event of a major national disaster involving fire or explosion, the FFS works most closely with:",
+    "options": { "A": "Nigerian Ports Authority", "B": "National Emergency Management Agency (NEMA)", "C": "Federal Inland Revenue Service", "D": "Judiciary" },
+    "ans": "B",
+    "exp": "NEMA is the federal agency responsible for coordinating disaster management, making them a primary partner."
+  },
+  {
+    "id": "FFS23",
+    "subject": "Federal Fire Service",
+    "q": "What is the specialized section of the FFS that investigates the cause and origin of a fire?",
+    "options": { "A": "Administrative Section", "B": "Fire Investigation Unit", "C": "Logistics Department", "D": "Public Relations Office" },
+    "ans": "B",
+    "exp": "The Fire Investigation Unit is dedicated to determining the specifics of a fire incident."
+  },
+  {
+    "id": "FFS24",
+    "subject": "Federal Fire Service",
+    "q": "The primary role of the Federal Fire Service is NOT to fight fires in:",
+    "options": { "A": "Federal Secretariats", "B": "High-rise commercial buildings in Abuja", "C": "Aircraft on the tarmac (handled by FAAN/Aviation Fire)", "D": "Major markets in Lagos" },
+    "ans": "C",
+    "exp": "Aircraft and airport firefighting are primarily handled by the Federal Airports Authority of Nigeria (FAAN) Fire Service, though FFS may provide support."
+  },
+  {
+    "id": "FFS25",
+    "subject": "Federal Fire Service",
+    "q": "The most common class of fire involving ordinary combustible materials like wood and paper is:",
+    "options": { "A": "Class A", "B": "Class B", "C": "Class C", "D": "Class D" },
+    "ans": "A",
+    "exp": "Class A fires involve solid materials of an organic nature."
+  },
+  {
+    "id": "FFS26",
+    "subject": "Federal Fire Service",
+    "q": "What is the primary function of a 'Hydrant' in firefighting?",
+    "options": { "A": "To store firefighting equipment", "B": "To provide access to a water supply for fire engines", "C": "To communicate with headquarters", "D": "To monitor air quality" },
+    "ans": "B",
+    "exp": "Fire hydrants are essential for connecting fire engines to a reliable, pressurized water source."
+  },
+  {
+    "id": "FFS27",
+    "subject": "Federal Fire Service",
+    "q": "What does the acronym 'FFS' stand for?",
+    "options": { "A": "Federal Forces Security", "B": "First Fire Safety", "C": "Federal Fire Service", "D": "Fast Fire Suppression" },
+    "ans": "C",
+    "exp": "FFS stands for Federal Fire Service."
+  },
+  {
+    "id": "FFS28",
+    "subject": "Federal Fire Service",
+    "q": "Training for new recruits in the FFS focuses heavily on:",
+    "options": { "A": "Financial accounting and auditing", "B": "Physical fitness and rapid response techniques", "C": "International diplomacy", "D": "Customs clearance" },
+    "ans": "B",
+    "exp": "Physical fitness, operational drills, and rapid response are core elements of fire service training."
+  },
+  {
+    "id": "FFS29",
+    "subject": "Federal Fire Service",
+    "q": "The officer rank 'Assistant Controller of Fire' is immediately below:",
+    "options": { "A": "Controller of Fire (CF)", "B": "Fireman I", "C": "Senior Fire Superintendent (SFS)", "D": "Deputy Controller General of Fire (DCGF)" },
+    "ans": "A",
+    "exp": "Assistant Controller of Fire (ACF) is directly beneath Controller of Fire (CF)."
+  },
+  {
+    "id": "FFS30",
+    "subject": "Federal Fire Service",
+    "q": "What is the term for the process of ventilating a burning building to remove heat and smoke?",
+    "options": { "A": "Hydration", "B": "Extrication", "C": "Ventilation", "D": "Insulation" },
+    "ans": "C",
+    "exp": "Ventilation in firefighting is the planned introduction of fresh air and removal of smoke/heat to improve conditions for victims and firefighters."
+  },
+  {
+    "id": "FFS31",
+    "subject": "Federal Fire Service",
+    "q": "The FFS typically uses which colour for its fire trucks/apparatus?",
+    "options": { "A": "White", "B": "Red", "C": "Yellow", "D": "Green" },
+    "ans": "B",
+    "exp": "Fire trucks are almost universally red for high visibility and historical reasons."
+  },
+  {
+    "id": "FFS32",
+    "subject": "Federal Fire Service",
+    "q": "A core mandate of the FFS is the provision of:",
+    "options": { "A": "Armed escort for VIPs", "B": "Ambulance and first-aid services at incident scenes", "C": "Weather forecasting", "D": "Collection of tariffs" },
+    "ans": "B",
+    "exp": "Emergency response often includes the provision of medical (first-aid/ambulance) services alongside fire and rescue."
+  },
+  {
+    "id": "FFS33",
+    "subject": "Federal Fire Service",
+    "q": "The FFS operates at the federal level, while which entities manage local/grassroots fire response?",
+    "options": { "A": "Military Barracks", "B": "State and Local Government Fire Services", "C": "University Security", "D": "Private Security Guards" },
+    "ans": "B",
+    "exp": "Fire services are generally decentralized to State and Local Government levels for localized response."
+  },
+  {
+    "id": "FFS34",
+    "subject": "Federal Fire Service",
+    "q": "What is the key role of the FFS Public Relations Unit?",
+    "options": { "A": "Fighting fires", "B": "Recruiting staff", "C": "Creating public awareness on fire prevention and safety", "D": "Managing the Controller General's finances" },
+    "ans": "C",
+    "exp": "The Public Relations Unit plays a vital role in public education and sensitization on safety issues."
+  },
+  {
+    "id": "FFS35",
+    "subject": "Federal Fire Service",
+    "q": "What is the most critical factor for the FFS in its response to an emergency?",
+    "options": { "A": "Cost of operation", "B": "Speed and efficiency of the response time", "C": "The gender of the victims", "D": "The colour of the building" },
+    "ans": "B",
+    "exp": "Response time is the most critical factor in mitigating loss of life and property in emergencies."
+  },
+  {
+    "id": "FFS36",
+    "subject": "Federal Fire Service",
+    "q": "The FFS is currently expanding its presence to which level of government to enhance grassroots response?",
+    "options": { "A": "Wards", "B": "Local Government Areas (LGAs)", "C": "Senatorial Districts", "D": "International borders" },
+    "ans": "B",
+    "exp": "Recent mandates have focused on establishing presence in all Local Government Areas to shorten response times."
+  },
+  {
+    "id": "FFS37",
+    "subject": "Federal Fire Service",
+    "q": "What is the FFS primarily trained to deal with on the highways and major roads?",
+    "options": { "A": "Vehicle registration checks", "B": "Accidents involving trapped victims or fire outbreaks (extrication/fire suppression)", "C": "Toll collection", "D": "Traffic monitoring" },
+    "ans": "B",
+    "exp": "Extrication of accident victims and fire suppression for road traffic incidents are key FFS highway duties."
+  },
+  {
+    "id": "FFS38",
+    "subject": "Federal Fire Service",
+    "q": "The use of breathing apparatus (BA) sets by firemen is primarily due to:",
+    "options": { "A": "The cold weather", "B": "The presence of toxic smoke and oxygen deficiency in burning areas", "C": "Preventing dust inhalation", "D": "Style and uniform requirements" },
+    "ans": "B",
+    "exp": "BA sets provide clean air for firefighters operating in environments compromised by smoke and combustion products."
+  },
+  {
+    "id": "FFS39",
+    "subject": "Federal Fire Service",
+    "q": "A key piece of equipment carried by FFS fire engines for gaining access is the:",
+    "options": { "A": "Computer Server", "B": "Jaws of Life/Hydraulic Cutter", "C": "Fax Machine", "D": "Microwave Oven" },
+    "ans": "B",
+    "exp": "The Jaws of Life (or similar hydraulic rescue tools) are critical for extricating victims from vehicles or collapsed structures."
+  },
+  {
+    "id": "FFS40",
+    "subject": "Federal Fire Service",
+    "q": "Which officer rank in the FFS is usually symbolized by the Nigerian coat of arms?",
+    "options": { "A": "Controller General", "B": "Senior Fire Superintendent", "C": "Assistant Superintendent of Fire", "D": "Fireman I" },
+    "ans": "A",
+    "exp": "The Coat of Arms is the highest insignia, typically reserved for the head of the service, the Controller General."
+  },
+  {
+    "id": "FFS41",
+    "subject": "Federal Fire Service",
+    "q": "The FFS's involvement in fire prevention includes the mandatory requirement for businesses to have:",
+    "options": { "A": "An annual staff party", "B": "A comprehensive Fire Safety Certificate", "C": "Only armed security guards", "D": "High-end surveillance cameras" },
+    "ans": "B",
+    "exp": "Fire Safety Certificates are official approvals from the FFS (or State services) confirming compliance with fire codes."
+  },
+  {
+    "id": "FFS42",
+    "subject": "Federal Fire Service",
+    "q": "Which class of fire involves electrical equipment?",
+    "options": { "A": "Class A", "B": "Class B", "C": "Class C", "D": "Class D" },
+    "ans": "C",
+    "exp": "Class C fires involve energized electrical equipment."
+  },
+  {
+    "id": "FFS43",
+    "subject": "Federal Fire Service",
+    "q": "The rank of 'Controller General of Fire' is equivalent to a high-ranking officer in which other agency?",
+    "options": { "A": "Commissioner of Police", "B": "Inspector General of Police (IGP)", "C": "Assistant Comptroller General", "D": "Brigadier General" },
+    "ans": "B",
+    "exp": "The CG is the highest rank, often considered equivalent to the IGP or heads of other major security services."
+  },
+  {
+    "id": "FFS44",
+    "subject": "Federal Fire Service",
+    "q": "What is the FFS's role concerning gas explosions in residential areas?",
+    "options": { "A": "They ignore it as a police matter", "B": "They respond for suppression, search, and rescue", "C": "They only offer advice via phone", "D": "They only investigate the cause, not rescue" },
+    "ans": "B",
+    "exp": "Gas explosions are high-priority incidents requiring immediate fire suppression and Search and Rescue operations."
+  },
+  {
+    "id": "FFS45",
+    "subject": "Federal Fire Service",
+    "q": "The FFS is currently undergoing reforms to improve its capacity for:",
+    "options": { "A": "Online banking services", "B": "Dealing with chemical, biological, radiological, and nuclear (CBRN) hazards", "C": "Running a large farm", "D": "International student visa processing" },
+    "ans": "B",
+    "exp": "Modern fire services are expanding capacity to deal with complex, high-hazard incidents like CBRN."
+  },
+  {
+    "id": "FFS46",
+    "subject": "Federal Fire Service",
+    "q": "The term 'Muster Point' in fire safety refers to the designated location for:",
+    "options": { "A": "Parking fire trucks", "B": "Storing dangerous chemicals", "C": "Evacuees to assemble safely after leaving a building", "D": "Firefighters to eat lunch" },
+    "ans": "C",
+    "exp": "The muster point is the safe assembly area post-evacuation, used for roll call and accountability."
+  },
+  {
+    "id": "FFS47",
+    "subject": "Federal Fire Service",
+    "q": "What is the primary power source for FFS fire pumps used to deliver water to the fire scene?",
+    "options": { "A": "Wind power", "B": "Internal Combustion Engines (Diesel/Petrol)", "C": "Solar panels", "D": "Battery packs only" },
+    "ans": "B",
+    "exp": "Fire pumps on trucks are typically powered by high-capacity internal combustion engines for reliable, sustained pressure."
+  },
+  {
+    "id": "FFS48",
+    "subject": "Federal Fire Service",
+    "q": "The FFS works in close collaboration with the State Fire Services, particularly in terms of:",
+    "options": { "A": "Revenue generation", "B": "Operational synergy and mutual aid agreements", "C": "Appointing state governors", "D": "Setting local market prices" },
+    "ans": "B",
+    "exp": "Collaboration ensures seamless response and the sharing of resources (mutual aid)."
+  },
+  {
+    "id": "FFS49",
+    "subject": "Federal Fire Service",
+    "q": "The FFS has been historically challenged by which factor that hinders rapid response?",
+    "options": { "A": "Abundant water supply", "B": "Lack of clear street addressing and traffic congestion", "C": "Excessive staff salaries", "D": "Too many operational vehicles" },
+    "ans": "B",
+    "exp": "Traffic congestion and poor addressing systems are perennial challenges to emergency response in urban Nigeria."
+  },
+  {
+    "id": "FFS50",
+    "subject": "Federal Fire Service",
+    "q": "What type of fire extinguisher is generally recommended for use in server rooms and sensitive electrical areas?",
+    "options": { "A": "Water/Foam", "B": "Dry Chemical Powder (DCP)", "C": "Carbon Dioxide ($\text{CO}_2$) or Clean Agent", "D": "Sand" },
+    "ans": "C",
+    "exp": "$\text{CO}_2$ or Clean Agent extinguishers are preferred for electrical and server areas as they leave no residue and do not damage equipment."
+  }
+  
 // --- ADDED FROM CDCFIB PRACTICE QUESTIONS (Batch 1) ---
 
 // FIRE SERVICE (additional from PDF)
-    { id: 'F16', subject: 'FIRE_FFS', q: 'What is the main component of dry chemical powder extinguishers?', options: { A: 'Monoammonium phosphate', B: 'Sodium bicarbonate', C: 'Potassium chloride', D: 'Calcium carbonate' }, ans: 'A', exp: 'Dry chemical powders commonly use monoammonium phosphate as the extinguishing agent.' },
-    { id: 'F17', subject: 'FIRE_FFS', q: 'H2O is?', options: { A: 'Water', B: 'Hydrogen peroxide', C: 'Hydroxide', D: 'Hydrogen oxide' }, ans: 'A', exp: 'H2O is the chemical formula for water.' },
-    { id: 'F18', subject: 'FIRE_FFS', q: 'Which gas is primarily used in human respiration?', options: { A: 'Oxygen', B: 'Carbon dioxide', C: 'Nitrogen', D: 'Helium' }, ans: 'A', exp: 'Oxygen is the gas humans inhale for respiration.' },
-    { id: 'F19', subject: 'FIRE_FFS', q: 'When was the Federal Fire Service (as a unit under Lagos Police Fire Brigade) first started?', options: { A: '1901', B: '1910', C: '1920', D: '1950' }, ans: 'A', exp: 'The service traces its origins to 1901 as part of the Lagos Police Fire Brigade.' },
-    { id: 'F20', subject: 'FIRE_FFS', q: 'Class A fires involve which type of materials?', options: { A: 'Ordinary combustibles (wood, paper, cloth)', B: 'Flammable liquids', C: 'Electrical equipment', D: 'Metals' }, ans: 'A', exp: 'Class A fires are ordinary combustible materials such as wood, paper and cloth.' },
-    { id: 'F21', subject: 'FIRE_FFS', q: 'Class B fires involve which type of materials?', options: { A: 'Flammable liquids', B: 'Metals', C: 'Paper and wood', D: 'Electrical equipment' }, ans: 'A', exp: 'Class B fires involve flammable liquids.' },
-    { id: 'F22', subject: 'FIRE_FFS', q: 'Class C fires involve which type of materials?', options: { A: 'Flammable gases', B: 'Flammable liquids', C: 'Metals', D: 'Paper' }, ans: 'A', exp: 'Class C fires are associated with flammable gases.' },
-    { id: 'F23', subject: 'FIRE_FFS', q: 'Class D fires involve which type of materials?', options: { A: 'Combustible metals', B: 'Paper and cloth', C: 'Flammable liquids', D: 'Electrical appliances' }, ans: 'A', exp: 'Class D fires involve combustible metals such as magnesium.' },
-    { id: 'F24', subject: 'FIRE_FFS', q: 'What is the emergency phone number for fire in Nigeria (as given in the PDF)?', options: { A: '112', B: '911', C: '999', D: '119' }, ans: 'A', exp: '112 is listed in the practice module as an emergency number for fire.' },
+    { id: 'F51', subject: 'FIRE_FFS', q: 'What is the main component of dry chemical powder extinguishers?', options: { A: 'Monoammonium phosphate', B: 'Sodium bicarbonate', C: 'Potassium chloride', D: 'Calcium carbonate' }, ans: 'A', exp: 'Dry chemical powders commonly use monoammonium phosphate as the extinguishing agent.' },
+    { id: 'F52', subject: 'FIRE_FFS', q: 'H2O is?', options: { A: 'Water', B: 'Hydrogen peroxide', C: 'Hydroxide', D: 'Hydrogen oxide' }, ans: 'A', exp: 'H2O is the chemical formula for water.' },
+    { id: 'F53', subject: 'FIRE_FFS', q: 'Which gas is primarily used in human respiration?', options: { A: 'Oxygen', B: 'Carbon dioxide', C: 'Nitrogen', D: 'Helium' }, ans: 'A', exp: 'Oxygen is the gas humans inhale for respiration.' },
+    { id: 'F54', subject: 'FIRE_FFS', q: 'When was the Federal Fire Service (as a unit under Lagos Police Fire Brigade) first started?', options: { A: '1901', B: '1910', C: '1920', D: '1950' }, ans: 'A', exp: 'The service traces its origins to 1901 as part of the Lagos Police Fire Brigade.' },
+    { id: 'F55', subject: 'FIRE_FFS', q: 'Class A fires involve which type of materials?', options: { A: 'Ordinary combustibles (wood, paper, cloth)', B: 'Flammable liquids', C: 'Electrical equipment', D: 'Metals' }, ans: 'A', exp: 'Class A fires are ordinary combustible materials such as wood, paper and cloth.' },
+    { id: 'F56', subject: 'FIRE_FFS', q: 'Class B fires involve which type of materials?', options: { A: 'Flammable liquids', B: 'Metals', C: 'Paper and wood', D: 'Electrical equipment' }, ans: 'A', exp: 'Class B fires involve flammable liquids.' },
+    { id: 'F57', subject: 'FIRE_FFS', q: 'Class C fires involve which type of materials?', options: { A: 'Flammable gases', B: 'Flammable liquids', C: 'Metals', D: 'Paper' }, ans: 'A', exp: 'Class C fires are associated with flammable gases.' },
+    { id: 'F58', subject: 'FIRE_FFS', q: 'Class D fires involve which type of materials?', options: { A: 'Combustible metals', B: 'Paper and cloth', C: 'Flammable liquids', D: 'Electrical appliances' }, ans: 'A', exp: 'Class D fires involve combustible metals such as magnesium.' },
+    { id: 'F59', subject: 'FIRE_FFS', q: 'What is the emergency phone number for fire in Nigeria (as given in the PDF)?', options: { A: '112', B: '911', C: '999', D: '119' }, ans: 'A', exp: '112 is listed in the practice module as an emergency number for fire.' },
 
 // NSCDC (Nigeria Security and Civil Defence Corps) - appended from PDF
-    { id: 'C16', subject: 'CIVIL_DEFENCE_NSCDC', q: 'The Nigeria Security and Civil Defence Corps was first introduced in which year?', options: { A: 'May 1979', B: 'June 1979', C: 'May 1967', D: 'June 1967' }, ans: 'C', exp: 'The practice module indicates May 1967 as the year of introduction.' },
-    { id: 'C17', subject: 'CIVIL_DEFENCE_NSCDC', q: 'What inspired the introduction of the NSCDC?', options: { A: 'The Lagos Market Women Protest', B: 'The Nigeria Civil War', C: 'The Aba Market Women Riot', D: 'Civil Unrest across the Country' }, ans: 'B', exp: 'The Nigeria Civil War was cited as the inspiration for the initial formation.' },
-    { id: 'C18', subject: 'CIVIL_DEFENCE_NSCDC', q: 'During the Nigeria Civil War, the NSCDC was known as which of the following?', options: { A: 'Lagos Civil Security Commission', B: 'Lagos Security and Community Defense Corps', C: 'Lagos Civil Defense Committee', D: 'Lagos Security and Defense Corporation' }, ans: 'C', exp: 'It was known as the Lagos Civil Defense Committee during that period.' },
-    { id: 'C19', subject: 'CIVIL_DEFENCE_NSCDC', q: 'What was the NSCDC’s initial core objective(s)?', options: { A: 'To sensitize and protect the Civil Populace', B: 'To maintain law and order in Civil Society', C: 'To foster movement of people', D: 'To encourage civil society to be peaceful' }, ans: 'A', exp: 'The initial aim was to sensitize and protect the civil populace.' },
-    { id: 'C20', subject: 'CIVIL_DEFENCE_NSCDC', q: 'In what year did the former Lagos Civil Defense Committee become officially known as the NSCDC?', options: { A: '1980', B: '1970', C: '1960', D: '1990' }, ans: 'B', exp: 'The module lists 1970 as the year it became officially known as NSCDC.' },
-    { id: 'C21', subject: 'CIVIL_DEFENCE_NSCDC', q: 'In what year did NSCDC become a National Security Outfit?', options: { A: '1984', B: '1988', C: '1994', D: '1986' }, ans: 'B', exp: '1988 is given as the year it became a national security outfit.' },
-    { id: 'C22', subject: 'CIVIL_DEFENCE_NSCDC', q: 'Who is the Commandant General of NSCDC (as listed)?', options: { A: 'Prof. Attairu Jega', B: 'Dr. Ahmed Abubakar Audi', C: 'Engr. Ali Baba', D: 'Dr. Aliu Maina' }, ans: 'B', exp: 'Dr. Ahmed Abubakar Audi is listed in the practice module.' },
-    { id: 'C23', subject: 'CIVIL_DEFENCE_NSCDC', q: 'What is the full meaning of NSCDC?', options: { A: 'Niger Security and Civil Defence Corps', B: 'Nigeria Security and Civil Defense Core', C: 'Nigeria Security and Civil Defence Corps', D: 'Nigeria Civil Defence Organization' }, ans: 'C', exp: 'NSCDC stands for Nigeria Security and Civil Defence Corps.' },
-    { id: 'C24', subject: 'CIVIL_DEFENCE_NSCDC', q: 'How many Directorates does NSCDC have?', options: { A: '9', B: '8', C: '7', D: '6' }, ans: 'D', exp: 'The practice questions indicate 6 directorates.' },
-    { id: 'C25', subject: 'CIVIL_DEFENCE_NSCDC', q: 'What is the legal document guiding the operations of NSCDC called?', options: { A: 'NSCDC Agenda', B: 'NSCDC Act', C: 'NSCDC Principles', D: 'NSCDC Laws' }, ans: 'B', exp: 'The NSCDC Act is the legal framework guiding the Corps.' },
+    { id: 'C51', subject: 'CIVIL_DEFENCE_NSCDC', q: 'The Nigeria Security and Civil Defence Corps was first introduced in which year?', options: { A: 'May 1979', B: 'June 1979', C: 'May 1967', D: 'June 1967' }, ans: 'C', exp: 'The practice module indicates May 1967 as the year of introduction.' },
+    { id: 'C52', subject: 'CIVIL_DEFENCE_NSCDC', q: 'What inspired the introduction of the NSCDC?', options: { A: 'The Lagos Market Women Protest', B: 'The Nigeria Civil War', C: 'The Aba Market Women Riot', D: 'Civil Unrest across the Country' }, ans: 'B', exp: 'The Nigeria Civil War was cited as the inspiration for the initial formation.' },
+    { id: 'C53', subject: 'CIVIL_DEFENCE_NSCDC', q: 'During the Nigeria Civil War, the NSCDC was known as which of the following?', options: { A: 'Lagos Civil Security Commission', B: 'Lagos Security and Community Defense Corps', C: 'Lagos Civil Defense Committee', D: 'Lagos Security and Defense Corporation' }, ans: 'C', exp: 'It was known as the Lagos Civil Defense Committee during that period.' },
+    { id: 'C54', subject: 'CIVIL_DEFENCE_NSCDC', q: 'What was the NSCDC’s initial core objective(s)?', options: { A: 'To sensitize and protect the Civil Populace', B: 'To maintain law and order in Civil Society', C: 'To foster movement of people', D: 'To encourage civil society to be peaceful' }, ans: 'A', exp: 'The initial aim was to sensitize and protect the civil populace.' },
+    { id: 'C55', subject: 'CIVIL_DEFENCE_NSCDC', q: 'In what year did the former Lagos Civil Defense Committee become officially known as the NSCDC?', options: { A: '1980', B: '1970', C: '1960', D: '1990' }, ans: 'B', exp: 'The module lists 1970 as the year it became officially known as NSCDC.' },
+    { id: 'C56', subject: 'CIVIL_DEFENCE_NSCDC', q: 'In what year did NSCDC become a National Security Outfit?', options: { A: '1984', B: '1988', C: '1994', D: '1986' }, ans: 'B', exp: '1988 is given as the year it became a national security outfit.' },
+    { id: 'C257', subject: 'CIVIL_DEFENCE_NSCDC', q: 'Who is the Commandant General of NSCDC (as listed)?', options: { A: 'Prof. Attairu Jega', B: 'Dr. Ahmed Abubakar Audi', C: 'Engr. Ali Baba', D: 'Dr. Aliu Maina' }, ans: 'B', exp: 'Dr. Ahmed Abubakar Audi is listed in the practice module.' },
+    { id: 'C58', subject: 'CIVIL_DEFENCE_NSCDC', q: 'What is the full meaning of NSCDC?', options: { A: 'Niger Security and Civil Defence Corps', B: 'Nigeria Security and Civil Defense Core', C: 'Nigeria Security and Civil Defence Corps', D: 'Nigeria Civil Defence Organization' }, ans: 'C', exp: 'NSCDC stands for Nigeria Security and Civil Defence Corps.' },
+    { id: 'C59', subject: 'CIVIL_DEFENCE_NSCDC', q: 'How many Directorates does NSCDC have?', options: { A: '9', B: '8', C: '7', D: '6' }, ans: 'D', exp: 'The practice questions indicate 6 directorates.' },
+    { id: 'C60', subject: 'CIVIL_DEFENCE_NSCDC', q: 'What is the legal document guiding the operations of NSCDC called?', options: { A: 'NSCDC Agenda', B: 'NSCDC Act', C: 'NSCDC Principles', D: 'NSCDC Laws' }, ans: 'B', exp: 'The NSCDC Act is the legal framework guiding the Corps.' },
 
 // NCoS (Correctional Service) - additional entries from PDF
-    { id: 'N16', subject: 'CORRECTIONAL_NCS', q: 'What is solitary confinement?', options: { A: 'Keeping an inmate alone in a cell as punishment', B: 'Group rehabilitation program', C: 'Temporary leave from prison', D: 'Open custody arrangement' }, ans: 'A', exp: 'Solitary confinement is the practice of isolating an inmate in a cell.' },
-    { id: 'N17', subject: 'CORRECTIONAL_NCS', q: 'Choose the odd one out: (a) Rehabilitation (b) Imprisonment (c) Reformation (d) Endocrine', options: { A: 'Rehabilitation', B: 'Imprisonment', C: 'Reformation', D: 'Endocrine' }, ans: 'D', exp: 'Endocrine is unrelated to correctional service functions.' },
-    { id: 'N18', subject: 'CORRECTIONAL_NCS', q: 'Choose the odd one out: (a) Court (b) Prison (c) Teacher (d) Police', options: { A: 'Court', B: 'Prison', C: 'Teacher', D: 'Police' }, ans: 'C', exp: 'Teacher is the odd one out – others are part of the criminal justice system.' },
-    { id: 'N19', subject: 'CORRECTIONAL_NCS', q: 'What does NCoS stand for?', options: { A: 'Nigerian Correctional Service', B: 'National Correctional Society', C: 'Nigerian Correctional System', D: 'National Corrections Service' }, ans: 'A', exp: 'NCoS stands for Nigerian Correctional Service.' },
-    { id: 'N20', subject: 'CORRECTIONAL_NCS', q: 'Which is the correct title for the head of NCoS?', options: { A: 'Comptroller General', B: 'Controller General', C: 'Commandant General', D: 'Major General' }, ans: 'B', exp: 'The correct title is Controller General.' },
+    { id: 'N51', subject: 'CORRECTIONAL_NCS', q: 'What is solitary confinement?', options: { A: 'Keeping an inmate alone in a cell as punishment', B: 'Group rehabilitation program', C: 'Temporary leave from prison', D: 'Open custody arrangement' }, ans: 'A', exp: 'Solitary confinement is the practice of isolating an inmate in a cell.' },
+    { id: 'N52', subject: 'CORRECTIONAL_NCS', q: 'Choose the odd one out: (a) Rehabilitation (b) Imprisonment (c) Reformation (d) Endocrine', options: { A: 'Rehabilitation', B: 'Imprisonment', C: 'Reformation', D: 'Endocrine' }, ans: 'D', exp: 'Endocrine is unrelated to correctional service functions.' },
+    { id: 'N53', subject: 'CORRECTIONAL_NCS', q: 'Choose the odd one out: (a) Court (b) Prison (c) Teacher (d) Police', options: { A: 'Court', B: 'Prison', C: 'Teacher', D: 'Police' }, ans: 'C', exp: 'Teacher is the odd one out – others are part of the criminal justice system.' },
+    { id: 'N54', subject: 'CORRECTIONAL_NCS', q: 'What does NCoS stand for?', options: { A: 'Nigerian Correctional Service', B: 'National Correctional Society', C: 'Nigerian Correctional System', D: 'National Corrections Service' }, ans: 'A', exp: 'NCoS stands for Nigerian Correctional Service.' },
+    { id: 'N55', subject: 'CORRECTIONAL_NCS', q: 'Which is the correct title for the head of NCoS?', options: { A: 'Comptroller General', B: 'Controller General', C: 'Commandant General', D: 'Major General' }, ans: 'B', exp: 'The correct title is Controller General.' },
 
 // NIS (Immigration Service) - appended from PDF
-    { id: 'I16', subject: 'IMMIGRATION_NIS', q: 'Which of the following is a core duty of the Nigeria Immigration Service (NIS)?', options: { A: 'Persecuting offenders', B: 'Enforcing of laws', C: 'Issuance of all Nigerian travel documents', D: 'Deporting of foreigners' }, ans: 'C', exp: 'Issuance of travel documents (passports) is a core duty of NIS.' },
-    { id: 'I17', subject: 'IMMIGRATION_NIS', q: 'The NIS was separated from the Nigerian Police Force in which year?', options: { A: '1946', B: '1956', C: '1958', D: '1964' }, ans: 'C', exp: 'The module lists 1958 as the year NIS was brought out of the police.' },
-    { id: 'I18', subject: 'IMMIGRATION_NIS', q: 'The NIS was formally established by an Act of Parliament in which year?', options: { A: '1963', B: '1957', C: '1964', D: '1976' }, ans: 'A', exp: '1963 is listed as the formal establishment year by Act of Parliament.' },
-    { id: 'I19', subject: 'IMMIGRATION_NIS', q: 'Which was the first African country to introduce an e-passport (as listed)?', options: { A: 'South Africa', B: 'Ghana', C: 'Liberia', D: 'Nigeria' }, ans: 'D', exp: 'Nigeria is listed in the practice module as the first African country to introduce e-passport.' },
-    { id: 'I20', subject: 'IMMIGRATION_NIS', q: 'How many Comptroller Generals has NIS had (as given)?', options: { A: '10', B: '12', C: '8', D: '15' }, ans: 'A', exp: 'The module lists 10 Comptroller Generals since inception.' },
-    { id: 'I21', subject: 'IMMIGRATION_NIS', q: 'Who is listed as the present Comptroller General of NIS in the PDF?', options: { A: 'Umar Dahiru', B: 'David Parradang', C: 'Boniface Cosmos', D: 'Kemi Nandap' }, ans: 'D', exp: 'Kemi Nandap is listed as the present Comptroller General in the sample.' },
-    { id: 'I22', subject: 'IMMIGRATION_NIS', q: 'Which title is correct for the head of NIS?', options: { A: 'Comptroller General', B: 'Controller General', C: 'Commandant General', D: 'Major General' }, ans: 'A', exp: 'The head of NIS holds the title Comptroller General.' },
-    { id: 'I23', subject: 'IMMIGRATION_NIS', q: 'How many Directorates does NIS have (as listed)?', options: { A: '10', B: '8', C: '7', D: '9' }, ans: 'A', exp: 'The module indicates 10 directorates.' },
-    { id: 'I24', subject: 'IMMIGRATION_NIS', q: 'What does CGIS stand for?', options: { A: 'Comptroller General of Immigration Service', B: 'Central Government Immigration Service', C: 'Comprehensive Government Immigration System', D: 'Complainant General Immigration Service' }, ans: 'A', exp: 'CGIS is an abbreviation for Comptroller General of Immigration Service.' },
-    { id: 'I25', subject: 'IMMIGRATION_NIS', q: 'NIS is under which Ministry?', options: { A: 'Ministry of Defence', B: 'Ministry of Foreign Affairs', C: 'Ministry of Interior', D: 'Ministry of Justice' }, ans: 'C', exp: 'NIS operates under the Ministry of Interior.' },
+    { id: 'I51', subject: 'IMMIGRATION_NIS', q: 'Which of the following is a core duty of the Nigeria Immigration Service (NIS)?', options: { A: 'Persecuting offenders', B: 'Enforcing of laws', C: 'Issuance of all Nigerian travel documents', D: 'Deporting of foreigners' }, ans: 'C', exp: 'Issuance of travel documents (passports) is a core duty of NIS.' },
+    { id: 'I52', subject: 'IMMIGRATION_NIS', q: 'The NIS was separated from the Nigerian Police Force in which year?', options: { A: '1946', B: '1956', C: '1958', D: '1964' }, ans: 'C', exp: 'The module lists 1958 as the year NIS was brought out of the police.' },
+    { id: 'I53', subject: 'IMMIGRATION_NIS', q: 'The NIS was formally established by an Act of Parliament in which year?', options: { A: '1963', B: '1957', C: '1964', D: '1976' }, ans: 'A', exp: '1963 is listed as the formal establishment year by Act of Parliament.' },
+    { id: 'I54', subject: 'IMMIGRATION_NIS', q: 'Which was the first African country to introduce an e-passport (as listed)?', options: { A: 'South Africa', B: 'Ghana', C: 'Liberia', D: 'Nigeria' }, ans: 'D', exp: 'Nigeria is listed in the practice module as the first African country to introduce e-passport.' },
+    { id: 'I55', subject: 'IMMIGRATION_NIS', q: 'How many Comptroller Generals has NIS had (as given)?', options: { A: '10', B: '12', C: '8', D: '15' }, ans: 'A', exp: 'The module lists 10 Comptroller Generals since inception.' },
+    { id: 'I56', subject: 'IMMIGRATION_NIS', q: 'Who is listed as the present Comptroller General of NIS in the PDF?', options: { A: 'Umar Dahiru', B: 'David Parradang', C: 'Boniface Cosmos', D: 'Kemi Nandap' }, ans: 'D', exp: 'Kemi Nandap is listed as the present Comptroller General in the sample.' },
+    { id: 'I57', subject: 'IMMIGRATION_NIS', q: 'Which title is correct for the head of NIS?', options: { A: 'Comptroller General', B: 'Controller General', C: 'Commandant General', D: 'Major General' }, ans: 'A', exp: 'The head of NIS holds the title Comptroller General.' },
+    { id: 'I58', subject: 'IMMIGRATION_NIS', q: 'How many Directorates does NIS have (as listed)?', options: { A: '10', B: '8', C: '7', D: '9' }, ans: 'A', exp: 'The module indicates 10 directorates.' },
+    { id: 'I59', subject: 'IMMIGRATION_NIS', q: 'What does CGIS stand for?', options: { A: 'Comptroller General of Immigration Service', B: 'Central Government Immigration Service', C: 'Comprehensive Government Immigration System', D: 'Complainant General Immigration Service' }, ans: 'A', exp: 'CGIS is an abbreviation for Comptroller General of Immigration Service.' },
+    { id: 'I60', subject: 'IMMIGRATION_NIS', q: 'NIS is under which Ministry?', options: { A: 'Ministry of Defence', B: 'Ministry of Foreign Affairs', C: 'Ministry of Interior', D: 'Ministry of Justice' }, ans: 'C', exp: 'NIS operates under the Ministry of Interior.' },
 
 // CURRENT AFFAIRS -> map into GENERAL subject (append as G21..)
     { id: 'G101', subject: 'GENERAL', q: 'The first Secretary General of the Commonwealth was?', options: { A: 'George Washington', B: 'Tulam Goldie', C: 'Arnold Smith', D: 'Joseph Garba' }, ans: 'C', exp: 'Arnold Smith was the first Secretary General of the Commonwealth.' },
@@ -4101,27 +5644,7 @@ const fullQuestionsData = [
     { id: 'G128', subject: 'GENERAL', q: 'The current Secretary General / Commission Chairman of the African Union (as listed) is?', options: { A: 'Dlamini Zuma', B: 'Alassane Ouattara', C: 'Emeka Anyaoku', D: 'Moussa Faki Mahamat' }, ans: 'D', exp: 'Moussa Faki Mahamat is the current Chairperson of the African Union Commission.' },
     { id: 'G129', subject: 'GENERAL', q: 'The current President of the Commission / Secretary of ECOWAS (as listed) is?', options: { A: 'H. Desategn', B: 'Omar Touray', C: 'Alassane Ouattara', D: 'Ike Ekweremadu' }, ans: 'B', exp: 'Omar Touray is listed as ECOWAS Commission President.' },
     { id: 'G130', subject: 'GENERAL', q: 'The headquarters of the United Nations is in which city?', options: { A: 'New York', B: 'Washington', C: 'Geneva', D: 'Vienna' }, ans: 'A', exp: 'UN Headquarters is based in New York.' },
-    { id: 'G51', subject: 'GENERAL', q: 'The United Nations Organization (UNO) was founded in San Francisco in which year?', options: { A: '1939', B: '1914', C: '1945', D: '1950' }, ans: 'C', exp: 'The UN was founded in 1945 in San Francisco.' },
-    { id: 'G52', subject: 'GENERAL', q: 'The first military coup d’état in Africa occurred in which country (as listed)?', options: { A: 'Libya', B: 'Liberia', C: 'Egypt', D: 'Nigeria' }, ans: 'C', exp: 'The module lists Egypt as the first country in Africa with a military coup.' },
-    { id: 'G53', subject: 'GENERAL', q: 'Nigeria became 36 states under the regime of which leader?', options: { A: 'Olusegun Obasanjo', B: 'Sanni Abacha', C: 'Ibrahim Babangida', D: 'Yakubu Gowon' }, ans: 'B', exp: 'The module lists Sanni Abacha for this change.' },
-    { id: 'G54', subject: 'GENERAL', q: 'Who was the first military head of state in Nigeria?', options: { A: 'Yakubu Gowon', B: 'Aguiyi Ironsi', C: 'Olusegun Obasanjo', D: 'Ernest' }, ans: 'B', exp: 'Aguiyi Ironsi led the first military government after 1966 coup.' },
-    { id: 'G55', subject: 'GENERAL', q: 'Oil can be found in all the following Nigerian states EXCEPT which one?', options: { A: 'Lagos', B: 'Anambra', C: 'Ondo', D: 'Ekiti' }, ans: 'D', exp: 'Ekiti is not listed among the main oil-producing states in the module.' },
-    { id: 'G56', subject: 'GENERAL', q: 'Tin is majorly found in which Nigerian city?', options: { A: 'Jos', B: 'Enugu', C: 'Kano', D: 'Imo' }, ans: 'A', exp: 'Jos is historically known for tin mining.' },
-    { id: 'G57', subject: 'GENERAL', q: 'Oil was first discovered by Shell-BP in Nigeria at which location?', options: { A: 'Oloibiri', B: 'Idanre', C: 'Warri', D: 'Kabba' }, ans: 'A', exp: 'Oloibiri is the historic site of Nigeria\'s first oil discovery.' },
-    { id: 'G58', subject: 'GENERAL', q: 'Which of the following may be regarded as a regional organization?', options: { A: 'ECOWAS', B: 'OAU', C: 'UN', D: 'OPEC' }, ans: 'B', exp: 'OAU (now African Union) is a regional organization; ECOWAS is also regional but answer per module is OAU.' },
-    { id: 'G59', subject: 'GENERAL', q: 'Who was the last military Head of State of Nigeria?', options: { A: 'Abdulsalami Abubakar', B: 'Yakubu Gowon', C: 'Sanni Abacha', D: 'Olusegun Obasanjo' }, ans: 'A', exp: 'Abdulsalami Abubakar was the last military head before transition to civilian rule.' },
-    { id: 'G60', subject: 'GENERAL', q: 'Who coined the name "Nigeria" (as listed)?', options: { A: 'Flora Shaw', B: 'Mary Slessor', C: 'Lord Lugard', D: 'T. J. Goldie' }, ans: 'A', exp: 'Flora Shaw (later Lady Lugard) is credited with coining the name.' },
-    { id: 'G61', subject: 'GENERAL', q: 'The legislature in Nigeria is called which of the following?', options: { A: 'House of Assembly', B: 'House of Representatives', C: 'House of Lords', D: 'National Assembly' }, ans: 'D', exp: 'The Nigerian legislature is the National Assembly.' },
-    { id: 'G62', subject: 'GENERAL', q: 'The legislature in Britain is referred to as which?', options: { A: 'House of Commons', B: 'White House', C: 'Congress', D: 'Parliament' }, ans: 'D', exp: 'The British legislature is called Parliament.' },
-    { id: 'G63', subject: 'GENERAL', q: 'Nigeria changed from pounds to Naira in which year?', options: { A: '1960', B: '1973', C: '1959', D: '1963' }, ans: 'B', exp: 'The currency was changed to the Naira in 1973.' },
-    { id: 'G64', subject: 'GENERAL', q: 'Which Nigerian president died in office as listed and on which date (module)?', options: { A: 'Murtala Mohammed - Feb 13, 1976', B: 'Sanni Abacha - June 8, 1998', C: 'Umaru Yar\'Adua - May 5, 2010', D: 'Aguiyi Ironsi - July 29, 1966' }, ans: 'D', exp: 'Aguiyi Ironsi was assassinated on July 29, 1966; the module lists the option accordingly.' },
-    { id: 'G65', subject: 'GENERAL', q: 'Which date did the late former president Muhammadu Buhari die (module listing)?', options: { A: 'May 29, 2025', B: 'July 13, 2025', C: 'July 29, 2025', D: 'June 12, 2025' }, ans: 'B', exp: 'The practice file lists July 13, 2025 for this item.' },
-    { id: 'G66', subject: 'GENERAL', q: 'Who is listed as the current Senate President of Nigeria (in the module)?', options: { A: 'David Mark', B: 'Bukola Saraki', C: 'Godswill Akpabio', D: 'Adams Oshiomhole' }, ans: 'C', exp: 'The practice module lists Godswill Akpabio.' },
-    { id: 'G67', subject: 'GENERAL', q: 'Who is listed as the current Honourable Minister of Interior (in the module)?', options: { A: 'Rauf Aregbesola', B: 'Olubunmi Tunji-Ojo', C: 'Nyesom Wike', D: 'Olufemi Alausa' }, ans: 'B', exp: 'Olubunmi Tunji-Ojo is listed in the material.' },
-    { id: 'G68', subject: 'GENERAL', q: 'Who is listed as the current Governor of the Central Bank of Nigeria (in the module)?', options: { A: 'Olayemi Cardoso', B: 'Godwin Emefiele', C: 'Lamido Sanusi', D: 'Folashodun Olubunmi (Osborne)' }, ans: 'A', exp: 'Olayemi Cardoso is listed as the CBN Governor in the practice file.' },
-    { id: 'G69', subject: 'GENERAL', q: 'The arm of government charged with the responsibility of making laws is?', options: { A: 'Judiciary', B: 'Legislative', C: 'Executive', D: 'Parliament' }, ans: 'B', exp: 'The Legislative arm is responsible for making laws.' },
-    { id: 'G70', subject: 'GENERAL', q: 'The eagle in the coat of arms stands for which quality?', options: { A: 'Strength', B: 'EFCC', C: 'Pride', D: 'Hero' }, ans: 'A', exp: 'The eagle symbolizes strength in the coat of arms.' },
-];
+    ];
 
 // Expose data to window for easier debugging in local browsers (module scope isn't global)
 try {
