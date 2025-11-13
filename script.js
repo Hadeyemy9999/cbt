@@ -7,7 +7,7 @@ import { getFirestore, doc, setDoc, getDoc, collection, updateDoc, serverTimesta
 // --- GLOBAL CONSTANTS ---
 // Define the base subjects that are always included in the exam.
 const FIXED_SUBJECTS = ['MATHS', 'ENGLISH', 'GENERAL']; 
-const TOTAL_QUESTIONS_COUNT = 80; 
+const TOTAL_QUESTIONS_COUNT = 50; 
 const MAX_TIME_SECONDS = 30 * 60; // 30 minutes converted to seconds.
 
 // Define the required question count for each subject category to hit 50 questions.
