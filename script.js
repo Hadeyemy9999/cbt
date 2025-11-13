@@ -1352,63 +1352,2610 @@ const fullQuestionsData = [
         "ans": "B",
         "exp": "LCM of 6 and 8 = $24$."
     },
-   // { id: 'M1', subject: 'MATHS', q: 'Simplify: $3x + 5y - x + 2y$', options: { A: '$4x + 7y$', B: '$2x + 7y$', C: '$4x + 3y$', D: '$2x + 3y$' }, ans: 'B', exp: 'Combine like terms: $(3x - x) + (5y + 2y) = 2x + 7y$.' },
- //   { id: 'M2', subject: 'MATHS', q: 'What is the value of $\\frac{1}{4}$ of $100$?', options: { A: '50', B: '25', C: '40', D: '75' }, ans: 'B', exp: 'One-quarter of 100 is $100 \\div 4 = 25$.' },
- //   { id: 'M3', subject: 'MATHS', q: 'If a man buys a shirt for N800 and sells it for N1000, what is his profit percentage?', options: { A: '$20\\%$', B: '$25\\%$', C: '$15\\%$', D: '$10\\%$' }, ans: 'B', exp: 'Profit is N200. Profit percentage is $(\\frac{200}{800}) \\times 100 = 25\\%$.' },
-//    { id: 'M4', subject: 'MATHS', q: 'Solve for x: $2x - 7 = 11$', options: { A: '$x = 8$', B: '$x = 9$', C: '$x = 10$', D: '$x = 18$' }, ans: 'B', exp: 'Add 7 to both sides: $2x = 18$. Divide by 2: $x = 9$.' },
-//    { id: 'M5', subject: 'MATHS', q: 'The next number in the sequence: $1, 4, 9, 16, 25, \\dots$', options: { A: '30', B: '32', C: '36', D: '49' }, ans: 'C', exp: 'The sequence consists of perfect squares: $1^2, 2^2, 3^2, 4^2, 5^2$. The next is $6^2 = 36$.' },
-//    { id: 'M6', subject: 'MATHS', q: 'Calculate the area of a circle with a radius of $7cm$ (use $\\pi = \\frac{22}{7}$)', options: { A: '$49cm^2$', B: '$154cm^2$', C: '$22cm^2$', D: '$14cm^2$' }, ans: 'B', exp: 'Area $= \\pi r^2 = \\frac{22}{7} \\times 7^2 = 22 \\times 7 = 154cm^2$.' },
-//    { id: 'M7', subject: 'MATHS', q: 'Convert $0.625$ to a fraction in its simplest form.', options: { A: '$\\frac{5}{8}$', B: '$\\frac{3}{5}$', C: '$\\frac{1}{2}$', D: '$\\frac{6}{10}$' }, ans: 'A', exp: '$0.625 = \\frac{625}{1000}$. Dividing by 125 gives $\\frac{5}{8}$.' },
- //   { id: 'M8', subject: 'MATHS', q: 'What is $2^3 + 3^2$?', options: { A: '12', B: '15', C: '17', D: '18' }, ans: 'C', exp: '$2^3 = 8$ and $3^2 = 9$. $8 + 9 = 17$.' },
-  //  { id: 'M9', subject: 'MATHS', q: 'How many days are there in $10$ weeks?', options: { A: '70', B: '60', C: '75', D: '100' }, ans: 'A', exp: '$10 \\times 7 = 70$ days.' },
- //   { id: 'M10', subject: 'MATHS', q: 'Find the mean of the numbers: $5, 10, 15, 20$.', options: { A: '12', B: '12.5', C: '15', D: '50' }, ans: 'B', exp: 'Sum is 50. Mean is $\\frac{50}{4} = 12.5.' },
-  //  { id: 'M11', subject: 'MATHS', q: 'If $a=3$ and $b=4$, find the value of $a^2 + b^2$.', options: { A: '7', B: '12', C: '25', D: '49' }, ans: 'C', exp: '$3^2 + 4^2 = 9 + 16 = 25.' },
-//    { id: 'M12', subject: 'MATHS', q: 'A train traveled $180km$ in $3$ hours. What was its speed in $km/h$?', options: { A: '$60km/h$', B: '$50km/h$', C: '$70km/h$', D: '90km/h' }, ans: 'A', exp: 'Speed = Distance / Time = $180km / 3h = 60km/h$.' },
-    //{ id: 'M13', subject: 'MATHS', q: 'What is the highest common factor (H.C.F.) of $12$ and $18$?', options: { A: '3', B: '6', C: '9', D: '12' }, ans: 'B', exp: 'The factors of 12 are 1, 2, 3, 4, 6, 12. The factors of 18 are 1, 2, 3, 6, 9, 18. The largest common factor is 6.' },
-  //  { id: 'M14', subject: 'MATHS', q: 'What is the sum of angles in a triangle?', options: { A: '$90^{\\circ}$', B: '$180^{\\circ}$', C: '$270^{\\circ}$', D: '$360^{\\circ}$' }, ans: 'B', exp: 'The sum of internal angles in any Euclidean triangle is always $180^{\\circ}$.' },
-//    { id: 'M15', subject: 'MATHS', q: 'A square has a perimeter of $40cm$. What is its area?', options: { A: '$10cm^2$', B: '$40cm^2$', C: '$100cm^2$', D: '$160cm^2$' }, ans: 'C', exp: 'Side length is $\\frac{40}{4} = 10cm$. Area is $10cm \\times 10cm = 100cm^2$.' },
-
-
     // --- ENGLISH LANGUAGE (15 Questions Pool) ---
-    { id: 'E1', subject: 'ENGLISH', q: 'Choose the word that is **nearest in meaning** to the word: **ADHERE**', options: { A: 'Detach', B: 'Observe', C: 'Ignore', D: 'Neglect' }, ans: 'B', exp: 'To adhere means to stick firmly to (a rule or belief), making "Observe" the closest synonym.' },
-    { id: 'E2', subject: 'ENGLISH', q: 'Identify the **verb** in the sentence: "The security officer quickly responded to the alarm."', options: { A: 'security', B: 'officer', C: 'quickly', D: 'responded' }, ans: 'D', exp: 'The verb is the action word in the sentence, which is "responded".' },
-    { id: 'E3', subject: 'ENGLISH', q: 'Choose the correct preposition: "She is good **\\dots** mathematics."', options: { A: 'at', B: 'in', C: 'with', D: 'for' }, ans: 'A', exp: 'The correct idiom is "good at something".' },
-    { id: 'E4', subject: 'ENGLISH', q: 'Find the word that is **opposite in meaning** to the word: **STRENGTH**', options: { A: 'Power', B: 'Weakness', C: 'Vigor', D: 'Energy' }, ans: 'B', exp: '"Weakness" is the direct opposite (antonym) of "Strength".' },
-    { id: 'E5', subject: 'ENGLISH', q: 'Complete the sentence: "Neither John **\\dots** Jane was present at the briefing."', options: { A: 'or', B: 'and', C: 'nor', D: 'but' }, ans: 'C', exp: 'The correlative conjunction for "Neither" is "nor".' },
-    { id: 'E6', subject: 'ENGLISH', q: 'The plural form of **crisis** is:', options: { A: 'crisisess', B: 'crises', C: 'crisises', D: 'crizis' }, ans: 'B', exp: 'Words ending in -is (like analysis, thesis) usually form the plural by changing -is to -es.' },
-    { id: 'E7', subject: 'ENGLISH', q: 'Choose the sentence with correct punctuation:', options: { A: 'It\'s a good job.', B: 'Its a good job.', C: 'Its\' a good job.', D: 'Its a good job' }, ans: 'A', exp: '"It\'s" is the contraction of "It is".' },
-    { id: 'E8', subject: 'ENGLISH', q: 'What type of literary device is used in the phrase: "The wind whispered secrets"?', options: { A: 'Simile', B: 'Metaphor', C: 'Personification', D: 'Hyperbole' }, ans: 'C', exp: 'Giving human qualities ("whispered secrets") to a non-human thing (the wind) is personification.' },
-    { id: 'E9', subject: 'ENGLISH', q: 'Identify the word that is correctly spelled:', options: { A: 'Seperate', B: 'Seperate', C: 'Seperate', D: 'Separate' }, ans: 'D', exp: 'The correct spelling is "separate".' },
-    { id: 'E10', subject: 'ENGLISH', q: 'Which of the following words is a **conjunction**?', options: { A: 'swiftly', B: 'beautiful', C: 'because', D: 'under' }, ans: 'C', exp: 'A conjunction links words, phrases, or clauses. "Because" is a subordinating conjunction.' },
-    { id: 'E11', subject: 'ENGLISH', q: 'Choose the correct form of the word: "He is senior **\\dots** me."', options: { A: 'than', B: 'to', C: 'over', D: 'from' }, ans: 'B', exp: 'Adjectives like senior, junior, superior, and inferior are followed by the preposition "to".' },
-    { id: 'E12', subject: 'ENGLISH', q: 'Change to passive voice: "The man opened the gate."', options: { A: 'The gate was opened by the man.', B: 'The gate is opened by the man.', C: 'The man was opening the gate.', D: 'The man, the gate was opened.' }, ans: 'A', exp: 'The active verb "opened" (Past Simple) becomes "was opened" in the passive voice.' },
-    { id: 'E13', subject: 'ENGLISH', q: 'The adjective form of the word **fame** is:', options: { A: 'famer', B: 'famous', C: 'fameous', D: 'famelike' }, ans: 'B', exp: 'The adjective form is "famous".' },
-    { id: 'E14', subject: 'ENGLISH', q: 'Choose the correct statement concerning subject-verb agreement:', options: { A: 'The manager and his assistant is here.', B: 'The manager and his assistant are here.', C: 'The manager, as well as his assistant, are here.', D: 'Neither the manager nor his assistant are here.' }, ans: 'B', exp: 'Two subjects joined by "and" require a plural verb ("are").' },
-    { id: 'E15', subject: 'ENGLISH', q: 'Choose the option that means **ad-hoc**:', options: { A: 'Planned', B: 'Permanent', C: 'Improvised', D: 'Systematic' }, ans: 'C', exp: 'Ad-hoc means created or done for a particular purpose as necessary, making "Improvised" the closest match.' },
+    {
+        "id": "E1",
+        "subject": "ENGLISH",
+        "q": "Choose the correct verb form: She ____ to the store yesterday.",
+        "options": {
+            "A": "go",
+            "B": "went",
+            "C": "gone",
+            "D": "going"
+        },
+        "ans": "B",
+        "exp": "Past action: use past tense 'went'."
+    },
+    {
+        "id": "E2",
+        "subject": "ENGLISH",
+        "q": "Identify the sentence with correct subject\u2013verb agreement: 'The team ____ ready.'",
+        "options": {
+            "A": "is",
+            "B": "are",
+            "C": "were",
+            "D": "be"
+        },
+        "ans": "A",
+        "exp": "'Team' as a collective noun here takes singular verb 'is'."
+    },
+    {
+        "id": "E3",
+        "subject": "ENGLISH",
+        "q": "Choose the correct modal: You ____ finish your homework before you play.",
+        "options": {
+            "A": "must",
+            "B": "might",
+            "C": "would",
+            "D": "shouldn't"
+        },
+        "ans": "A",
+        "exp": "'Must' shows obligation - best fit for requirement."
+    },
+    {
+        "id": "E4",
+        "subject": "ENGLISH",
+        "q": "Select the correct tense: By next year, I ____ my degree.",
+        "options": {
+            "A": "complete",
+            "B": "will complete",
+            "C": "will have completed",
+            "D": "completed"
+        },
+        "ans": "C",
+        "exp": "Future perfect 'will have completed' for an action finished before a time."
+    },
+    {
+        "id": "E5",
+        "subject": "ENGLISH",
+        "q": "Choose the correct conditional: If I ____ you, I would apologize.",
+        "options": {
+            "A": "am",
+            "B": "were",
+            "C": "was",
+            "D": "be"
+        },
+        "ans": "B",
+        "exp": "Second conditional uses 'were' for hypothetical situations."
+    },
+    {
+        "id": "E6",
+        "subject": "ENGLISH",
+        "q": "Choose the closest meaning of 'mitigate'.",
+        "options": {
+            "A": "worsen",
+            "B": "alleviate",
+            "C": "ignore",
+            "D": "celebrate"
+        },
+        "ans": "B",
+        "exp": "'Mitigate' means to make less severe; 'alleviate'."
+    },
+    {
+        "id": "E7",
+        "subject": "ENGLISH",
+        "q": "Select the antonym of 'scarce'.",
+        "options": {
+            "A": "rare",
+            "B": "limited",
+            "C": "abundant",
+            "D": "insufficient"
+        },
+        "ans": "C",
+        "exp": "Antonym of 'scarce' is 'abundant'."
+    },
+    {
+        "id": "E8",
+        "subject": "ENGLISH",
+        "q": "Choose the correct usage: He gave a ____ answer to the rude question.",
+        "options": {
+            "A": "concise",
+            "B": "conartist",
+            "C": "concrete",
+            "D": "conscientious"
+        },
+        "ans": "A",
+        "exp": "'Concise' means brief and to the point."
+    },
+    {
+        "id": "E9",
+        "subject": "ENGLISH",
+        "q": "Select the synonym of 'obstinate'.",
+        "options": {
+            "A": "flexible",
+            "B": "stubborn",
+            "C": "timid",
+            "D": "friendly"
+        },
+        "ans": "B",
+        "exp": "'Obstinate' = 'stubborn'."
+    },
+    {
+        "id": "E10",
+        "subject": "ENGLISH",
+        "q": "Choose the word that best fits: The speech was so ____ that many people cried.",
+        "options": {
+            "A": "insipid",
+            "B": "moving",
+            "C": "tedious",
+            "D": "mundane"
+        },
+        "ans": "B",
+        "exp": "'Moving' means emotionally touching."
+    },
+    {
+        "id": "E11",
+        "subject": "ENGLISH",
+        "q": "Identify the part of speech of the capitalized word: She QUICKLY finished her work.",
+        "options": {
+            "A": "Noun",
+            "B": "Verb",
+            "C": "Adverb",
+            "D": "Adjective"
+        },
+        "ans": "C",
+        "exp": "'Quickly' modifies a verb \u2014 it's an adverb."
+    },
+    {
+        "id": "E12",
+        "subject": "ENGLISH",
+        "q": "Which word is a conjunction in: 'I wanted to go, but it rained.'",
+        "options": {
+            "A": "wanted",
+            "B": "but",
+            "C": "rained",
+            "D": "to"
+        },
+        "ans": "B",
+        "exp": "'But' connects clauses; it's a conjunction."
+    },
+    {
+        "id": "E13",
+        "subject": "ENGLISH",
+        "q": "Identify the part of speech: 'Happiness is contagious.' - 'Happiness' is a ____.",
+        "options": {
+            "A": "Verb",
+            "B": "Adjective",
+            "C": "Noun",
+            "D": "Adverb"
+        },
+        "ans": "C",
+        "exp": "'Happiness' names a thing/feeling \u2014 noun."
+    },
+    {
+        "id": "E14",
+        "subject": "ENGLISH",
+        "q": "Choose the pronoun in: 'Give the book to her.'",
+        "options": {
+            "A": "Give",
+            "B": "the",
+            "C": "her",
+            "D": "book"
+        },
+        "ans": "C",
+        "exp": "'Her' refers to a person \u2014 pronoun."
+    },
+    {
+        "id": "E15",
+        "subject": "ENGLISH",
+        "q": "What is 'beautiful' in the sentence: 'The beautiful painting hung on the wall.'",
+        "options": {
+            "A": "Noun",
+            "B": "Verb",
+            "C": "Adverb",
+            "D": "Adjective"
+        },
+        "ans": "D",
+        "exp": "'Beautiful' describes the painting \u2014 adjective."
+    },
+    {
+        "id": "E16",
+        "subject": "ENGLISH",
+        "q": "Choose the correctly punctuated sentence.",
+        "options": {
+            "A": "Its raining; bring an umbrella.",
+            "B": "It's raining; bring an umbrella.",
+            "C": "Its' raining, bring an umbrella.",
+            "D": "It is' raining bring an umbrella."
+        },
+        "ans": "B",
+        "exp": "Contraction 'It's' and semicolon correctly used."
+    },
+    {
+        "id": "E17",
+        "subject": "ENGLISH",
+        "q": "Identify the fragment: 'When he arrived at the station.'",
+        "options": {
+            "A": "When he arrived at the station.",
+            "B": "He arrived at the station.",
+            "C": "They left early.",
+            "D": "She smiled."
+        },
+        "ans": "A",
+        "exp": "Sentence fragment lacks main clause."
+    },
+    {
+        "id": "E18",
+        "subject": "ENGLISH",
+        "q": "Choose correct parallel structure: 'She likes hiking, swimming, and ____.'",
+        "options": {
+            "A": "to bike",
+            "B": "biking",
+            "C": "bikes",
+            "D": "bike"
+        },
+        "ans": "B",
+        "exp": "Parallel gerunds: hiking, swimming, biking."
+    },
+    {
+        "id": "E19",
+        "subject": "ENGLISH",
+        "q": "Select the sentence in passive voice.",
+        "options": {
+            "A": "The chef cooked the meal.",
+            "B": "The meal was cooked by the chef.",
+            "C": "They will cook dinner.",
+            "D": "She cooks well."
+        },
+        "ans": "B",
+        "exp": "Passive: subject receives action."
+    },
+    {
+        "id": "E20",
+        "subject": "ENGLISH",
+        "q": "Choose correct sentence combining using relative clause: 'I met a man. He writes novels.'",
+        "options": {
+            "A": "I met a man who writes novels.",
+            "B": "I met a man, he writes novels.",
+            "C": "I met a man which writes novels.",
+            "D": "I met a man writing novels who."
+        },
+        "ans": "A",
+        "exp": "Use 'who' for people to join clauses."
+    },
+    {
+        "id": "E21",
+        "subject": "ENGLISH",
+        "q": "Identify the figure of speech: 'The wind whispered through the trees.'",
+        "options": {
+            "A": "Metaphor",
+            "B": "Simile",
+            "C": "Personification",
+            "D": "Alliteration"
+        },
+        "ans": "C",
+        "exp": "Giving human qualities to wind = personification."
+    },
+    {
+        "id": "E22",
+        "subject": "ENGLISH",
+        "q": "What is this: 'She is as brave as a lion.'",
+        "options": {
+            "A": "Hyperbole",
+            "B": "Simile",
+            "C": "Metonymy",
+            "D": "Irony"
+        },
+        "ans": "B",
+        "exp": "Use of 'as' compares \u2014 simile."
+    },
+    {
+        "id": "E23",
+        "subject": "ENGLISH",
+        "q": "Identify the device: 'Peter Piper picked a peck of pickled peppers.'",
+        "options": {
+            "A": "Onomatopoeia",
+            "B": "Alliteration",
+            "C": "Oxymoron",
+            "D": "Antithesis"
+        },
+        "ans": "B",
+        "exp": "Repeated initial consonant sounds = alliteration."
+    },
+    {
+        "id": "E24",
+        "subject": "ENGLISH",
+        "q": "What figure is: 'Time is a thief.'",
+        "options": {
+            "A": "Metaphor",
+            "B": "Personification",
+            "C": "Simile",
+            "D": "Hyperbole"
+        },
+        "ans": "A",
+        "exp": "Direct comparison without 'like' or 'as' = metaphor."
+    },
+    {
+        "id": "E25",
+        "subject": "ENGLISH",
+        "q": "Identify: 'The silence was deafening.'",
+        "options": {
+            "A": "Oxymoron",
+            "B": "Personification",
+            "C": "Hyperbole",
+            "D": "Understatement"
+        },
+        "ans": "C",
+        "exp": "Exaggeration for effect = hyperbole."
+    },
+    {
+        "id": "E26",
+        "subject": "ENGLISH",
+        "q": "Read the sentence: 'Lola planted a sapling; within a year it had grown into a small tree.' Question: What happened within a year?",
+        "options": {
+            "A": "The sapling died",
+            "B": "The sapling grew into a small tree",
+            "C": "Lola planted another sapling",
+            "D": "It snowed"
+        },
+        "ans": "B",
+        "exp": "The sentence states it grew into a small tree."
+    },
+    {
+        "id": "E27",
+        "subject": "ENGLISH",
+        "q": "Short passage: 'Marcus studied all night, yet he failed the test.' Question: Why might Marcus have failed despite studying?",
+        "options": {
+            "A": "He studied the wrong material",
+            "B": "He slept during the test",
+            "C": "The test was easy",
+            "D": "He didn't study"
+        },
+        "ans": "A",
+        "exp": "Contrasting 'yet' implies unexpected result; likely studied wrong material."
+    },
+    {
+        "id": "E28",
+        "subject": "ENGLISH",
+        "q": "Read: 'Many birds migrate south for the winter.' Question: What does 'migrate' mean here?",
+        "options": {
+            "A": "Build nests",
+            "B": "Fly long distances seasonally",
+            "C": "Eat more",
+            "D": "Sing loudly"
+        },
+        "ans": "B",
+        "exp": "'Migrate' refers to seasonal long-distance movement."
+    },
+    {
+        "id": "E29",
+        "subject": "ENGLISH",
+        "q": "Passage: 'The scientist observed the reaction carefully.' Question: What did the scientist do?",
+        "options": {
+            "A": "Ignored the reaction",
+            "B": "Observed carefully",
+            "C": "Conducted an unrelated experiment",
+            "D": "Left the lab"
+        },
+        "ans": "B",
+        "exp": "Directly stated in passage."
+    },
+    {
+        "id": "E30",
+        "subject": "ENGLISH",
+        "q": "Read: 'She declined the offer politely.' Question: How did she respond?",
+        "options": {
+            "A": "Angrily",
+            "B": "Politely declined",
+            "C": "Accepted",
+            "D": "Ignored"
+        },
+        "ans": "B",
+        "exp": "Sentence specifies 'politely'."
+    },
+    {
+        "id": "E31",
+        "subject": "ENGLISH",
+        "q": "Choose the correct word: He gave an ____ explanation of the procedure.",
+        "options": {
+            "A": "explicit",
+            "B": "explict",
+            "C": "explisit",
+            "D": "explicate"
+        },
+        "ans": "A",
+        "exp": "'Explicit' means clear and detailed."
+    },
+    {
+        "id": "E32",
+        "subject": "ENGLISH",
+        "q": "Fill: The manager asked for a ____ report by Monday.",
+        "options": {
+            "A": "comprehesive",
+            "B": "comprehensive",
+            "C": "comprehensve",
+            "D": "comprehend"
+        },
+        "ans": "B",
+        "exp": "Correct spelling 'comprehensive'."
+    },
+    {
+        "id": "E33",
+        "subject": "ENGLISH",
+        "q": "Choose correct preposition: She is proficient ____ French.",
+        "options": {
+            "A": "in",
+            "B": "on",
+            "C": "at",
+            "D": "for"
+        },
+        "ans": "A",
+        "exp": "Use 'proficient in' for languages."
+    },
+    {
+        "id": "E34",
+        "subject": "ENGLISH",
+        "q": "Select correct collocation: 'Make a ____ decision.'",
+        "options": {
+            "A": "fast",
+            "B": "quick",
+            "C": "prompt",
+            "D": "done"
+        },
+        "ans": "C",
+        "exp": "'Make a prompt decision' is standard collocation."
+    },
+    {
+        "id": "E35",
+        "subject": "ENGLISH",
+        "q": "Choose correct register: In formal writing, avoid ____ contractions.",
+        "options": {
+            "A": "using",
+            "B": "used",
+            "C": "use",
+            "D": "uses"
+        },
+        "ans": "A",
+        "exp": "Use gerund 'using' after 'avoid'."
+    },
+    {
+        "id": "E36",
+        "subject": "ENGLISH",
+        "q": "Choose the correct spelling:",
+        "options": {
+            "A": "accommodate",
+            "B": "acommodate",
+            "C": "accomodate",
+            "D": "acomodate"
+        },
+        "ans": "A",
+        "exp": "Correct spelling 'accommodate' with double 'c' and double 'm'."
+    },
+    {
+        "id": "E37",
+        "subject": "ENGLISH",
+        "q": "Choose correct punctuation: Which is correct?",
+        "options": {
+            "A": "She asked, 'Are you coming?'",
+            "B": "She asked 'Are you coming?'",
+            "C": "She asked Are you coming?",
+            "D": "She asked: 'Are you coming?'"
+        },
+        "ans": "A",
+        "exp": "Comma before quotation in standard punctuation."
+    },
+    {
+        "id": "E38",
+        "subject": "ENGLISH",
+        "q": "Which is correctly capitalized?",
+        "options": {
+            "A": "the President of nigeria",
+            "B": "The president of Nigeria",
+            "C": "The President of Nigeria",
+            "D": "the President Of Nigeria"
+        },
+        "ans": "C",
+        "exp": "Formal title and country proper noun capitalized."
+    },
+    {
+        "id": "E39",
+        "subject": "ENGLISH",
+        "q": "Choose correct homophone: 'Their/There/They're going to arrive soon.'",
+        "options": {
+            "A": "Their",
+            "B": "There",
+            "C": "They're",
+            "D": "Thare"
+        },
+        "ans": "C",
+        "exp": "'They're' = 'they are' fits sentence."
+    },
+    {
+        "id": "E40",
+        "subject": "ENGLISH",
+        "q": "Select correct apostrophe use: Plural of 'child' is ____.",
+        "options": {
+            "A": "childs",
+            "B": "child's",
+            "C": "children",
+            "D": "childes"
+        },
+        "ans": "C",
+        "exp": "Irregular plural is 'children'."
+    },
+    {
+        "id": "E41",
+        "subject": "ENGLISH",
+        "q": "Choose the correct verb form: She ____ to the store yesterday.",
+        "options": {
+            "A": "go",
+            "B": "went",
+            "C": "gone",
+            "D": "going"
+        },
+        "ans": "B",
+        "exp": "Past action: use past tense 'went'."
+    },
+    {
+        "id": "E42",
+        "subject": "ENGLISH",
+        "q": "Identify the sentence with correct subject\u2013verb agreement: 'The team ____ ready.'",
+        "options": {
+            "A": "is",
+            "B": "are",
+            "C": "were",
+            "D": "be"
+        },
+        "ans": "A",
+        "exp": "'Team' as a collective noun here takes singular verb 'is'."
+    },
+    {
+        "id": "E43",
+        "subject": "ENGLISH",
+        "q": "Choose the correct modal: You ____ finish your homework before you play.",
+        "options": {
+            "A": "must",
+            "B": "might",
+            "C": "would",
+            "D": "shouldn't"
+        },
+        "ans": "A",
+        "exp": "'Must' shows obligation - best fit for requirement."
+    },
+    {
+        "id": "E44",
+        "subject": "ENGLISH",
+        "q": "Select the correct tense: By next year, I ____ my degree.",
+        "options": {
+            "A": "complete",
+            "B": "will complete",
+            "C": "will have completed",
+            "D": "completed"
+        },
+        "ans": "C",
+        "exp": "Future perfect 'will have completed' for an action finished before a time."
+    },
+    {
+        "id": "E45",
+        "subject": "ENGLISH",
+        "q": "Choose the correct conditional: If I ____ you, I would apologize.",
+        "options": {
+            "A": "am",
+            "B": "were",
+            "C": "was",
+            "D": "be"
+        },
+        "ans": "B",
+        "exp": "Second conditional uses 'were' for hypothetical situations."
+    },
+    {
+        "id": "E46",
+        "subject": "ENGLISH",
+        "q": "Choose the closest meaning of 'mitigate'.",
+        "options": {
+            "A": "worsen",
+            "B": "alleviate",
+            "C": "ignore",
+            "D": "celebrate"
+        },
+        "ans": "B",
+        "exp": "'Mitigate' means to make less severe; 'alleviate'."
+    },
+    {
+        "id": "E47",
+        "subject": "ENGLISH",
+        "q": "Select the antonym of 'scarce'.",
+        "options": {
+            "A": "rare",
+            "B": "limited",
+            "C": "abundant",
+            "D": "insufficient"
+        },
+        "ans": "C",
+        "exp": "Antonym of 'scarce' is 'abundant'."
+    },
+    {
+        "id": "E48",
+        "subject": "ENGLISH",
+        "q": "Choose the correct usage: He gave a ____ answer to the rude question.",
+        "options": {
+            "A": "concise",
+            "B": "conartist",
+            "C": "concrete",
+            "D": "conscientious"
+        },
+        "ans": "A",
+        "exp": "'Concise' means brief and to the point."
+    },
+    {
+        "id": "E49",
+        "subject": "ENGLISH",
+        "q": "Select the synonym of 'obstinate'.",
+        "options": {
+            "A": "flexible",
+            "B": "stubborn",
+            "C": "timid",
+            "D": "friendly"
+        },
+        "ans": "B",
+        "exp": "'Obstinate' = 'stubborn'."
+    },
+    {
+        "id": "E50",
+        "subject": "ENGLISH",
+        "q": "Choose the word that best fits: The speech was so ____ that many people cried.",
+        "options": {
+            "A": "insipid",
+            "B": "moving",
+            "C": "tedious",
+            "D": "mundane"
+        },
+        "ans": "B",
+        "exp": "'Moving' means emotionally touching."
+    },
+    {
+        "id": "E51",
+        "subject": "ENGLISH",
+        "q": "Identify the part of speech of the capitalized word: She QUICKLY finished her work.",
+        "options": {
+            "A": "Noun",
+            "B": "Verb",
+            "C": "Adverb",
+            "D": "Adjective"
+        },
+        "ans": "C",
+        "exp": "'Quickly' modifies a verb \u2014 it's an adverb."
+    },
+    {
+        "id": "E52",
+        "subject": "ENGLISH",
+        "q": "Which word is a conjunction in: 'I wanted to go, but it rained.'",
+        "options": {
+            "A": "wanted",
+            "B": "but",
+            "C": "rained",
+            "D": "to"
+        },
+        "ans": "B",
+        "exp": "'But' connects clauses; it's a conjunction."
+    },
+    {
+        "id": "E53",
+        "subject": "ENGLISH",
+        "q": "Identify the part of speech: 'Happiness is contagious.' - 'Happiness' is a ____.",
+        "options": {
+            "A": "Verb",
+            "B": "Adjective",
+            "C": "Noun",
+            "D": "Adverb"
+        },
+        "ans": "C",
+        "exp": "'Happiness' names a thing/feeling \u2014 noun."
+    },
+    {
+        "id": "E54",
+        "subject": "ENGLISH",
+        "q": "Choose the pronoun in: 'Give the book to her.'",
+        "options": {
+            "A": "Give",
+            "B": "the",
+            "C": "her",
+            "D": "book"
+        },
+        "ans": "C",
+        "exp": "'Her' refers to a person \u2014 pronoun."
+    },
+    {
+        "id": "E55",
+        "subject": "ENGLISH",
+        "q": "What is 'beautiful' in the sentence: 'The beautiful painting hung on the wall.'",
+        "options": {
+            "A": "Noun",
+            "B": "Verb",
+            "C": "Adverb",
+            "D": "Adjective"
+        },
+        "ans": "D",
+        "exp": "'Beautiful' describes the painting \u2014 adjective."
+    },
+    {
+        "id": "E56",
+        "subject": "ENGLISH",
+        "q": "Choose the correctly punctuated sentence.",
+        "options": {
+            "A": "Its raining; bring an umbrella.",
+            "B": "It's raining; bring an umbrella.",
+            "C": "Its' raining, bring an umbrella.",
+            "D": "It is' raining bring an umbrella."
+        },
+        "ans": "B",
+        "exp": "Contraction 'It's' and semicolon correctly used."
+    },
+    {
+        "id": "E57",
+        "subject": "ENGLISH",
+        "q": "Identify the fragment: 'When he arrived at the station.'",
+        "options": {
+            "A": "When he arrived at the station.",
+            "B": "He arrived at the station.",
+            "C": "They left early.",
+            "D": "She smiled."
+        },
+        "ans": "A",
+        "exp": "Sentence fragment lacks main clause."
+    },
+    {
+        "id": "E58",
+        "subject": "ENGLISH",
+        "q": "Choose correct parallel structure: 'She likes hiking, swimming, and ____.'",
+        "options": {
+            "A": "to bike",
+            "B": "biking",
+            "C": "bikes",
+            "D": "bike"
+        },
+        "ans": "B",
+        "exp": "Parallel gerunds: hiking, swimming, biking."
+    },
+    {
+        "id": "E59",
+        "subject": "ENGLISH",
+        "q": "Select the sentence in passive voice.",
+        "options": {
+            "A": "The chef cooked the meal.",
+            "B": "The meal was cooked by the chef.",
+            "C": "They will cook dinner.",
+            "D": "She cooks well."
+        },
+        "ans": "B",
+        "exp": "Passive: subject receives action."
+    },
+    {
+        "id": "E60",
+        "subject": "ENGLISH",
+        "q": "Choose correct sentence combining using relative clause: 'I met a man. He writes novels.'",
+        "options": {
+            "A": "I met a man who writes novels.",
+            "B": "I met a man, he writes novels.",
+            "C": "I met a man which writes novels.",
+            "D": "I met a man writing novels who."
+        },
+        "ans": "A",
+        "exp": "Use 'who' for people to join clauses."
+    },
+    {
+        "id": "E61",
+        "subject": "ENGLISH",
+        "q": "Identify the figure of speech: 'The wind whispered through the trees.'",
+        "options": {
+            "A": "Metaphor",
+            "B": "Simile",
+            "C": "Personification",
+            "D": "Alliteration"
+        },
+        "ans": "C",
+        "exp": "Giving human qualities to wind = personification."
+    },
+    {
+        "id": "E62",
+        "subject": "ENGLISH",
+        "q": "What is this: 'She is as brave as a lion.'",
+        "options": {
+            "A": "Hyperbole",
+            "B": "Simile",
+            "C": "Metonymy",
+            "D": "Irony"
+        },
+        "ans": "B",
+        "exp": "Use of 'as' compares \u2014 simile."
+    },
+    {
+        "id": "E63",
+        "subject": "ENGLISH",
+        "q": "Identify the device: 'Peter Piper picked a peck of pickled peppers.'",
+        "options": {
+            "A": "Onomatopoeia",
+            "B": "Alliteration",
+            "C": "Oxymoron",
+            "D": "Antithesis"
+        },
+        "ans": "B",
+        "exp": "Repeated initial consonant sounds = alliteration."
+    },
+    {
+        "id": "E64",
+        "subject": "ENGLISH",
+        "q": "What figure is: 'Time is a thief.'",
+        "options": {
+            "A": "Metaphor",
+            "B": "Personification",
+            "C": "Simile",
+            "D": "Hyperbole"
+        },
+        "ans": "A",
+        "exp": "Direct comparison without 'like' or 'as' = metaphor."
+    },
+    {
+        "id": "E65",
+        "subject": "ENGLISH",
+        "q": "Identify: 'The silence was deafening.'",
+        "options": {
+            "A": "Oxymoron",
+            "B": "Personification",
+            "C": "Hyperbole",
+            "D": "Understatement"
+        },
+        "ans": "C",
+        "exp": "Exaggeration for effect = hyperbole."
+    },
+    {
+        "id": "E66",
+        "subject": "ENGLISH",
+        "q": "Read the sentence: 'Lola planted a sapling; within a year it had grown into a small tree.' Question: What happened within a year?",
+        "options": {
+            "A": "The sapling died",
+            "B": "The sapling grew into a small tree",
+            "C": "Lola planted another sapling",
+            "D": "It snowed"
+        },
+        "ans": "B",
+        "exp": "The sentence states it grew into a small tree."
+    },
+    {
+        "id": "E67",
+        "subject": "ENGLISH",
+        "q": "Short passage: 'Marcus studied all night, yet he failed the test.' Question: Why might Marcus have failed despite studying?",
+        "options": {
+            "A": "He studied the wrong material",
+            "B": "He slept during the test",
+            "C": "The test was easy",
+            "D": "He didn't study"
+        },
+        "ans": "A",
+        "exp": "Contrasting 'yet' implies unexpected result; likely studied wrong material."
+    },
+    {
+        "id": "E68",
+        "subject": "ENGLISH",
+        "q": "Read: 'Many birds migrate south for the winter.' Question: What does 'migrate' mean here?",
+        "options": {
+            "A": "Build nests",
+            "B": "Fly long distances seasonally",
+            "C": "Eat more",
+            "D": "Sing loudly"
+        },
+        "ans": "B",
+        "exp": "'Migrate' refers to seasonal long-distance movement."
+    },
+    {
+        "id": "E69",
+        "subject": "ENGLISH",
+        "q": "Passage: 'The scientist observed the reaction carefully.' Question: What did the scientist do?",
+        "options": {
+            "A": "Ignored the reaction",
+            "B": "Observed carefully",
+            "C": "Conducted an unrelated experiment",
+            "D": "Left the lab"
+        },
+        "ans": "B",
+        "exp": "Directly stated in passage."
+    },
+    {
+        "id": "E70",
+        "subject": "ENGLISH",
+        "q": "Read: 'She declined the offer politely.' Question: How did she respond?",
+        "options": {
+            "A": "Angrily",
+            "B": "Politely declined",
+            "C": "Accepted",
+            "D": "Ignored"
+        },
+        "ans": "B",
+        "exp": "Sentence specifies 'politely'."
+    },
+    {
+        "id": "E71",
+        "subject": "ENGLISH",
+        "q": "Choose the correct word: He gave an ____ explanation of the procedure.",
+        "options": {
+            "A": "explicit",
+            "B": "explict",
+            "C": "explisit",
+            "D": "explicate"
+        },
+        "ans": "A",
+        "exp": "'Explicit' means clear and detailed."
+    },
+    {
+        "id": "E72",
+        "subject": "ENGLISH",
+        "q": "Fill: The manager asked for a ____ report by Monday.",
+        "options": {
+            "A": "comprehesive",
+            "B": "comprehensive",
+            "C": "comprehensve",
+            "D": "comprehend"
+        },
+        "ans": "B",
+        "exp": "Correct spelling 'comprehensive'."
+    },
+    {
+        "id": "E73",
+        "subject": "ENGLISH",
+        "q": "Choose correct preposition: She is proficient ____ French.",
+        "options": {
+            "A": "in",
+            "B": "on",
+            "C": "at",
+            "D": "for"
+        },
+        "ans": "A",
+        "exp": "Use 'proficient in' for languages."
+    },
+    {
+        "id": "E74",
+        "subject": "ENGLISH",
+        "q": "Select correct collocation: 'Make a ____ decision.'",
+        "options": {
+            "A": "fast",
+            "B": "quick",
+            "C": "prompt",
+            "D": "done"
+        },
+        "ans": "C",
+        "exp": "'Make a prompt decision' is standard collocation."
+    },
+    {
+        "id": "E75",
+        "subject": "ENGLISH",
+        "q": "Choose correct register: In formal writing, avoid ____ contractions.",
+        "options": {
+            "A": "using",
+            "B": "used",
+            "C": "use",
+            "D": "uses"
+        },
+        "ans": "A",
+        "exp": "Use gerund 'using' after 'avoid'."
+    },
+    {
+        "id": "E76",
+        "subject": "ENGLISH",
+        "q": "Choose the correct spelling:",
+        "options": {
+            "A": "accommodate",
+            "B": "acommodate",
+            "C": "accomodate",
+            "D": "acomodate"
+        },
+        "ans": "A",
+        "exp": "Correct spelling 'accommodate' with double 'c' and double 'm'."
+    },
+    {
+        "id": "E77",
+        "subject": "ENGLISH",
+        "q": "Choose correct punctuation: Which is correct?",
+        "options": {
+            "A": "She asked, 'Are you coming?'",
+            "B": "She asked 'Are you coming?'",
+            "C": "She asked Are you coming?",
+            "D": "She asked: 'Are you coming?'"
+        },
+        "ans": "A",
+        "exp": "Comma before quotation in standard punctuation."
+    },
+    {
+        "id": "E78",
+        "subject": "ENGLISH",
+        "q": "Which is correctly capitalized?",
+        "options": {
+            "A": "the President of nigeria",
+            "B": "The president of Nigeria",
+            "C": "The President of Nigeria",
+            "D": "the President Of Nigeria"
+        },
+        "ans": "C",
+        "exp": "Formal title and country proper noun capitalized."
+    },
+    {
+        "id": "E79",
+        "subject": "ENGLISH",
+        "q": "Choose correct homophone: 'Their/There/They're going to arrive soon.'",
+        "options": {
+            "A": "Their",
+            "B": "There",
+            "C": "They're",
+            "D": "Thare"
+        },
+        "ans": "C",
+        "exp": "'They're' = 'they are' fits sentence."
+    },
+    {
+        "id": "E80",
+        "subject": "ENGLISH",
+        "q": "Select correct apostrophe use: Plural of 'child' is ____.",
+        "options": {
+            "A": "childs",
+            "B": "child's",
+            "C": "children",
+            "D": "childes"
+        },
+        "ans": "C",
+        "exp": "Irregular plural is 'children'."
+    },
+    {
+        "id": "E81",
+        "subject": "ENGLISH",
+        "q": "Choose the correct verb form: She ____ to the store yesterday.",
+        "options": {
+            "A": "go",
+            "B": "went",
+            "C": "gone",
+            "D": "going"
+        },
+        "ans": "B",
+        "exp": "Past action: use past tense 'went'."
+    },
+    {
+        "id": "E82",
+        "subject": "ENGLISH",
+        "q": "Identify the sentence with correct subject\u2013verb agreement: 'The team ____ ready.'",
+        "options": {
+            "A": "is",
+            "B": "are",
+            "C": "were",
+            "D": "be"
+        },
+        "ans": "A",
+        "exp": "'Team' as a collective noun here takes singular verb 'is'."
+    },
+    {
+        "id": "E83",
+        "subject": "ENGLISH",
+        "q": "Choose the correct modal: You ____ finish your homework before you play.",
+        "options": {
+            "A": "must",
+            "B": "might",
+            "C": "would",
+            "D": "shouldn't"
+        },
+        "ans": "A",
+        "exp": "'Must' shows obligation - best fit for requirement."
+    },
+    {
+        "id": "E84",
+        "subject": "ENGLISH",
+        "q": "Select the correct tense: By next year, I ____ my degree.",
+        "options": {
+            "A": "complete",
+            "B": "will complete",
+            "C": "will have completed",
+            "D": "completed"
+        },
+        "ans": "C",
+        "exp": "Future perfect 'will have completed' for an action finished before a time."
+    },
+    {
+        "id": "E85",
+        "subject": "ENGLISH",
+        "q": "Choose the correct conditional: If I ____ you, I would apologize.",
+        "options": {
+            "A": "am",
+            "B": "were",
+            "C": "was",
+            "D": "be"
+        },
+        "ans": "B",
+        "exp": "Second conditional uses 'were' for hypothetical situations."
+    },
+    {
+        "id": "E86",
+        "subject": "ENGLISH",
+        "q": "Choose the closest meaning of 'mitigate'.",
+        "options": {
+            "A": "worsen",
+            "B": "alleviate",
+            "C": "ignore",
+            "D": "celebrate"
+        },
+        "ans": "B",
+        "exp": "'Mitigate' means to make less severe; 'alleviate'."
+    },
+    {
+        "id": "E87",
+        "subject": "ENGLISH",
+        "q": "Select the antonym of 'scarce'.",
+        "options": {
+            "A": "rare",
+            "B": "limited",
+            "C": "abundant",
+            "D": "insufficient"
+        },
+        "ans": "C",
+        "exp": "Antonym of 'scarce' is 'abundant'."
+    },
+    {
+        "id": "E88",
+        "subject": "ENGLISH",
+        "q": "Choose the correct usage: He gave a ____ answer to the rude question.",
+        "options": {
+            "A": "concise",
+            "B": "conartist",
+            "C": "concrete",
+            "D": "conscientious"
+        },
+        "ans": "A",
+        "exp": "'Concise' means brief and to the point."
+    },
+    {
+        "id": "E89",
+        "subject": "ENGLISH",
+        "q": "Select the synonym of 'obstinate'.",
+        "options": {
+            "A": "flexible",
+            "B": "stubborn",
+            "C": "timid",
+            "D": "friendly"
+        },
+        "ans": "B",
+        "exp": "'Obstinate' = 'stubborn'."
+    },
+    {
+        "id": "E90",
+        "subject": "ENGLISH",
+        "q": "Choose the word that best fits: The speech was so ____ that many people cried.",
+        "options": {
+            "A": "insipid",
+            "B": "moving",
+            "C": "tedious",
+            "D": "mundane"
+        },
+        "ans": "B",
+        "exp": "'Moving' means emotionally touching."
+    },
+    {
+        "id": "E91",
+        "subject": "ENGLISH",
+        "q": "Identify the part of speech of the capitalized word: She QUICKLY finished her work.",
+        "options": {
+            "A": "Noun",
+            "B": "Verb",
+            "C": "Adverb",
+            "D": "Adjective"
+        },
+        "ans": "C",
+        "exp": "'Quickly' modifies a verb \u2014 it's an adverb."
+    },
+    {
+        "id": "E92",
+        "subject": "ENGLISH",
+        "q": "Which word is a conjunction in: 'I wanted to go, but it rained.'",
+        "options": {
+            "A": "wanted",
+            "B": "but",
+            "C": "rained",
+            "D": "to"
+        },
+        "ans": "B",
+        "exp": "'But' connects clauses; it's a conjunction."
+    },
+    {
+        "id": "E93",
+        "subject": "ENGLISH",
+        "q": "Identify the part of speech: 'Happiness is contagious.' - 'Happiness' is a ____.",
+        "options": {
+            "A": "Verb",
+            "B": "Adjective",
+            "C": "Noun",
+            "D": "Adverb"
+        },
+        "ans": "C",
+        "exp": "'Happiness' names a thing/feeling \u2014 noun."
+    },
+    {
+        "id": "E94",
+        "subject": "ENGLISH",
+        "q": "Choose the pronoun in: 'Give the book to her.'",
+        "options": {
+            "A": "Give",
+            "B": "the",
+            "C": "her",
+            "D": "book"
+        },
+        "ans": "C",
+        "exp": "'Her' refers to a person \u2014 pronoun."
+    },
+    {
+        "id": "E95",
+        "subject": "ENGLISH",
+        "q": "What is 'beautiful' in the sentence: 'The beautiful painting hung on the wall.'",
+        "options": {
+            "A": "Noun",
+            "B": "Verb",
+            "C": "Adverb",
+            "D": "Adjective"
+        },
+        "ans": "D",
+        "exp": "'Beautiful' describes the painting \u2014 adjective."
+    },
+    {
+        "id": "E96",
+        "subject": "ENGLISH",
+        "q": "Choose the correctly punctuated sentence.",
+        "options": {
+            "A": "Its raining; bring an umbrella.",
+            "B": "It's raining; bring an umbrella.",
+            "C": "Its' raining, bring an umbrella.",
+            "D": "It is' raining bring an umbrella."
+        },
+        "ans": "B",
+        "exp": "Contraction 'It's' and semicolon correctly used."
+    },
+    {
+        "id": "E97",
+        "subject": "ENGLISH",
+        "q": "Identify the fragment: 'When he arrived at the station.'",
+        "options": {
+            "A": "When he arrived at the station.",
+            "B": "He arrived at the station.",
+            "C": "They left early.",
+            "D": "She smiled."
+        },
+        "ans": "A",
+        "exp": "Sentence fragment lacks main clause."
+    },
+    {
+        "id": "E98",
+        "subject": "ENGLISH",
+        "q": "Choose correct parallel structure: 'She likes hiking, swimming, and ____.'",
+        "options": {
+            "A": "to bike",
+            "B": "biking",
+            "C": "bikes",
+            "D": "bike"
+        },
+        "ans": "B",
+        "exp": "Parallel gerunds: hiking, swimming, biking."
+    },
+    {
+        "id": "E99",
+        "subject": "ENGLISH",
+        "q": "Select the sentence in passive voice.",
+        "options": {
+            "A": "The chef cooked the meal.",
+            "B": "The meal was cooked by the chef.",
+            "C": "They will cook dinner.",
+            "D": "She cooks well."
+        },
+        "ans": "B",
+        "exp": "Passive: subject receives action."
+    },
+    {
+        "id": "E100",
+        "subject": "ENGLISH",
+        "q": "Choose correct sentence combining using relative clause: 'I met a man. He writes novels.'",
+        "options": {
+            "A": "I met a man who writes novels.",
+            "B": "I met a man, he writes novels.",
+            "C": "I met a man which writes novels.",
+            "D": "I met a man writing novels who."
+        },
+        "ans": "A",
+        "exp": "Use 'who' for people to join clauses."
+    },
 
     // --- GENERAL KNOWLEDGE (20 Questions Pool) ---
-    { id: 'G1', subject: 'GENERAL', q: 'What is the capital city of Nigeria?', options: { A: 'Abuja', B: 'Lagos', C: 'Port Harcourt', D: 'Kano' }, ans: 'A', exp: 'Abuja is the Federal Capital Territory, officially replacing Lagos in 1991.' },
-    { id: 'G2', subject: 'GENERAL', q: 'The Nigerian flag has how many colors?', options: { A: '1', B: '2', C: '3', D: '4' }, ans: 'B', exp: 'The flag has two colors: Green and White, representing agriculture and peace.' },
-    { id: 'G3', subject: 'GENERAL', q: 'In what year did Nigeria gain independence?', options: { A: '1963', B: '1960', C: '1914', D: '1999' }, ans: 'B', exp: 'Nigeria gained full independence from British rule on October 1, 1960.' },
-    { id: 'G4', subject: 'GENERAL', q: 'Who designed the Nigerian national flag?', options: { A: 'Wole Soyinka', B: 'Taiwo Akinkunmi', C: 'Chinua Achebe', D: 'Obafemi Awolowo' }, ans: 'B', exp: 'Michael Taiwo Akinkunmi designed the Nigerian flag in 1959.' },
-    { id: 'G5', subject: 'GENERAL', q: 'The National Assembly is the **\\dots** organ of government?', options: { A: 'Executive', B: 'Legislative', C: 'Judicial', D: 'Federal Council' }, ans: 'B', exp: 'The Legislative arm, which includes the National Assembly, is responsible for making laws.' },
-    { id: 'G6', subject: 'GENERAL', q: 'Which body manages the economy and monetary policy in Nigeria?', options: { A: 'NNPC', B: 'CBN', C: 'NTA', D: 'FRSC' }, ans: 'B', exp: 'The Central Bank of Nigeria (CBN) manages the monetary policy.' },
-    { id: 'G7', subject: 'GENERAL', q: 'Which year marked the amalgamation of Northern and Southern Protectorates?', options: { A: '1914', B: '1960', C: '1900', D: '1884' }, ans: 'A', exp: 'The Northern and Southern Protectorates were amalgamated in 1914 by Lord Lugard.' },
-    { id: 'G8', subject: 'GENERAL', q: 'The White color on the Nigerian flag primarily represents:', options: { A: 'Agriculture', B: 'Peace and Unity', C: 'Oil wealth', D: 'Fertile land' }, ans: 'B', exp: 'The white stripe represents peace and unity.' },
-    { id: 'G9', subject: 'GENERAL', q: 'The official language of Nigeria is?', options: { A: 'Yoruba', B: 'Hausa', C: 'Igbo', D: 'English' }, ans: 'D', exp: 'English is the official language, used for administration and education.' },
-    { id: 'G10', subject: 'GENERAL', q: 'How many states are officially in the Federal Republic of Nigeria?', options: { A: '35', B: '36', C: '37', D: '34' }, ans: 'B', exp: 'Nigeria is composed of 36 states and the Federal Capital Territory (FCT).' },
-    { id: 'G11', subject: 'GENERAL', q: 'The current President of Nigeria is the head of which arm of government?', options: { A: 'Executive', B: 'Legislative', C: 'Judicial', D: 'Traditional' }, ans: 'A', exp: 'The President is the head of the Executive arm.' },
-    { id: 'G12', subject: 'GENERAL', q: 'What is the full meaning of ECOWAS?', options: { A: 'Economic Community of Western African States', B: 'Economic Community of West African States', C: 'Ecological Convention of West African States', D: 'Economic Co-operation of West African States' }, ans: 'B', exp: 'ECOWAS stands for Economic Community of West African States.' },
-    { id: 'G13', subject: 'GENERAL', q: 'The primary mineral resource that Nigeria relies on for its economy is:', options: { A: 'Coal', B: 'Gold', C: 'Crude Oil', D: 'Tin' }, ans: 'C', exp: 'Crude Oil remains the largest source of government revenue.' },
-    { id: 'G14', subject: 'GENERAL', q: 'The minimum age requirement to contest for the presidency of Nigeria is:', options: { A: '30 years', B: '35 years', C: '40 years', D: '45 years' }, ans: 'B', exp: 'The 1999 Constitution (as amended) sets the minimum age for President at 35.' },
-    { id: 'G15', subject: 'GENERAL', q: 'Which Nigerian state is known as the "Centre of Excellence"?', options: { A: 'Abuja', B: 'Kano', C: 'Lagos', D: 'Rivers' }, ans: 'C', exp: 'Lagos State is famously known by this slogan.' },
-    { id: 'G16', subject: 'GENERAL', q: 'The Supreme Court is the head of which arm of government?', options: { A: 'Executive', B: 'Legislative', C: 'Judicial', D: 'Council of State' }, ans: 'C', exp: 'The Supreme Court is the apex body of the Judicial arm.' },
-    { id: 'G17', subject: 'GENERAL', q: 'The term "Rule of Law" means:', options: { A: 'The ruler is above the law', B: 'Everyone is subject to the law', C: 'Only the rich are governed by the law', D: 'Only the poor are governed by the law' }, ans: 'B', exp: 'Rule of Law means all persons, institutions, and entities are accountable to laws that are publicly promulgated, equally enforced, and independently adjudicated.' },
-    { id: 'G18', subject: 'GENERAL', q: 'The Nigerian currency is the Naira and:', options: { A: 'Kobo', B: 'Shilling', C: 'Dollar', D: 'Pound' }, ans: 'A', exp: 'The Nigerian currency is divided into Naira and Kobo.' },
-    { id: 'G19', subject: 'GENERAL', q: 'Which body is responsible for conducting elections in Nigeria?', options: { A: 'NASS', B: 'INEC', C: 'Police', D: 'Judiciary' }, ans: 'B', exp: 'The Independent National Electoral Commission (INEC) is responsible for elections.' },
-    { id: 'G20', subject: 'GENERAL', q: 'The national motto of Nigeria is:', options: { A: 'Peace and Unity', B: 'Unity and Faith, Peace and Progress', C: 'To Serve With Integrity', D: 'Loyalty and Diligence' }, ans: 'B', exp: 'Unity and Faith, Peace and Progress is the national motto.' },
-
-
+    {
+        "id": "G1",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the largest ethnic group in Nigeria?",
+        "options": {
+            "A": "Igbo",
+            "B": "Yoruba",
+            "C": "Hausa-Fulani",
+            "D": "Ijaw"
+        },
+        "ans": "C",
+        "exp": "The Hausa-Fulani are the largest ethnic group in Nigeria."
+    },
+    {
+        "id": "G2",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who was Nigeria's first Prime Minister?",
+        "options": {
+            "A": "Nnamdi Azikiwe",
+            "B": "Tafawa Balewa",
+            "C": "Obafemi Awolowo",
+            "D": "Ahmadu Bello"
+        },
+        "ans": "B",
+        "exp": "Sir Abubakar Tafawa Balewa was Nigeria\u2019s first Prime Minister."
+    },
+    {
+        "id": "G3",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian city is known as the \u2018Centre of Excellence\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Lagos",
+            "C": "Enugu",
+            "D": "Abuja"
+        },
+        "ans": "B",
+        "exp": "Lagos is nicknamed the 'Centre of Excellence'."
+    },
+    {
+        "id": "G4",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the largest ethnic group in Nigeria?",
+        "options": {
+            "A": "Igbo",
+            "B": "Yoruba",
+            "C": "Hausa-Fulani",
+            "D": "Ijaw"
+        },
+        "ans": "C",
+        "exp": "The Hausa-Fulani are the largest ethnic group in Nigeria."
+    },
+    {
+        "id": "G5",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who composed the Nigerian national anthem?",
+        "options": {
+            "A": "Benedict Odiase",
+            "B": "Pa Benedict Peters",
+            "C": "Wole Soyinka",
+            "D": "Chinua Achebe"
+        },
+        "ans": "A",
+        "exp": "Benedict Odiase composed the current national anthem, adopted in 1978."
+    },
+    {
+        "id": "G6",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Nigeria operates what type of government system?",
+        "options": {
+            "A": "Monarchy",
+            "B": "Parliamentary",
+            "C": "Federal Republic",
+            "D": "Confederation"
+        },
+        "ans": "C",
+        "exp": "Nigeria operates a Federal Republic system of government."
+    },
+    {
+        "id": "G7",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is the largest by land area?",
+        "options": {
+            "A": "Niger",
+            "B": "Borno",
+            "C": "Kano",
+            "D": "Kaduna"
+        },
+        "ans": "A",
+        "exp": "Niger State is the largest by land area in Nigeria."
+    },
+    {
+        "id": "G8",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who was Nigeria's first Prime Minister?",
+        "options": {
+            "A": "Nnamdi Azikiwe",
+            "B": "Tafawa Balewa",
+            "C": "Obafemi Awolowo",
+            "D": "Ahmadu Bello"
+        },
+        "ans": "B",
+        "exp": "Sir Abubakar Tafawa Balewa was Nigeria\u2019s first Prime Minister."
+    },
+    {
+        "id": "G9",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current Governor of Lagos State?",
+        "options": {
+            "A": "Babajide Sanwo-Olu",
+            "B": "Akinwunmi Ambode",
+            "C": "Kayode Fayemi",
+            "D": "Dapo Abiodun"
+        },
+        "ans": "A",
+        "exp": "Babajide Sanwo-Olu has been governor since 2019."
+    },
+    {
+        "id": "G10",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is the largest by land area?",
+        "options": {
+            "A": "Niger",
+            "B": "Borno",
+            "C": "Kano",
+            "D": "Kaduna"
+        },
+        "ans": "A",
+        "exp": "Niger State is the largest by land area in Nigeria."
+    },
+    {
+        "id": "G11",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian city is known as the \u2018Centre of Excellence\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Lagos",
+            "C": "Enugu",
+            "D": "Abuja"
+        },
+        "ans": "B",
+        "exp": "Lagos is nicknamed the 'Centre of Excellence'."
+    },
+    {
+        "id": "G12",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is known as the \u2018Coal City State\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Enugu",
+            "C": "Jos",
+            "D": "Ogun"
+        },
+        "ans": "B",
+        "exp": "Enugu is nicknamed the 'Coal City State' due to its coal deposits."
+    },
+    {
+        "id": "G13",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which river is the longest in Nigeria?",
+        "options": {
+            "A": "River Niger",
+            "B": "River Benue",
+            "C": "Cross River",
+            "D": "Ogun River"
+        },
+        "ans": "A",
+        "exp": "River Niger is Nigeria\u2019s longest river."
+    },
+    {
+        "id": "G14",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current President of Nigeria?",
+        "options": {
+            "A": "Bola Ahmed Tinubu",
+            "B": "Muhammadu Buhari",
+            "C": "Goodluck Jonathan",
+            "D": "Atiku Abubakar"
+        },
+        "ans": "A",
+        "exp": "Bola Ahmed Tinubu became Nigeria\u2019s President in May 2023."
+    },
+    {
+        "id": "G15",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the largest ethnic group in Nigeria?",
+        "options": {
+            "A": "Igbo",
+            "B": "Yoruba",
+            "C": "Hausa-Fulani",
+            "D": "Ijaw"
+        },
+        "ans": "C",
+        "exp": "The Hausa-Fulani are the largest ethnic group in Nigeria."
+    },
+    {
+        "id": "G16",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian was awarded the Nobel Prize in Literature?",
+        "options": {
+            "A": "Wole Soyinka",
+            "B": "Chinua Achebe",
+            "C": "Buchi Emecheta",
+            "D": "Ben Okri"
+        },
+        "ans": "A",
+        "exp": "Wole Soyinka won the Nobel Prize in Literature in 1986."
+    },
+    {
+        "id": "G17",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the name of Nigeria\u2019s legislative building?",
+        "options": {
+            "A": "House of Assembly",
+            "B": "The Villa",
+            "C": "National Assembly Complex",
+            "D": "Unity House"
+        },
+        "ans": "C",
+        "exp": "The National Assembly Complex in Abuja houses the Senate and House of Representatives."
+    },
+    {
+        "id": "G18",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "In which year did Nigeria gain independence?",
+        "options": {
+            "A": "1957",
+            "B": "1959",
+            "C": "1960",
+            "D": "1963"
+        },
+        "ans": "C",
+        "exp": "Nigeria gained independence from Britain on October 1, 1960."
+    },
+    {
+        "id": "G19",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "In which year did Nigeria gain independence?",
+        "options": {
+            "A": "1957",
+            "B": "1959",
+            "C": "1960",
+            "D": "1963"
+        },
+        "ans": "C",
+        "exp": "Nigeria gained independence from Britain on October 1, 1960."
+    },
+    {
+        "id": "G20",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What does the green color in Nigeria's flag represent?",
+        "options": {
+            "A": "Peace",
+            "B": "Agriculture",
+            "C": "Unity",
+            "D": "Strength"
+        },
+        "ans": "B",
+        "exp": "Green represents agriculture, white stands for peace."
+    },
+    {
+        "id": "G21",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is known as the \u2018Coal City State\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Enugu",
+            "C": "Jos",
+            "D": "Ogun"
+        },
+        "ans": "B",
+        "exp": "Enugu is nicknamed the 'Coal City State' due to its coal deposits."
+    },
+    {
+        "id": "G22",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is the largest by land area?",
+        "options": {
+            "A": "Niger",
+            "B": "Borno",
+            "C": "Kano",
+            "D": "Kaduna"
+        },
+        "ans": "A",
+        "exp": "Niger State is the largest by land area in Nigeria."
+    },
+    {
+        "id": "G23",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current President of Nigeria?",
+        "options": {
+            "A": "Bola Ahmed Tinubu",
+            "B": "Muhammadu Buhari",
+            "C": "Goodluck Jonathan",
+            "D": "Atiku Abubakar"
+        },
+        "ans": "A",
+        "exp": "Bola Ahmed Tinubu became Nigeria\u2019s President in May 2023."
+    },
+    {
+        "id": "G24",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is the largest by land area?",
+        "options": {
+            "A": "Niger",
+            "B": "Borno",
+            "C": "Kano",
+            "D": "Kaduna"
+        },
+        "ans": "A",
+        "exp": "Niger State is the largest by land area in Nigeria."
+    },
+    {
+        "id": "G25",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Nigeria operates what type of government system?",
+        "options": {
+            "A": "Monarchy",
+            "B": "Parliamentary",
+            "C": "Federal Republic",
+            "D": "Confederation"
+        },
+        "ans": "C",
+        "exp": "Nigeria operates a Federal Republic system of government."
+    },
+    {
+        "id": "G26",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the color of the Nigerian flag?",
+        "options": {
+            "A": "Green and White",
+            "B": "Green, White, Green",
+            "C": "White and Green",
+            "D": "Green and Black"
+        },
+        "ans": "B",
+        "exp": "The flag consists of three vertical stripes: green, white, green."
+    },
+    {
+        "id": "G27",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian author wrote 'Things Fall Apart'?",
+        "options": {
+            "A": "Wole Soyinka",
+            "B": "Chimamanda Adichie",
+            "C": "Chinua Achebe",
+            "D": "Ben Okri"
+        },
+        "ans": "C",
+        "exp": "'Things Fall Apart' was written by Chinua Achebe in 1958."
+    },
+    {
+        "id": "G28",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current Governor of Lagos State?",
+        "options": {
+            "A": "Babajide Sanwo-Olu",
+            "B": "Akinwunmi Ambode",
+            "C": "Kayode Fayemi",
+            "D": "Dapo Abiodun"
+        },
+        "ans": "A",
+        "exp": "Babajide Sanwo-Olu has been governor since 2019."
+    },
+    {
+        "id": "G29",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current President of Nigeria?",
+        "options": {
+            "A": "Bola Ahmed Tinubu",
+            "B": "Muhammadu Buhari",
+            "C": "Goodluck Jonathan",
+            "D": "Atiku Abubakar"
+        },
+        "ans": "A",
+        "exp": "Bola Ahmed Tinubu became Nigeria\u2019s President in May 2023."
+    },
+    {
+        "id": "G30",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current President of Nigeria?",
+        "options": {
+            "A": "Bola Ahmed Tinubu",
+            "B": "Muhammadu Buhari",
+            "C": "Goodluck Jonathan",
+            "D": "Atiku Abubakar"
+        },
+        "ans": "A",
+        "exp": "Bola Ahmed Tinubu became Nigeria\u2019s President in May 2023."
+    },
+    {
+        "id": "G31",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current President of Nigeria?",
+        "options": {
+            "A": "Bola Ahmed Tinubu",
+            "B": "Muhammadu Buhari",
+            "C": "Goodluck Jonathan",
+            "D": "Atiku Abubakar"
+        },
+        "ans": "A",
+        "exp": "Bola Ahmed Tinubu became Nigeria\u2019s President in May 2023."
+    },
+    {
+        "id": "G32",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who was Nigeria's first Prime Minister?",
+        "options": {
+            "A": "Nnamdi Azikiwe",
+            "B": "Tafawa Balewa",
+            "C": "Obafemi Awolowo",
+            "D": "Ahmadu Bello"
+        },
+        "ans": "B",
+        "exp": "Sir Abubakar Tafawa Balewa was Nigeria\u2019s first Prime Minister."
+    },
+    {
+        "id": "G33",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is known as the \u2018Coal City State\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Enugu",
+            "C": "Jos",
+            "D": "Ogun"
+        },
+        "ans": "B",
+        "exp": "Enugu is nicknamed the 'Coal City State' due to its coal deposits."
+    },
+    {
+        "id": "G34",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current Governor of Lagos State?",
+        "options": {
+            "A": "Babajide Sanwo-Olu",
+            "B": "Akinwunmi Ambode",
+            "C": "Kayode Fayemi",
+            "D": "Dapo Abiodun"
+        },
+        "ans": "A",
+        "exp": "Babajide Sanwo-Olu has been governor since 2019."
+    },
+    {
+        "id": "G35",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which river is the longest in Nigeria?",
+        "options": {
+            "A": "River Niger",
+            "B": "River Benue",
+            "C": "Cross River",
+            "D": "Ogun River"
+        },
+        "ans": "A",
+        "exp": "River Niger is Nigeria\u2019s longest river."
+    },
+    {
+        "id": "G36",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Nigeria operates what type of government system?",
+        "options": {
+            "A": "Monarchy",
+            "B": "Parliamentary",
+            "C": "Federal Republic",
+            "D": "Confederation"
+        },
+        "ans": "C",
+        "exp": "Nigeria operates a Federal Republic system of government."
+    },
+    {
+        "id": "G37",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian footballer won the 1995 FIFA World Player of the Year?",
+        "options": {
+            "A": "Austin Okocha",
+            "B": "Nwankwo Kanu",
+            "C": "Victor Osimhen",
+            "D": "Rashidi Yekini"
+        },
+        "ans": "B",
+        "exp": "Nwankwo Kanu won the FIFA U-17 and Olympic gold, and was African Footballer of the Year twice."
+    },
+    {
+        "id": "G38",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the name of Nigeria\u2019s legislative building?",
+        "options": {
+            "A": "House of Assembly",
+            "B": "The Villa",
+            "C": "National Assembly Complex",
+            "D": "Unity House"
+        },
+        "ans": "C",
+        "exp": "The National Assembly Complex in Abuja houses the Senate and House of Representatives."
+    },
+    {
+        "id": "G39",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is the largest by land area?",
+        "options": {
+            "A": "Niger",
+            "B": "Borno",
+            "C": "Kano",
+            "D": "Kaduna"
+        },
+        "ans": "A",
+        "exp": "Niger State is the largest by land area in Nigeria."
+    },
+    {
+        "id": "G40",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian city is known as the \u2018Centre of Excellence\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Lagos",
+            "C": "Enugu",
+            "D": "Abuja"
+        },
+        "ans": "B",
+        "exp": "Lagos is nicknamed the 'Centre of Excellence'."
+    },
+    {
+        "id": "G41",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian author wrote 'Things Fall Apart'?",
+        "options": {
+            "A": "Wole Soyinka",
+            "B": "Chimamanda Adichie",
+            "C": "Chinua Achebe",
+            "D": "Ben Okri"
+        },
+        "ans": "C",
+        "exp": "'Things Fall Apart' was written by Chinua Achebe in 1958."
+    },
+    {
+        "id": "G42",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian footballer won the 1995 FIFA World Player of the Year?",
+        "options": {
+            "A": "Austin Okocha",
+            "B": "Nwankwo Kanu",
+            "C": "Victor Osimhen",
+            "D": "Rashidi Yekini"
+        },
+        "ans": "B",
+        "exp": "Nwankwo Kanu won the FIFA U-17 and Olympic gold, and was African Footballer of the Year twice."
+    },
+    {
+        "id": "G43",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current Governor of Lagos State?",
+        "options": {
+            "A": "Babajide Sanwo-Olu",
+            "B": "Akinwunmi Ambode",
+            "C": "Kayode Fayemi",
+            "D": "Dapo Abiodun"
+        },
+        "ans": "A",
+        "exp": "Babajide Sanwo-Olu has been governor since 2019."
+    },
+    {
+        "id": "G44",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is the largest by land area?",
+        "options": {
+            "A": "Niger",
+            "B": "Borno",
+            "C": "Kano",
+            "D": "Kaduna"
+        },
+        "ans": "A",
+        "exp": "Niger State is the largest by land area in Nigeria."
+    },
+    {
+        "id": "G45",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian footballer won the 1995 FIFA World Player of the Year?",
+        "options": {
+            "A": "Austin Okocha",
+            "B": "Nwankwo Kanu",
+            "C": "Victor Osimhen",
+            "D": "Rashidi Yekini"
+        },
+        "ans": "B",
+        "exp": "Nwankwo Kanu won the FIFA U-17 and Olympic gold, and was African Footballer of the Year twice."
+    },
+    {
+        "id": "G46",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What does the green color in Nigeria's flag represent?",
+        "options": {
+            "A": "Peace",
+            "B": "Agriculture",
+            "C": "Unity",
+            "D": "Strength"
+        },
+        "ans": "B",
+        "exp": "Green represents agriculture, white stands for peace."
+    },
+    {
+        "id": "G47",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who composed the Nigerian national anthem?",
+        "options": {
+            "A": "Benedict Odiase",
+            "B": "Pa Benedict Peters",
+            "C": "Wole Soyinka",
+            "D": "Chinua Achebe"
+        },
+        "ans": "A",
+        "exp": "Benedict Odiase composed the current national anthem, adopted in 1978."
+    },
+    {
+        "id": "G48",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current President of Nigeria?",
+        "options": {
+            "A": "Bola Ahmed Tinubu",
+            "B": "Muhammadu Buhari",
+            "C": "Goodluck Jonathan",
+            "D": "Atiku Abubakar"
+        },
+        "ans": "A",
+        "exp": "Bola Ahmed Tinubu became Nigeria\u2019s President in May 2023."
+    },
+    {
+        "id": "G49",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the name of Nigeria\u2019s legislative building?",
+        "options": {
+            "A": "House of Assembly",
+            "B": "The Villa",
+            "C": "National Assembly Complex",
+            "D": "Unity House"
+        },
+        "ans": "C",
+        "exp": "The National Assembly Complex in Abuja houses the Senate and House of Representatives."
+    },
+    {
+        "id": "G50",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which is Nigeria\u2019s highest mountain?",
+        "options": {
+            "A": "Mount Patti",
+            "B": "Chappal Waddi",
+            "C": "Shere Hills",
+            "D": "Obudu Hill"
+        },
+        "ans": "B",
+        "exp": "Chappal Waddi, in Taraba State, is Nigeria\u2019s highest mountain."
+    },
+    {
+        "id": "G51",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is known as the \u2018Coal City State\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Enugu",
+            "C": "Jos",
+            "D": "Ogun"
+        },
+        "ans": "B",
+        "exp": "Enugu is nicknamed the 'Coal City State' due to its coal deposits."
+    },
+    {
+        "id": "G52",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is known as the \u2018Coal City State\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Enugu",
+            "C": "Jos",
+            "D": "Ogun"
+        },
+        "ans": "B",
+        "exp": "Enugu is nicknamed the 'Coal City State' due to its coal deposits."
+    },
+    {
+        "id": "G53",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Nigeria operates what type of government system?",
+        "options": {
+            "A": "Monarchy",
+            "B": "Parliamentary",
+            "C": "Federal Republic",
+            "D": "Confederation"
+        },
+        "ans": "C",
+        "exp": "Nigeria operates a Federal Republic system of government."
+    },
+    {
+        "id": "G54",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the color of the Nigerian flag?",
+        "options": {
+            "A": "Green and White",
+            "B": "Green, White, Green",
+            "C": "White and Green",
+            "D": "Green and Black"
+        },
+        "ans": "B",
+        "exp": "The flag consists of three vertical stripes: green, white, green."
+    },
+    {
+        "id": "G55",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current Governor of Lagos State?",
+        "options": {
+            "A": "Babajide Sanwo-Olu",
+            "B": "Akinwunmi Ambode",
+            "C": "Kayode Fayemi",
+            "D": "Dapo Abiodun"
+        },
+        "ans": "A",
+        "exp": "Babajide Sanwo-Olu has been governor since 2019."
+    },
+    {
+        "id": "G56",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "In which year did Nigeria gain independence?",
+        "options": {
+            "A": "1957",
+            "B": "1959",
+            "C": "1960",
+            "D": "1963"
+        },
+        "ans": "C",
+        "exp": "Nigeria gained independence from Britain on October 1, 1960."
+    },
+    {
+        "id": "G57",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is Nigeria\u2019s official currency?",
+        "options": {
+            "A": "Dollar",
+            "B": "Cedi",
+            "C": "Naira",
+            "D": "Pound"
+        },
+        "ans": "C",
+        "exp": "The Naira (\u20a6) is the official currency of Nigeria."
+    },
+    {
+        "id": "G58",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the name of Nigeria\u2019s legislative building?",
+        "options": {
+            "A": "House of Assembly",
+            "B": "The Villa",
+            "C": "National Assembly Complex",
+            "D": "Unity House"
+        },
+        "ans": "C",
+        "exp": "The National Assembly Complex in Abuja houses the Senate and House of Representatives."
+    },
+    {
+        "id": "G59",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian was awarded the Nobel Prize in Literature?",
+        "options": {
+            "A": "Wole Soyinka",
+            "B": "Chinua Achebe",
+            "C": "Buchi Emecheta",
+            "D": "Ben Okri"
+        },
+        "ans": "A",
+        "exp": "Wole Soyinka won the Nobel Prize in Literature in 1986."
+    },
+    {
+        "id": "G60",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is Nigeria\u2019s official currency?",
+        "options": {
+            "A": "Dollar",
+            "B": "Cedi",
+            "C": "Naira",
+            "D": "Pound"
+        },
+        "ans": "C",
+        "exp": "The Naira (\u20a6) is the official currency of Nigeria."
+    },
+    {
+        "id": "G61",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian author wrote 'Things Fall Apart'?",
+        "options": {
+            "A": "Wole Soyinka",
+            "B": "Chimamanda Adichie",
+            "C": "Chinua Achebe",
+            "D": "Ben Okri"
+        },
+        "ans": "C",
+        "exp": "'Things Fall Apart' was written by Chinua Achebe in 1958."
+    },
+    {
+        "id": "G62",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the largest ethnic group in Nigeria?",
+        "options": {
+            "A": "Igbo",
+            "B": "Yoruba",
+            "C": "Hausa-Fulani",
+            "D": "Ijaw"
+        },
+        "ans": "C",
+        "exp": "The Hausa-Fulani are the largest ethnic group in Nigeria."
+    },
+    {
+        "id": "G63",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current President of Nigeria?",
+        "options": {
+            "A": "Bola Ahmed Tinubu",
+            "B": "Muhammadu Buhari",
+            "C": "Goodluck Jonathan",
+            "D": "Atiku Abubakar"
+        },
+        "ans": "A",
+        "exp": "Bola Ahmed Tinubu became Nigeria\u2019s President in May 2023."
+    },
+    {
+        "id": "G64",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the largest ethnic group in Nigeria?",
+        "options": {
+            "A": "Igbo",
+            "B": "Yoruba",
+            "C": "Hausa-Fulani",
+            "D": "Ijaw"
+        },
+        "ans": "C",
+        "exp": "The Hausa-Fulani are the largest ethnic group in Nigeria."
+    },
+    {
+        "id": "G65",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is known as the \u2018Coal City State\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Enugu",
+            "C": "Jos",
+            "D": "Ogun"
+        },
+        "ans": "B",
+        "exp": "Enugu is nicknamed the 'Coal City State' due to its coal deposits."
+    },
+    {
+        "id": "G66",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian city is known as the \u2018Centre of Excellence\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Lagos",
+            "C": "Enugu",
+            "D": "Abuja"
+        },
+        "ans": "B",
+        "exp": "Lagos is nicknamed the 'Centre of Excellence'."
+    },
+    {
+        "id": "G67",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the color of the Nigerian flag?",
+        "options": {
+            "A": "Green and White",
+            "B": "Green, White, Green",
+            "C": "White and Green",
+            "D": "Green and Black"
+        },
+        "ans": "B",
+        "exp": "The flag consists of three vertical stripes: green, white, green."
+    },
+    {
+        "id": "G68",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian footballer won the 1995 FIFA World Player of the Year?",
+        "options": {
+            "A": "Austin Okocha",
+            "B": "Nwankwo Kanu",
+            "C": "Victor Osimhen",
+            "D": "Rashidi Yekini"
+        },
+        "ans": "B",
+        "exp": "Nwankwo Kanu won the FIFA U-17 and Olympic gold, and was African Footballer of the Year twice."
+    },
+    {
+        "id": "G69",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What does the green color in Nigeria's flag represent?",
+        "options": {
+            "A": "Peace",
+            "B": "Agriculture",
+            "C": "Unity",
+            "D": "Strength"
+        },
+        "ans": "B",
+        "exp": "Green represents agriculture, white stands for peace."
+    },
+    {
+        "id": "G70",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian footballer won the 1995 FIFA World Player of the Year?",
+        "options": {
+            "A": "Austin Okocha",
+            "B": "Nwankwo Kanu",
+            "C": "Victor Osimhen",
+            "D": "Rashidi Yekini"
+        },
+        "ans": "B",
+        "exp": "Nwankwo Kanu won the FIFA U-17 and Olympic gold, and was African Footballer of the Year twice."
+    },
+    {
+        "id": "G71",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian author wrote 'Things Fall Apart'?",
+        "options": {
+            "A": "Wole Soyinka",
+            "B": "Chimamanda Adichie",
+            "C": "Chinua Achebe",
+            "D": "Ben Okri"
+        },
+        "ans": "C",
+        "exp": "'Things Fall Apart' was written by Chinua Achebe in 1958."
+    },
+    {
+        "id": "G72",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current Governor of Lagos State?",
+        "options": {
+            "A": "Babajide Sanwo-Olu",
+            "B": "Akinwunmi Ambode",
+            "C": "Kayode Fayemi",
+            "D": "Dapo Abiodun"
+        },
+        "ans": "A",
+        "exp": "Babajide Sanwo-Olu has been governor since 2019."
+    },
+    {
+        "id": "G73",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian city is known as the \u2018Centre of Excellence\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Lagos",
+            "C": "Enugu",
+            "D": "Abuja"
+        },
+        "ans": "B",
+        "exp": "Lagos is nicknamed the 'Centre of Excellence'."
+    },
+    {
+        "id": "G74",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian was awarded the Nobel Prize in Literature?",
+        "options": {
+            "A": "Wole Soyinka",
+            "B": "Chinua Achebe",
+            "C": "Buchi Emecheta",
+            "D": "Ben Okri"
+        },
+        "ans": "A",
+        "exp": "Wole Soyinka won the Nobel Prize in Literature in 1986."
+    },
+    {
+        "id": "G75",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the name of Nigeria\u2019s legislative building?",
+        "options": {
+            "A": "House of Assembly",
+            "B": "The Villa",
+            "C": "National Assembly Complex",
+            "D": "Unity House"
+        },
+        "ans": "C",
+        "exp": "The National Assembly Complex in Abuja houses the Senate and House of Representatives."
+    },
+    {
+        "id": "G76",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian city is known as the \u2018Centre of Excellence\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Lagos",
+            "C": "Enugu",
+            "D": "Abuja"
+        },
+        "ans": "B",
+        "exp": "Lagos is nicknamed the 'Centre of Excellence'."
+    },
+    {
+        "id": "G77",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who composed the Nigerian national anthem?",
+        "options": {
+            "A": "Benedict Odiase",
+            "B": "Pa Benedict Peters",
+            "C": "Wole Soyinka",
+            "D": "Chinua Achebe"
+        },
+        "ans": "A",
+        "exp": "Benedict Odiase composed the current national anthem, adopted in 1978."
+    },
+    {
+        "id": "G78",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who was Nigeria's first Prime Minister?",
+        "options": {
+            "A": "Nnamdi Azikiwe",
+            "B": "Tafawa Balewa",
+            "C": "Obafemi Awolowo",
+            "D": "Ahmadu Bello"
+        },
+        "ans": "B",
+        "exp": "Sir Abubakar Tafawa Balewa was Nigeria\u2019s first Prime Minister."
+    },
+    {
+        "id": "G79",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What does the green color in Nigeria's flag represent?",
+        "options": {
+            "A": "Peace",
+            "B": "Agriculture",
+            "C": "Unity",
+            "D": "Strength"
+        },
+        "ans": "B",
+        "exp": "Green represents agriculture, white stands for peace."
+    },
+    {
+        "id": "G80",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who composed the Nigerian national anthem?",
+        "options": {
+            "A": "Benedict Odiase",
+            "B": "Pa Benedict Peters",
+            "C": "Wole Soyinka",
+            "D": "Chinua Achebe"
+        },
+        "ans": "A",
+        "exp": "Benedict Odiase composed the current national anthem, adopted in 1978."
+    },
+    {
+        "id": "G81",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the capital city of Nigeria?",
+        "options": {
+            "A": "Lagos",
+            "B": "Abuja",
+            "C": "Kano",
+            "D": "Port Harcourt"
+        },
+        "ans": "B",
+        "exp": "Abuja became the capital of Nigeria in 1991, replacing Lagos."
+    },
+    {
+        "id": "G82",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who composed the Nigerian national anthem?",
+        "options": {
+            "A": "Benedict Odiase",
+            "B": "Pa Benedict Peters",
+            "C": "Wole Soyinka",
+            "D": "Chinua Achebe"
+        },
+        "ans": "A",
+        "exp": "Benedict Odiase composed the current national anthem, adopted in 1978."
+    },
+    {
+        "id": "G83",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which is Nigeria\u2019s highest mountain?",
+        "options": {
+            "A": "Mount Patti",
+            "B": "Chappal Waddi",
+            "C": "Shere Hills",
+            "D": "Obudu Hill"
+        },
+        "ans": "B",
+        "exp": "Chappal Waddi, in Taraba State, is Nigeria\u2019s highest mountain."
+    },
+    {
+        "id": "G84",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the color of the Nigerian flag?",
+        "options": {
+            "A": "Green and White",
+            "B": "Green, White, Green",
+            "C": "White and Green",
+            "D": "Green and Black"
+        },
+        "ans": "B",
+        "exp": "The flag consists of three vertical stripes: green, white, green."
+    },
+    {
+        "id": "G85",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian city is known as the \u2018Centre of Excellence\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Lagos",
+            "C": "Enugu",
+            "D": "Abuja"
+        },
+        "ans": "B",
+        "exp": "Lagos is nicknamed the 'Centre of Excellence'."
+    },
+    {
+        "id": "G86",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Nigeria operates what type of government system?",
+        "options": {
+            "A": "Monarchy",
+            "B": "Parliamentary",
+            "C": "Federal Republic",
+            "D": "Confederation"
+        },
+        "ans": "C",
+        "exp": "Nigeria operates a Federal Republic system of government."
+    },
+    {
+        "id": "G87",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian city is known as the \u2018Centre of Excellence\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Lagos",
+            "C": "Enugu",
+            "D": "Abuja"
+        },
+        "ans": "B",
+        "exp": "Lagos is nicknamed the 'Centre of Excellence'."
+    },
+    {
+        "id": "G88",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian state is known as the \u2018Coal City State\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Enugu",
+            "C": "Jos",
+            "D": "Ogun"
+        },
+        "ans": "B",
+        "exp": "Enugu is nicknamed the 'Coal City State' due to its coal deposits."
+    },
+    {
+        "id": "G89",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian author wrote 'Things Fall Apart'?",
+        "options": {
+            "A": "Wole Soyinka",
+            "B": "Chimamanda Adichie",
+            "C": "Chinua Achebe",
+            "D": "Ben Okri"
+        },
+        "ans": "C",
+        "exp": "'Things Fall Apart' was written by Chinua Achebe in 1958."
+    },
+    {
+        "id": "G90",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Nigeria operates what type of government system?",
+        "options": {
+            "A": "Monarchy",
+            "B": "Parliamentary",
+            "C": "Federal Republic",
+            "D": "Confederation"
+        },
+        "ans": "C",
+        "exp": "Nigeria operates a Federal Republic system of government."
+    },
+    {
+        "id": "G91",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "In which year did Nigeria gain independence?",
+        "options": {
+            "A": "1957",
+            "B": "1959",
+            "C": "1960",
+            "D": "1963"
+        },
+        "ans": "C",
+        "exp": "Nigeria gained independence from Britain on October 1, 1960."
+    },
+    {
+        "id": "G92",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What does the green color in Nigeria's flag represent?",
+        "options": {
+            "A": "Peace",
+            "B": "Agriculture",
+            "C": "Unity",
+            "D": "Strength"
+        },
+        "ans": "B",
+        "exp": "Green represents agriculture, white stands for peace."
+    },
+    {
+        "id": "G93",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the name of Nigeria\u2019s legislative building?",
+        "options": {
+            "A": "House of Assembly",
+            "B": "The Villa",
+            "C": "National Assembly Complex",
+            "D": "Unity House"
+        },
+        "ans": "C",
+        "exp": "The National Assembly Complex in Abuja houses the Senate and House of Representatives."
+    },
+    {
+        "id": "G94",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian city is known as the \u2018Centre of Excellence\u2019?",
+        "options": {
+            "A": "Kano",
+            "B": "Lagos",
+            "C": "Enugu",
+            "D": "Abuja"
+        },
+        "ans": "B",
+        "exp": "Lagos is nicknamed the 'Centre of Excellence'."
+    },
+    {
+        "id": "G95",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the color of the Nigerian flag?",
+        "options": {
+            "A": "Green and White",
+            "B": "Green, White, Green",
+            "C": "White and Green",
+            "D": "Green and Black"
+        },
+        "ans": "B",
+        "exp": "The flag consists of three vertical stripes: green, white, green."
+    },
+    {
+        "id": "G96",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What does the green color in Nigeria's flag represent?",
+        "options": {
+            "A": "Peace",
+            "B": "Agriculture",
+            "C": "Unity",
+            "D": "Strength"
+        },
+        "ans": "B",
+        "exp": "Green represents agriculture, white stands for peace."
+    },
+    {
+        "id": "G97",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Who is the current President of Nigeria?",
+        "options": {
+            "A": "Bola Ahmed Tinubu",
+            "B": "Muhammadu Buhari",
+            "C": "Goodluck Jonathan",
+            "D": "Atiku Abubakar"
+        },
+        "ans": "A",
+        "exp": "Bola Ahmed Tinubu became Nigeria\u2019s President in May 2023."
+    },
+    {
+        "id": "G98",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "Which Nigerian footballer won the 1995 FIFA World Player of the Year?",
+        "options": {
+            "A": "Austin Okocha",
+            "B": "Nwankwo Kanu",
+            "C": "Victor Osimhen",
+            "D": "Rashidi Yekini"
+        },
+        "ans": "B",
+        "exp": "Nwankwo Kanu won the FIFA U-17 and Olympic gold, and was African Footballer of the Year twice."
+    },
+    {
+        "id": "G99",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What is the name of Nigeria\u2019s legislative building?",
+        "options": {
+            "A": "House of Assembly",
+            "B": "The Villa",
+            "C": "National Assembly Complex",
+            "D": "Unity House"
+        },
+        "ans": "C",
+        "exp": "The National Assembly Complex in Abuja houses the Senate and House of Representatives."
+    },
+    {
+        "id": "G100",
+        "subject": "GENERAL KNOWLEDGE",
+        "q": "What does the green color in Nigeria's flag represent?",
+        "options": {
+            "A": "Peace",
+            "B": "Agriculture",
+            "C": "Unity",
+            "D": "Strength"
+        },
+        "ans": "B",
+        "exp": "Green represents agriculture, white stands for peace."
+    },
+    
     // --- DEPARTMENTAL QUESTIONS (60 Questions Pool, organized by subject) ---
 
     // IMMIGRATION SERVICE (NIS) - 15 Questions Pool
@@ -1524,36 +4071,36 @@ const fullQuestionsData = [
     { id: 'I25', subject: 'IMMIGRATION_NIS', q: 'NIS is under which Ministry?', options: { A: 'Ministry of Defence', B: 'Ministry of Foreign Affairs', C: 'Ministry of Interior', D: 'Ministry of Justice' }, ans: 'C', exp: 'NIS operates under the Ministry of Interior.' },
 
 // CURRENT AFFAIRS -> map into GENERAL subject (append as G21..)
-    { id: 'G21', subject: 'GENERAL', q: 'The first Secretary General of the Commonwealth was?', options: { A: 'George Washington', B: 'Tulam Goldie', C: 'Arnold Smith', D: 'Joseph Garba' }, ans: 'C', exp: 'Arnold Smith was the first Secretary General of the Commonwealth.' },
-    { id: 'G22', subject: 'GENERAL', q: 'Lagos became a crown colony in which year?', options: { A: '1862', B: '1861', C: '1841', D: '1886' }, ans: 'A', exp: '1862 is listed as the year Lagos became a crown colony.' },
-    { id: 'G23', subject: 'GENERAL', q: 'World War I took place between which years?', options: { A: '1911-1914', B: '1914-1916', C: '1916-1918', D: '1914-1918' }, ans: 'D', exp: 'World War I occurred between 1914 and 1918.' },
-    { id: 'G24', subject: 'GENERAL', q: 'The Western and Eastern regions of Nigeria became self-governing in which year?', options: { A: '1959', B: '1960', C: '1957', D: '1956' }, ans: 'C', exp: 'The module lists 1957 for regional self-government.' },
-    { id: 'G25', subject: 'GENERAL', q: 'Who was the first head of government of Nigeria?', options: { A: 'Yakubu Gowon', B: 'Aguiyi Ironsi', C: 'Tafawa Balewa', D: 'Nnamdi Azikiwe' }, ans: 'C', exp: 'Tafawa Balewa was the first Prime Minister (head of government).' },
-    { id: 'G26', subject: 'GENERAL', q: 'Who was the first military president of Nigeria?', options: { A: 'Sanni Abacha', B: 'Ibrahim Babangida', C: 'Aguiyi Ironsi', D: 'Yakubu Gowon' }, ans: 'C', exp: 'Aguiyi Ironsi is widely recognized as the first military Head of State.' },
-    { id: 'G27', subject: 'GENERAL', q: 'Nigeria became a republic in which year?', options: { A: '1963', B: '1960', C: '1976', D: '1961' }, ans: 'A', exp: 'Nigeria became a republic in 1963.' },
-    { id: 'G28', subject: 'GENERAL', q: 'The Northern and Southern protectorates were amalgamated in which year?', options: { A: '1914', B: '1919', C: '1921', D: '1900' }, ans: 'A', exp: 'The amalgamation occurred in 1914.' },
-    { id: 'G29', subject: 'GENERAL', q: 'Who was the first Executive President?', options: { A: 'Nnamdi Azikiwe', B: 'Olusegun Obasanjo', C: 'Shehu Shagari', D: 'Goodluck Jonathan' }, ans: 'A', exp: 'Nnamdi Azikiwe served as Governor-General and later as President; listed as first Executive President in the module.' },
-    { id: 'G30', subject: 'GENERAL', q: 'Who was the first colonial Governor-General of Nigeria?', options: { A: 'Tulam Goldie', B: 'James Robertson', C: 'Huge Clifford', D: 'Lord Lugard' }, ans: 'A', exp: 'Tulam (T. H.) Goldie is listed in the module.' },
-    { id: 'G31', subject: 'GENERAL', q: 'Which is the highest court in Nigeria?', options: { A: 'Court of Appeal', B: 'Supreme Court', C: 'Federal High Court', D: 'Magistrate Court' }, ans: 'B', exp: 'The Supreme Court is the apex court in Nigeria.' },
-    { id: 'G32', subject: 'GENERAL', q: 'ECOWAS was established in __ and has its administrative headquarters in __', options: { A: '1967, Lome', B: '1975, Lome', C: '1975, Lagos', D: '1967, Lagos' }, ans: 'B', exp: 'ECOWAS was established in 1975 with headquarters in Lome.' },
-    { id: 'G33', subject: 'GENERAL', q: 'The first general election in Nigeria was held in which year?', options: { A: '1964', B: '1960', C: '1963', D: '1999' }, ans: 'A', exp: 'The module references 1964 as the first general election.' },
-    { id: 'G34', subject: 'GENERAL', q: 'Nigeria practices which system of government?', options: { A: 'Confederalism', B: 'Unitarism', C: 'Parliamentarianism', D: 'Federalism' }, ans: 'D', exp: 'Nigeria practices a federal system of government.' },
-    { id: 'G35', subject: 'GENERAL', q: 'Who was the last colonial Governor-General of Nigeria?', options: { A: 'James Robertson', B: 'Jimmy Carter', C: 'Lord Lugard', D: 'Huge Clifford' }, ans: 'A', exp: 'James Robertson is listed as the last colonial Governor-General.' },
-    { id: 'G36', subject: 'GENERAL', q: 'The first military coup d’état in Nigeria was in which year?', options: { A: '1964', B: '1966', C: '1960', D: '1999' }, ans: 'B', exp: 'The first military coup took place in 1966.' },
-    { id: 'G37', subject: 'GENERAL', q: 'The establishment of states in Nigeria started on which date?', options: { A: 'May 27, 1967', B: 'Feb 13, 1966', C: 'April 8, 1960', D: 'Oct 1, 1960' }, ans: 'A', exp: 'May 27, 1967 marked the beginning of state creation.' },
-    { id: 'G38', subject: 'GENERAL', q: 'The Biafra Civil War took place between which years?', options: { A: '1967-1968', B: '1968-1971', C: '1967-1970', D: '1970-1975' }, ans: 'C', exp: 'The Biafra Civil War lasted from 1967 to 1970.' },
-    { id: 'G39', subject: 'GENERAL', q: 'The National Youth Service Corps (NYSC) was established in which year?', options: { A: '1960', B: '1973', C: '1980', D: '1997' }, ans: 'B', exp: 'NYSC was established in 1973.' },
-    { id: 'G40', subject: 'GENERAL', q: 'The Nigeria Police Force belongs to which organ of government?', options: { A: 'Judiciary', B: 'Executive', C: 'Legislative', D: 'None of the above' }, ans: 'B', exp: 'The police are part of the Executive arm of government.' },
-    { id: 'G41', subject: 'GENERAL', q: 'Africa consists of how many countries (as given)?', options: { A: '54', B: '55', C: '60', D: '70' }, ans: 'A', exp: 'The module lists Africa as consisting of 54 countries.' },
-    { id: 'G42', subject: 'GENERAL', q: 'The Secretary General of OPEC (as listed) is?', options: { A: 'Abdulsaleam Kanuri', B: 'Abdullah El-Badri', C: 'Utuhu Kamirideen', D: 'Haitham Al Ghais' }, ans: 'D', exp: 'Haitham Al Ghais is listed as the current Secretary General of OPEC.' },
-    { id: 'G43', subject: 'GENERAL', q: 'The current Secretary General of the United Nations is?', options: { A: 'Ban Ki-moon', B: 'Antonio Guterres', C: 'Kofi Annan', D: 'Boutros Boutros-Ghali' }, ans: 'B', exp: 'Antonio Guterres is the current UN Secretary-General.' },
-    { id: 'G44', subject: 'GENERAL', q: 'Which of the following pairs of countries are permanent members of the UN Security Council?', options: { A: 'Brazil, Germany, France, USA, China', B: 'France, China, USSR, USA, Britain', C: 'France, Germany, Japan, China, Britain', D: 'Brazil, New Zealand, Britain, France, China' }, ans: 'B', exp: 'France, China, USSR (now Russia), USA and Britain are the permanent members.' },
-    { id: 'G45', subject: 'GENERAL', q: 'To qualify for the office of President in Nigeria, the candidate must be at least which age?', options: { A: '35 years', B: '20 years', C: '40 years', D: '55 years' }, ans: 'A', exp: 'The Constitution sets the minimum age at 35 years.' },
-    { id: 'G46', subject: 'GENERAL', q: 'The name "Nigeria" was coined from which geographical feature?', options: { A: 'Niger Forest', B: 'Niger Area', C: 'Niger River', D: 'Niger Textures' }, ans: 'C', exp: 'The name Nigeria derives from the Niger River.' },
-    { id: 'G47', subject: 'GENERAL', q: 'Who was the first Inspector General of Police in Nigeria?', options: { A: 'Teslim Balogun', B: 'Louis Edet', C: 'Ademola Adetokunbo', D: 'Elias Balogon' }, ans: 'B', exp: 'Louis Edet is historically recognized as the first IGP.' },
-    { id: 'G48', subject: 'GENERAL', q: 'The current Secretary General / Commission Chairman of the African Union (as listed) is?', options: { A: 'Dlamini Zuma', B: 'Alassane Ouattara', C: 'Emeka Anyaoku', D: 'Moussa Faki Mahamat' }, ans: 'D', exp: 'Moussa Faki Mahamat is the current Chairperson of the African Union Commission.' },
-    { id: 'G49', subject: 'GENERAL', q: 'The current President of the Commission / Secretary of ECOWAS (as listed) is?', options: { A: 'H. Desategn', B: 'Omar Touray', C: 'Alassane Ouattara', D: 'Ike Ekweremadu' }, ans: 'B', exp: 'Omar Touray is listed as ECOWAS Commission President.' },
-    { id: 'G50', subject: 'GENERAL', q: 'The headquarters of the United Nations is in which city?', options: { A: 'New York', B: 'Washington', C: 'Geneva', D: 'Vienna' }, ans: 'A', exp: 'UN Headquarters is based in New York.' },
+    { id: 'G101', subject: 'GENERAL', q: 'The first Secretary General of the Commonwealth was?', options: { A: 'George Washington', B: 'Tulam Goldie', C: 'Arnold Smith', D: 'Joseph Garba' }, ans: 'C', exp: 'Arnold Smith was the first Secretary General of the Commonwealth.' },
+    { id: 'G102', subject: 'GENERAL', q: 'Lagos became a crown colony in which year?', options: { A: '1862', B: '1861', C: '1841', D: '1886' }, ans: 'A', exp: '1862 is listed as the year Lagos became a crown colony.' },
+    { id: 'G103', subject: 'GENERAL', q: 'World War I took place between which years?', options: { A: '1911-1914', B: '1914-1916', C: '1916-1918', D: '1914-1918' }, ans: 'D', exp: 'World War I occurred between 1914 and 1918.' },
+    { id: 'G104', subject: 'GENERAL', q: 'The Western and Eastern regions of Nigeria became self-governing in which year?', options: { A: '1959', B: '1960', C: '1957', D: '1956' }, ans: 'C', exp: 'The module lists 1957 for regional self-government.' },
+    { id: 'G105', subject: 'GENERAL', q: 'Who was the first head of government of Nigeria?', options: { A: 'Yakubu Gowon', B: 'Aguiyi Ironsi', C: 'Tafawa Balewa', D: 'Nnamdi Azikiwe' }, ans: 'C', exp: 'Tafawa Balewa was the first Prime Minister (head of government).' },
+    { id: 'G106', subject: 'GENERAL', q: 'Who was the first military president of Nigeria?', options: { A: 'Sanni Abacha', B: 'Ibrahim Babangida', C: 'Aguiyi Ironsi', D: 'Yakubu Gowon' }, ans: 'C', exp: 'Aguiyi Ironsi is widely recognized as the first military Head of State.' },
+    { id: 'G107', subject: 'GENERAL', q: 'Nigeria became a republic in which year?', options: { A: '1963', B: '1960', C: '1976', D: '1961' }, ans: 'A', exp: 'Nigeria became a republic in 1963.' },
+    { id: 'G108', subject: 'GENERAL', q: 'The Northern and Southern protectorates were amalgamated in which year?', options: { A: '1914', B: '1919', C: '1921', D: '1900' }, ans: 'A', exp: 'The amalgamation occurred in 1914.' },
+    { id: 'G109', subject: 'GENERAL', q: 'Who was the first Executive President?', options: { A: 'Nnamdi Azikiwe', B: 'Olusegun Obasanjo', C: 'Shehu Shagari', D: 'Goodluck Jonathan' }, ans: 'A', exp: 'Nnamdi Azikiwe served as Governor-General and later as President; listed as first Executive President in the module.' },
+    { id: 'G110', subject: 'GENERAL', q: 'Who was the first colonial Governor-General of Nigeria?', options: { A: 'Tulam Goldie', B: 'James Robertson', C: 'Huge Clifford', D: 'Lord Lugard' }, ans: 'A', exp: 'Tulam (T. H.) Goldie is listed in the module.' },
+    { id: 'G111', subject: 'GENERAL', q: 'Which is the highest court in Nigeria?', options: { A: 'Court of Appeal', B: 'Supreme Court', C: 'Federal High Court', D: 'Magistrate Court' }, ans: 'B', exp: 'The Supreme Court is the apex court in Nigeria.' },
+    { id: 'G112', subject: 'GENERAL', q: 'ECOWAS was established in __ and has its administrative headquarters in __', options: { A: '1967, Lome', B: '1975, Lome', C: '1975, Lagos', D: '1967, Lagos' }, ans: 'B', exp: 'ECOWAS was established in 1975 with headquarters in Lome.' },
+    { id: 'G113', subject: 'GENERAL', q: 'The first general election in Nigeria was held in which year?', options: { A: '1964', B: '1960', C: '1963', D: '1999' }, ans: 'A', exp: 'The module references 1964 as the first general election.' },
+    { id: 'G114', subject: 'GENERAL', q: 'Nigeria practices which system of government?', options: { A: 'Confederalism', B: 'Unitarism', C: 'Parliamentarianism', D: 'Federalism' }, ans: 'D', exp: 'Nigeria practices a federal system of government.' },
+    { id: 'G115', subject: 'GENERAL', q: 'Who was the last colonial Governor-General of Nigeria?', options: { A: 'James Robertson', B: 'Jimmy Carter', C: 'Lord Lugard', D: 'Huge Clifford' }, ans: 'A', exp: 'James Robertson is listed as the last colonial Governor-General.' },
+    { id: 'G116', subject: 'GENERAL', q: 'The first military coup d’état in Nigeria was in which year?', options: { A: '1964', B: '1966', C: '1960', D: '1999' }, ans: 'B', exp: 'The first military coup took place in 1966.' },
+    { id: 'G117', subject: 'GENERAL', q: 'The establishment of states in Nigeria started on which date?', options: { A: 'May 27, 1967', B: 'Feb 13, 1966', C: 'April 8, 1960', D: 'Oct 1, 1960' }, ans: 'A', exp: 'May 27, 1967 marked the beginning of state creation.' },
+    { id: 'G118', subject: 'GENERAL', q: 'The Biafra Civil War took place between which years?', options: { A: '1967-1968', B: '1968-1971', C: '1967-1970', D: '1970-1975' }, ans: 'C', exp: 'The Biafra Civil War lasted from 1967 to 1970.' },
+    { id: 'G119', subject: 'GENERAL', q: 'The National Youth Service Corps (NYSC) was established in which year?', options: { A: '1960', B: '1973', C: '1980', D: '1997' }, ans: 'B', exp: 'NYSC was established in 1973.' },
+    { id: 'G120', subject: 'GENERAL', q: 'The Nigeria Police Force belongs to which organ of government?', options: { A: 'Judiciary', B: 'Executive', C: 'Legislative', D: 'None of the above' }, ans: 'B', exp: 'The police are part of the Executive arm of government.' },
+    { id: 'G121', subject: 'GENERAL', q: 'Africa consists of how many countries (as given)?', options: { A: '54', B: '55', C: '60', D: '70' }, ans: 'A', exp: 'The module lists Africa as consisting of 54 countries.' },
+    { id: 'G122', subject: 'GENERAL', q: 'The Secretary General of OPEC (as listed) is?', options: { A: 'Abdulsaleam Kanuri', B: 'Abdullah El-Badri', C: 'Utuhu Kamirideen', D: 'Haitham Al Ghais' }, ans: 'D', exp: 'Haitham Al Ghais is listed as the current Secretary General of OPEC.' },
+    { id: 'G123', subject: 'GENERAL', q: 'The current Secretary General of the United Nations is?', options: { A: 'Ban Ki-moon', B: 'Antonio Guterres', C: 'Kofi Annan', D: 'Boutros Boutros-Ghali' }, ans: 'B', exp: 'Antonio Guterres is the current UN Secretary-General.' },
+    { id: 'G124', subject: 'GENERAL', q: 'Which of the following pairs of countries are permanent members of the UN Security Council?', options: { A: 'Brazil, Germany, France, USA, China', B: 'France, China, USSR, USA, Britain', C: 'France, Germany, Japan, China, Britain', D: 'Brazil, New Zealand, Britain, France, China' }, ans: 'B', exp: 'France, China, USSR (now Russia), USA and Britain are the permanent members.' },
+    { id: 'G125', subject: 'GENERAL', q: 'To qualify for the office of President in Nigeria, the candidate must be at least which age?', options: { A: '35 years', B: '20 years', C: '40 years', D: '55 years' }, ans: 'A', exp: 'The Constitution sets the minimum age at 35 years.' },
+    { id: 'G126', subject: 'GENERAL', q: 'The name "Nigeria" was coined from which geographical feature?', options: { A: 'Niger Forest', B: 'Niger Area', C: 'Niger River', D: 'Niger Textures' }, ans: 'C', exp: 'The name Nigeria derives from the Niger River.' },
+    { id: 'G127', subject: 'GENERAL', q: 'Who was the first Inspector General of Police in Nigeria?', options: { A: 'Teslim Balogun', B: 'Louis Edet', C: 'Ademola Adetokunbo', D: 'Elias Balogon' }, ans: 'B', exp: 'Louis Edet is historically recognized as the first IGP.' },
+    { id: 'G128', subject: 'GENERAL', q: 'The current Secretary General / Commission Chairman of the African Union (as listed) is?', options: { A: 'Dlamini Zuma', B: 'Alassane Ouattara', C: 'Emeka Anyaoku', D: 'Moussa Faki Mahamat' }, ans: 'D', exp: 'Moussa Faki Mahamat is the current Chairperson of the African Union Commission.' },
+    { id: 'G129', subject: 'GENERAL', q: 'The current President of the Commission / Secretary of ECOWAS (as listed) is?', options: { A: 'H. Desategn', B: 'Omar Touray', C: 'Alassane Ouattara', D: 'Ike Ekweremadu' }, ans: 'B', exp: 'Omar Touray is listed as ECOWAS Commission President.' },
+    { id: 'G130', subject: 'GENERAL', q: 'The headquarters of the United Nations is in which city?', options: { A: 'New York', B: 'Washington', C: 'Geneva', D: 'Vienna' }, ans: 'A', exp: 'UN Headquarters is based in New York.' },
     { id: 'G51', subject: 'GENERAL', q: 'The United Nations Organization (UNO) was founded in San Francisco in which year?', options: { A: '1939', B: '1914', C: '1945', D: '1950' }, ans: 'C', exp: 'The UN was founded in 1945 in San Francisco.' },
     { id: 'G52', subject: 'GENERAL', q: 'The first military coup d’état in Africa occurred in which country (as listed)?', options: { A: 'Libya', B: 'Liberia', C: 'Egypt', D: 'Nigeria' }, ans: 'C', exp: 'The module lists Egypt as the first country in Africa with a military coup.' },
     { id: 'G53', subject: 'GENERAL', q: 'Nigeria became 36 states under the regime of which leader?', options: { A: 'Olusegun Obasanjo', B: 'Sanni Abacha', C: 'Ibrahim Babangida', D: 'Yakubu Gowon' }, ans: 'B', exp: 'The module lists Sanni Abacha for this change.' },
@@ -1574,88 +4121,6 @@ const fullQuestionsData = [
     { id: 'G68', subject: 'GENERAL', q: 'Who is listed as the current Governor of the Central Bank of Nigeria (in the module)?', options: { A: 'Olayemi Cardoso', B: 'Godwin Emefiele', C: 'Lamido Sanusi', D: 'Folashodun Olubunmi (Osborne)' }, ans: 'A', exp: 'Olayemi Cardoso is listed as the CBN Governor in the practice file.' },
     { id: 'G69', subject: 'GENERAL', q: 'The arm of government charged with the responsibility of making laws is?', options: { A: 'Judiciary', B: 'Legislative', C: 'Executive', D: 'Parliament' }, ans: 'B', exp: 'The Legislative arm is responsible for making laws.' },
     { id: 'G70', subject: 'GENERAL', q: 'The eagle in the coat of arms stands for which quality?', options: { A: 'Strength', B: 'EFCC', C: 'Pride', D: 'Hero' }, ans: 'A', exp: 'The eagle symbolizes strength in the coat of arms.' },
-
-// ENGLISH (append E16..E50 from PDF)
-    { id: 'E16', subject: 'ENGLISH', q: 'One significant character of the "jet age" is that it encourages people to cut corners. What does "cut corners" mean in this context?', options: { A: 'Not to face all problems', B: 'To want to become rich quickly', C: 'To want to avoid unnecessary hardships', D: 'Forfeit the opportunity of further education' }, ans: 'C', exp: 'In this context "cut corners" means to avoid unnecessary hardships.' },
-    { id: 'E17', subject: 'ENGLISH', q: 'The lady who won the beauty contest had a good "gait". Which word is nearest in meaning to "gait"?', options: { A: 'Stature', B: 'Figure', C: 'Elegance', D: 'Carriage' }, ans: 'D', exp: 'Gait relates to carriage or the manner of walking.' },
-    { id: 'E18', subject: 'ENGLISH', q: 'It would need a high flyer to make a first class degree in the university. Which choice best matches "high flyer"?', options: { A: 'A smart performer/unmitigated swot', B: 'An outright genius', C: 'An outstanding scholar', D: 'An average student' }, ans: 'A', exp: 'The phrase implies an exceptionally capable or high performing student.' },
-    { id: 'E19', subject: 'ENGLISH', q: 'What you will find in the book is a bird\'s eye view of the subject. What does "bird\'s eye view" mean?', options: { A: 'A detailed account', B: 'General survey', C: 'A balanced account', D: 'A biased treatment' }, ans: 'B', exp: 'A bird\'s eye view means a general survey or overview.' },
-    { id: 'E20', subject: 'ENGLISH', q: 'Hers was a chequered career. The phrase "chequered career" most nearly means?', options: { A: 'An interesting and successful career', B: 'A career full of sorrow and tears', C: 'A bright and memorable career', D: 'A career full of ups and downs' }, ans: 'D', exp: 'A chequered career means one with ups and downs.' },
-    { id: 'E21', subject: 'ENGLISH', q: 'If experience is anything to go by, this action will prove a political minefield. What does "political minefield" imply?', options: { A: 'A source of political benefits', B: 'A way out of political trouble', C: 'A cause for political joy', D: 'An invitation to political problems' }, ans: 'D', exp: 'A political minefield suggests a situation full of hidden dangers.' },
-    { id: 'E22', subject: 'ENGLISH', q: 'In my view, the play didn\'t come off. What does "come off" mean here?', options: { A: 'Succeed', B: 'Fail', C: 'Attract applause', D: 'Take place' }, ans: 'B', exp: 'Here "come off" means the play did not succeed.' },
-    { id: 'E23', subject: 'ENGLISH', q: 'When the chips are down, we will know those who have the courage to stand. What does the phrase mean?', options: { A: 'When we get to a crisis point', B: 'In the final analysis', C: 'When the blocks are lowered', D: 'When we get to the end of the road' }, ans: 'A', exp: '"When the chips are down" refers to a crisis or difficult time.' },
-    { id: 'E24', subject: 'ENGLISH', q: 'She said boxing is, in fact, her pet aversion. What does "pet aversion" mean?', options: { A: 'Something she likes very much', B: 'Something she dislikes very much', C: 'A hobby she loves to pursue', D: 'One thing she can\'t miss' }, ans: 'B', exp: 'A pet aversion is something one particularly dislikes.' },
-    { id: 'E25', subject: 'ENGLISH', q: 'The gate man does his work perfunctorily. What does "perfunctorily" mean?', options: { A: 'Without commitment', B: 'With speed', C: 'Mother\'s pet', D: 'Father\'s pet' }, ans: 'A', exp: 'Perfunctorily means doing something with little interest or care.' },
-    { id: 'E26', subject: 'ENGLISH', q: 'Members of the panel were working at cross-purposes. This means they were?', options: { A: 'In harmony', B: 'In disunity', C: 'For selfish purposes', D: 'Stretching resources' }, ans: 'B', exp: 'Working at cross-purposes means working against each other or in disunity.' },
-    { id: 'E27', subject: 'ENGLISH', q: 'The young man who distributed political pamphlets on campus was promptly repudiated. "Repudiated" most nearly means?', options: { A: 'Disowned', B: 'Arrested', C: 'Warned', D: 'Killed' }, ans: 'A', exp: 'Repudiated means disowned or rejected.' },
-    { id: 'E28', subject: 'ENGLISH', q: 'Adayi is a die-hard criminal. The phrase "die-hard" here best means?', options: { A: 'Hard to kill', B: 'Hard to arrest', C: 'Remorseless', D: 'Resentless' }, ans: 'C', exp: 'Die-hard criminal refers to someone persistent and unrepentant.' },
-    { id: 'E29', subject: 'ENGLISH', q: 'In moments of serious economic hardship, many people are __ to turn to God. Which word best fills the gap?', options: { A: 'Concerned', B: 'Inclined', C: 'Disposed', D: 'Propensed' }, ans: 'B', exp: '"Inclined" fits the context best.' },
-    { id: 'E30', subject: 'ENGLISH', q: 'We cannot all wear expensive shoes in situation of __. Which phrase best completes the sentence?', options: { A: 'Different demand and supply', B: 'Uneven wear and tear', C: 'Purchasing power', D: 'Unpredictable national income' }, ans: 'C', exp: 'Purchasing power is the economic factor affecting ability to buy expensive shoes.' },
-    { id: 'E31', subject: 'ENGLISH', q: 'The centre–forward was __ consequently the goal was not allowed. Which choice completes it?', options: { A: 'In an offside position', B: 'Very well positioned', C: 'Brilliant player', D: 'The captain of the team' }, ans: 'A', exp: 'Being in an offside position makes a goal disallowed.' },
-    { id: 'E32', subject: 'ENGLISH', q: 'AIDS is a disease that kills slowly but surely. Which option correctly modifies the sentence for emphasis?', options: { A: 'Too much a deadly', B: 'Very deadly', C: 'So deadly', D: 'Such deadly' }, ans: 'C', exp: '"So deadly" is the grammatically appropriate modifier here.' },
-    { id: 'E33', subject: 'ENGLISH', q: 'We had a dull evening because __', options: { A: 'Hardly the talk had begun when the lights went off', B: 'Hardly had the talk begun when the light went off', C: 'The talk had hardly begun when the light had gone out', D: 'The lights had hardly gone out when the talk began' }, ans: 'B', exp: '"Hardly had the talk begun when..." is the correct inversion.' },
-    { id: 'E34', subject: 'ENGLISH', q: 'Soyinka\'s masterful __ of the atmosphere of his childhood helped to make his book, Ake, an outright success. Which word completes the sentence?', options: { A: 'Evocation', B: 'Invocation', C: 'Convocation', D: 'Revocation' }, ans: 'A', exp: 'Evocation of atmosphere is the correct word.' },
-    { id: 'E35', subject: 'ENGLISH', q: 'Students will always blame their unfavourable teachers when examination results are __. Which tag question fits?', options: { A: 'Won\'t they', B: 'Wouldn\'t they', C: 'Isn\'t it', D: 'Can\'t they' }, ans: 'B', exp: '"Wouldn\'t they" is the appropriate tag question.' },
-    { id: 'E36', subject: 'ENGLISH', q: 'Okonkwo is a stubborn man; he will never __ his words. Which verb completes the sentence?', options: { A: 'Chew', B: 'Spit', C: 'Eat', D: 'Bite' }, ans: 'D', exp: '"Bite his words" is the idiomatic completion meaning to withdraw his words.' },
-    { id: 'E37', subject: 'ENGLISH', q: 'Kindly __ me your book because my friend has __ mine. Which option pair is correct?', options: { A: 'Borrow/ borrowed', B: 'Borrow/ rent', C: 'Lend/ lent', D: 'Lend/ borrowed' }, ans: 'D', exp: '"Lend me your book because my friend has borrowed mine." fits correctly.' },
-    { id: 'E38', subject: 'ENGLISH', q: 'Three quarters of the church __ painted by members the previous day. Which verb form is correct?', options: { A: 'Were', B: 'Was', C: 'Is', D: 'Are' }, ans: 'A', exp: 'When referring to people (members), "were" is used here.' },
-    { id: 'E39', subject: 'ENGLISH', q: 'The young boys have been caught with parts of the stolen machine but admitted stealing it. Which choice correctly completes the sentence?', options: { A: 'Neither of them has', B: 'Neither of them have', C: 'None of them has', D: 'None' }, ans: 'C', exp: '"None of them has" is grammatically correct in this context.' },
-    { id: 'E40', subject: 'ENGLISH', q: 'Watching carefully, I could see the fish __ along the bottom. Which verb fits?', options: { A: 'Dotting', B: 'Crawling', C: 'Diving', D: 'Darting' }, ans: 'D', exp: '"Darting" describes quick swimming motions along the bottom.' },
-    { id: 'E41', subject: 'ENGLISH', q: 'Emeka is now a __ student but it took him years to __. Which option is correct?', options: { A: 'Matured/mature', B: 'Mature/mature', C: 'Mature/matured', D: 'Matured/matured' }, ans: 'B', exp: 'Emeka is now a mature student (present), it took him years to mature (verb).' },
-    { id: 'E42', subject: 'ENGLISH', q: 'The rebels will soon fight back. We have been informed __ their __.', options: { A: 'Of / predicament', B: 'About / indulgence', C: 'On / rearmament', D: 'As / ___' }, ans: 'C', exp: '"On their rearmament" fits logically.' },
-    { id: 'E43', subject: 'ENGLISH', q: 'Ali was honest and quiet as a school boy but too much drinking has now changed his __ and __ his tongue.', options: { A: 'Temperature/ injured', B: 'Character/ tightened', C: 'Temperament/ loosened', D: 'Innocence/ worsened' }, ans: 'C', exp: '"Temperament/ loosened" makes sense in the context given by the module.' },
-    { id: 'E44', subject: 'ENGLISH', q: 'The hospital was closed __ because there were no beds to put patients. Which pair completes the sentence?', options: { A: 'Again/ upon', B: 'Off/ on', C: 'Down/ at', D: 'Up/ in' }, ans: 'B', exp: '"Closed off because" is an odd phrasing but per module the choice was B.' },
-    { id: 'E45', subject: 'ENGLISH', q: 'The judge with his son __ travelling to Lagos now. Which verb form is correct?', options: { A: 'Were', B: 'Shall', C: 'Is', D: 'Are' }, ans: 'C', exp: 'The judge with his son is travelling (singular collective).' },
-    { id: 'E46', subject: 'ENGLISH', q: 'A university teacher is an __.', options: { A: 'Academic', B: 'Academics', C: 'Academician', D: 'Academia' }, ans: 'A', exp: 'Academic is the correct noun form.' },
-    { id: 'E47', subject: 'ENGLISH', q: 'The adventurers ran into many __ in the forest. Which plural is correct?', options: { A: 'Dear', B: 'Dears', C: 'Deers', D: 'Deer' }, ans: 'D', exp: 'The plural of deer is deer.' },
-    { id: 'E48', subject: 'ENGLISH', q: 'The argument between the two neighbours degenerated into __.', options: { A: 'A free-for-all', B: 'A free for all fight', C: 'A flee for all', D: 'A free fight' }, ans: 'A', exp: '"A free-for-all" is the correct phrase.' },
-    { id: 'E49', subject: 'ENGLISH', q: 'The class __ more girls than boys this session. Which verb is correct?', options: { A: 'Comprise of', B: 'Comprises of', C: 'Comprise', D: 'Comprises' }, ans: 'D', exp: '"Comprises" (singular) is correct in this context.' },
-    { id: 'E50', subject: 'ENGLISH', q: 'The tourist bought which description is correct?', options: { A: 'A brown, small, Nigerian earthen pot', B: 'A small, brown Nigerian earthen pot', C: 'An earthen, brown, small Nigerian pot', D: 'A Nigerian small brown earthen pot' }, ans: 'B', exp: 'Order of adjectives should be: size, color, origin.' },
-
-// End of additions for Batch 1
-
-// --- MATHEMATICS (Batch 2 additions from PDF) ---
-    { id: 'M16', subject: 'MATHS', q: 'What is the probability of getting an odd number on a single toss of a fair die?', options: { A: '1/6', B: '1/3', C: '1/2', D: '2/3' }, ans: 'C', exp: 'Odd faces are 1,3,5 → 3 out of 6 = 1/2.' },
-    { id: 'M17', subject: 'MATHS', q: 'In a class of 40 children, 16 surnames begin with O and 9 begin with A. What is the probability a randomly chosen child\'s surname begins with O or A?', options: { A: '5/8', B: '7/8', C: '9/16', D: '14/25' }, ans: 'A', exp: 'Total O or A = 16 + 9 = 25; probability = 25/40 = 5/8.' },
-    { id: 'M18', subject: 'MATHS', q: 'If more than one surname begins with a letter besides A and O, how many letters (from the options) might that represent according to the module?', options: { A: '2', B: '3', C: '4', D: '6' }, ans: 'B', exp: 'Answer taken from the practice module (original formatting ambiguous).' },
-    { id: 'M19', subject: 'MATHS', q: 'From the table of scores (2,2), (3,4), (4,7), (5,2), (6,3), (7,2): If a student is chosen at random, what is the probability that he scored at least 6 marks?', options: { A: '3/20', B: '1/5', C: '1/4', D: '3/10' }, ans: 'C', exp: 'There are 3 students with 6 and 2 with 7 → 5 out of 20 = 1/4.' },
-    { id: 'M20', subject: 'MATHS', q: 'What is the probability that three customers waiting in a bank will be served in the sequence of their arrival?', options: { A: '1/6', B: '1/3', C: '1/2', D: '2/3' }, ans: 'A', exp: 'There are 3! = 6 possible orders; only one matches arrival order.' },
-    { id: 'M21', subject: 'MATHS', q: 'Kodjo and Adoga have pass probabilities 3/4 and 3/5 respectively. What is the probability both boys fail the examination?', options: { A: '1/10', B: '3/10', C: '1/2', D: '2/3' }, ans: 'A', exp: 'Fail probabilities: 1/4 and 2/5. Product = (1/4)*(2/5)=1/10.' },
-    { id: 'M22', subject: 'MATHS', q: 'The mean of 20 observations is 4. If the largest value is 23, find the mean of the remaining observations.', options: { A: '4', B: '3', C: '2.85', D: '2.60' }, ans: 'B', exp: 'Sum = 20*4 = 80. Remove 23 → 57 remaining; mean = 57/19 = 3.' },
-    { id: 'M23', subject: 'MATHS', q: 'In a group of 11 people who speak English or French or both: 7 speak English and 6 speak French. If a person who speaks English is chosen at random, what is the probability that the person also speaks French?', options: { A: '2/7', B: '4/11', C: '5/11', D: '11/13' }, ans: 'A', exp: 'Both = 7 + 6 - 11 = 2. Given English speaker count 7 → 2/7.' },
-    { id: 'M24', subject: 'MATHS', q: 'If events X and Y are mutually exclusive with P(X)=1/3 and P(Y)=2/5, what is P(X ∩ Y)?', options: { A: '0', B: '2/15', C: '4/15', D: '11/15' }, ans: 'A', exp: 'Mutually exclusive events cannot both occur → intersection probability = 0.' },
-    { id: 'M25', subject: 'MATHS', q: 'Using the same X and Y, what is P(X ∪ Y)?', options: { A: '0', B: '2/15', C: '4/15', D: '11/15' }, ans: 'D', exp: 'P(X ∪ Y) = P(X)+P(Y) = 1/3 + 2/5 = 11/15.' },
-    { id: 'M26', subject: 'MATHS', q: 'A box contains 2 white and 3 blue identical marbles. If two marbles are picked at random without replacement, what is the probability they are of different colours?', options: { A: '2/3', B: '3/5', C: '2/5', D: '7/20' }, ans: 'B', exp: 'Probability = (2/5)*(3/4) + (3/5)*(2/4) = 12/20 = 3/5.' },
-    { id: 'M27', subject: 'MATHS', q: 'Mrs. Jones: P(boy)=1/2 and P(blue eyes)=1/4. What is P(blue-eyed boy)?', options: { A: '1/8', B: '1/4', C: '3/8', D: '1/2' }, ans: 'A', exp: 'Assuming independence: (1/2)*(1/4)=1/8.' },
-    { id: 'M28', subject: 'MATHS', q: 'Convert 90 km/h to metres per second.', options: { A: '1.5 m/s', B: '2.5 m/s', C: '25 m/s', D: '1.5×10^3 m/s' }, ans: 'C', exp: '90*(1000/3600)=90*(5/18)=25 m/s.' },
-    { id: 'M29', subject: 'MATHS', q: 'Uche and Chidi share money in ratio m:n. If Chidi\'s share is N4,200, what is Uche\'s share?', options: { A: 'N4,200 n/m', B: 'N4,200/mn', C: 'N4,200 m/n', D: 'N4,200/n' }, ans: 'C', exp: 'If Chidi (n parts) = N4,200 then one part = 4200/n so Uche (m parts) = 4200*(m/n).' },
-    { id: 'M30', subject: 'MATHS', q: 'A husband contributes 7% of his income (N5,500 p.a.) and his wife contributes 4% of her income (N4,000 p.a.). Find their total contribution.', options: { A: 'N1,045', B: 'N605', C: 'N545', D: 'N490' }, ans: 'C', exp: 'Husband: 0.07*5500=385; Wife:0.04*4000=160; Total = 385+160 = 545.' },
-    { id: 'M31', subject: 'MATHS', q: 'A car is traveling at 80 km/h. Its speed in metres per second (m/s) is approximately?', options: { A: '13.3 m/s', B: '22.2 m/s', C: '133.3 m/s', D: '222.2 m/s' }, ans: 'B', exp: '80*(5/18)=400/18 ≈ 22.22 m/s.' },
-    { id: 'M32', subject: 'MATHS', q: 'If children share N10.50 in the ratio 6:7:8, what is the largest share?', options: { A: 'N3.00', B: 'N3.50', C: 'N4.00', D: 'N4.50' }, ans: 'C', exp: 'Total parts 21. Largest = 8/21 * 10.50 = 4.00.' },
-    { id: 'M33', subject: 'MATHS', q: 'A trader makes a loss of 15%. What is the ratio selling price : cost price?', options: { A: '3:20', B: '3:17', C: '17:20', D: '20:23' }, ans: 'C', exp: 'If loss 15% then SP = 85% of CP. Ratio = 85:100 = 17:20.' },
-    { id: 'M34', subject: 'MATHS', q: 'A car travels at x km/h for 1 hour and at y km/h for 2 hours. What is its average speed?', options: { A: '(x+2y)/3', B: '(2x+2y)/3', C: '(x+ y)/3', D: '(2x+y)/3' }, ans: 'A', exp: 'Average speed = total distance / total time = (x + 2y)/3.' },
-    { id: 'M35', subject: 'MATHS', q: 'The ages of three men are in the ratio 3:4:5. If the difference between oldest and youngest is 18 years, find the sum of their ages.', options: { A: '45 years', B: '72 years', C: '108 years', D: '216 years' }, ans: 'C', exp: 'Let k be common factor: (5-3)k = 2k = 18 → k=9. Sum = (3+4+5)k = 12*9 = 108.' },
-    { id: 'M36', subject: 'MATHS', q: 'A bicycle wheel of radius 42 cm is rolled over 66 m. How many revolutions does it make? (Take π = 22/7)', options: { A: '2.5', B: '5', C: '25', D: '50' }, ans: 'C', exp: 'Circumference = 2πr = 2*(22/7)*42 = 264 cm. Distance = 6600 cm. Revolutions = 6600/264 = 25.' },
-    { id: 'M37', subject: 'MATHS', q: 'In a bag of oranges, the ratio of good ones to bad ones is 5:4. If the number of bad ones is 36, how many oranges are there altogether?', options: { A: '81', B: '72', C: '54', D: '45' }, ans: 'A', exp: 'Bad = 4 parts = 36 → 1 part = 9 → total = 9*9 = 81.' },
-    { id: 'M38', subject: 'MATHS', q: 'A man is four times as old as his son. The difference between their ages is 36. Find the sum of their ages.', options: { A: '45 years', B: '48 years', C: '60 years', D: '74 years' }, ans: 'C', exp: 'Let son = s; man = 4s; 4s - s =36 → s=12; sum=5s=60.' },
-    { id: 'M39', subject: 'MATHS', q: 'If 4m + 3n = 5, find the ratio m:n (choose from given options)', options: { A: '37:4', B: '4:3', C: '3:4', D: '4:7' }, ans: 'B', exp: 'Answer per module formatting; kept as listed.' },
-    { id: 'M40', subject: 'MATHS', q: 'If 2x : (x+1) = 3 : 2, what is the value of x?', options: { A: '1/2', B: '1', C: '3/2', D: '3' }, ans: 'D', exp: '2x/(x+1)=3/2 → 4x = 3x + 3 → x = 3.' },
-    { id: 'M41', subject: 'MATHS', q: 'The ratio of men to women in a 20-member committee is 3:1. How many women must be added so that the ratio becomes 3:2?', options: { A: '7', B: '9', C: '5', D: '2' }, ans: 'C', exp: 'Men = 15, women =5. Need 15:(5+w)=3:2 → w=5.' },
-    { id: 'M42', subject: 'MATHS', q: 'Three men Bedu, Bakare and Kofi shared N500 in the ratio 3:2:x. If Bedu\'s share is N150, find the value of x.', options: { A: '1', B: '3', C: '5', D: '6' }, ans: 'C', exp: '3/(3+2+x)*500 =150 → 3/(5+x)=150/500=3/10 → 5+x=10 → x=5.' },
-    { id: 'M43', subject: 'MATHS', q: 'The sides of two cubes are in the ratio 2:5. What is the ratio of their volumes?', options: { A: '8:15', B: '8:125', C: '6:125', D: '4:5' }, ans: 'B', exp: 'Volumes scale as cubes: 2^3 : 5^3 = 8 : 125.' },
-    { id: 'M44', subject: 'MATHS', q: 'Lena bought 400 shares at N1.50 each and sold them at N2.05 each. What was her gain?', options: { A: 'N0.55', B: 'N20.00', C: 'N220.00', D: 'N330.00' }, ans: 'C', exp: 'Gain per share = 2.05 - 1.50 = 0.55. Total gain = 0.55 * 400 = 220.' },
-    { id: 'M45', subject: 'MATHS', q: 'Amma buys 100 oranges at 20 for C30.00 and 200 oranges at 4 for C10.00. If she sells all oranges at C3.00 each, what was her profit?', options: { A: 'C150.00', B: 'C250.00', C: 'C500.00', D: 'C650.00' }, ans: 'B', exp: 'Cost = (100/20)*30 + (200/4)*10 =150 +500 =650. Revenue = 300*3 =900. Profit = 250.' },
-    { id: 'M46', subject: 'MATHS', q: 'The price of a litre of petrol is increased from C30.00 to C39.00. What is the percentage increase?', options: { A: '90%', B: '30%', C: '34%', D: '39%' }, ans: 'B', exp: 'Increase = 9/30 = 0.3 = 30%.' },
-    { id: 'M47', subject: 'MATHS', q: 'A trader sold a pair of shoes for C2,800 making a loss of 20% on his cost price. Find his loss as a percentage of his selling price.', options: { A: '16 2/3%', B: '2%', C: '25%', D: '75%' }, ans: 'C', exp: 'If loss 20% of CP, then loss/SP = 0.2CP / 0.8CP = 0.25 = 25%.' },
-    { id: 'M48', subject: 'MATHS', q: 'An article bought for D5,000 depreciates by 15% in the first year. Find its value after a year.', options: { A: 'D425.00', B: 'D750.00', C: 'D4,250.00', D: 'D4,985.00' }, ans: 'C', exp: 'Value = 5000*(1-0.15)=5000*0.85=4250.' },
-    { id: 'M49', subject: 'MATHS', q: 'A house bought for N100,000 was later auctioned for N80,000. Find the loss percent.', options: { A: '20%', B: '30%', C: '40%', D: '50%' }, ans: 'A', exp: 'Loss = 20,000 on 100,000 → 20%.' },
-    { id: 'M50', subject: 'MATHS', q: 'The side of a square is increased from 20 cm to 21 cm. Calculate the percentage increase in its area.', options: { A: '2.5%', B: '9.3%', C: '10.0%', D: '10.25%' }, ans: 'D', exp: 'Area increase from 400 to 441; increase = 41/400 = 0.1025 = 10.25%.' },
-    { id: 'M51', subject: 'MATHS', q: 'A man bought 2220 mangoes at N5x each and sold each for 3x kobo making a gain of N8. Find the value of x (as given in options).', options: { A: '2', B: '3', C: '6', D: '10' }, ans: 'A', exp: 'Problem statement in module is ambiguous; selected option per module listing.' },
-    { id: 'M52', subject: 'MATHS', q: 'A car moves at an average speed of 30 km/h. How long does it take to cover 200 metres?', options: { A: '2.4 sec', B: '24 sec', C: '144 sec', D: '240 sec' }, ans: 'B', exp: '30 km/h = 8.333... m/s; time = 200 / 8.333... ≈ 24 s.' },
-    { id: 'M53', subject: 'MATHS', q: 'A man bought a television on hire purchase for N25,000 of which he paid N10,000. If he pays the balance in eight equal installments, find the value of each installment.', options: { A: 'N1250', B: 'N1578', C: 'N1875', D: 'N3125' }, ans: 'C', exp: 'Balance = 25,000 - 10,000 = 15,000; each = 15,000/8 = 1875.' },
-    { id: 'M54', subject: 'MATHS', q: 'If the simple interest on N2,000 after 9 months is N60, what is the rate per annum?', options: { A: '2 1/4%', B: '4%', C: '5%', D: '6%' }, ans: 'B', exp: 'Assuming interest is N60 (module likely intended 60): r = 60/(2000*(9/12)) = 60/1500 = 0.04 = 4%.' },
-    { id: 'M55', subject: 'MATHS', q: 'A student bought 3 notebooks and 1 pen for N35. She later bought 2 notebooks and 2 pens for N30. What is the cost of a pen?', options: { A: 'N5.00', B: 'N7.50', C: 'N10.00', D: 'N15.00' }, ans: 'A', exp: 'Solve: 3n + p =35 and 2n +2p =30 → n=10, p=5.' },
-
 ];
 
 // Expose data to window for easier debugging in local browsers (module scope isn't global)
