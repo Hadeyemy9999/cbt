@@ -12,10 +12,10 @@ const MAX_TIME_SECONDS = 30 * 60; // 30 minutes converted to seconds.
 
 // Define the required question count for each subject category to hit 50 questions.
 const QUESTIONS_PER_SUBJECT_MAP = {
-    MATHS: 13,
-    ENGLISH: 13,
-    GENERAL: 12,
-    DEPARTMENTAL: 12
+    MATHS: 5,
+    ENGLISH: 5,
+    GENERAL: 10,
+    DEPARTMENTAL: 30
 };
 
 // --- FIREBASE AND STATE VARIABLES ---
